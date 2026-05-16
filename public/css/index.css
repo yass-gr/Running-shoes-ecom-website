@@ -1,0 +1,169 @@
+/* global settings */
+:root {
+  --main-bg-clr: #f0eee9;
+  --main-font: "satoshi", sans-serif;
+  --sec-bg-clr: #212121;
+  --nav-bg: #ffffff;
+}
+
+@font-face {
+  font-family: "satoshi";
+  src: url("../assets/Satoshi.ttf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "chillax";
+  src: url("../assets/Chillax.ttf") format("opentype");
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+}
+
+body {
+  background-color: var(--main-bg-clr);
+  height: 100vh;
+  position: relative;
+}
+
+/* header & nav */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.sale-announcement {
+  background-color: var(--sec-bg-clr);
+  color: white;
+  font-size: 0.7rem;
+  padding-block: 7px;
+  text-align: center;
+}
+
+header nav {
+  background-color: var(--nav-bg);
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 0 20px;
+  height: 42px;
+  align-items: center;
+  padding-inline: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.114);
+
+  h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 150px;
+    font-family: "chillax", sans-serif;
+  }
+
+  ul {
+    display: flex;
+    gap: 20px;
+
+    li {
+      list-style: none;
+      font-size: 0.7rem;
+      font-family: "chillax", sans-serif;
+    }
+  }
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+      font-size: 1.2rem;
+    }
+    svg {
+      width: 18px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 0.8rem;
+      padding-right: 10px;
+      font-family: "chillax", sans-serif;
+    }
+  }
+}
+
+/* hero */
+#hero-section {
+  background: url("../assets/heroBg.webp");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  margin: 40px 10px 0 10px;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding: 50px;
+
+  .hero-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h2 {
+      color: white;
+      font-weight: 450;
+    }
+
+    .hero-btns {
+      display: flex;
+      justify-content: end;
+      gap: 20px;
+      button {
+        width: 110px;
+        height: 30px;
+        border-radius: 60px;
+        border: none;
+        font-size: 0.7rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.3px;
+        font-family: "chillax", sans-serif;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: var(--sec-bg-clr);
+        color: white;
+      }
+    }
+  }
+}
+
+#logo {
+  max-width: 60px;
+}
+
+.input-color {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.label-color {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  /* outline: 1px solid #fff; */
+  transition: all 0.2s ease;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px black;
+}
