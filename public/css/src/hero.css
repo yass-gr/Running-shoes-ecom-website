@@ -1,0 +1,52 @@
+.hero-container {
+  padding-top: 40px;
+}
+#hero-section {
+  background: url("../../assets/heroBg.webp");
+  background-size: cover;
+  background-position: center;
+  height: 87vh;
+  margin: 0px 10px 0 10px;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  padding: 50px;
+  .hero-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    h2 {
+      color: white;
+      font-weight: 500;
+      font-size: 1.7rem;
+    }
+
+    .hero-btns {
+      display: flex;
+      justify-content: end;
+      gap: 20px;
+      button {
+        width: 130px;
+        height: 35px;
+        border-radius: 60px;
+        border: none;
+        font-size: 0.7rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.3px;
+        font-family: "chillax", sans-serif;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: var(--sec-bg-clr);
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.specialCollectionSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "left left rightT rightT"
+    "left left rightB1 rightB2";
+  gap: 10px;
+  padding: 10px;
+  margin-top: 30px;
+
+  .main {
+    background: url("../../assets/images/grid4.jpg");
+    grid-area: left;
+    aspect-ratio: 1;
+    background-position: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  div:nth-child(2) {
+    background: url("../../assets/images/grid3.jpg");
+    grid-area: rightT;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  div:nth-child(3) {
+    background: url("../../assets/images/grid2.webp");
+    grid-area: rightB1;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  div:nth-child(4) {
+    background: url("../../assets/images/grid1.webp");
+    grid-area: rightB2;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  div {
+    border-radius: 15px;
+  }
+}

@@ -1,0 +1,38 @@
+@import "src/footer.css";
+@import "src/infoCardsSection.css";
+@import "src/header.css";
+@import "src/hero.css";
+@import "src/categoriesSection.css";
+@import "src/newArrivalsSection.css";
+@import "src/specialCollectionsection.css";
+
+:root {
+  --main-bg-clr: #f0eee9;
+  --main-font: "satoshi", sans-serif;
+  --sec-bg-clr: #212121;
+  --nav-bg: #ffffff;
+}
+
+@font-face {
+  font-family: "satoshi";
+  src: url("../assets/fonts/Satoshi.ttf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "chillax";
+  src: url("../assets/fonts/Chillax.ttf") format("opentype");
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+}
+
+body {
+  background-color: var(--main-bg-clr);
+  height: 100vh;
+  position: relative;
+  scroll-behavior: smooth;
+}

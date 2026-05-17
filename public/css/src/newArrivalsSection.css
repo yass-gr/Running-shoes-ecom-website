@@ -1,0 +1,51 @@
+#new-arrivals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .title {
+    font-size: 1.1rem;
+    text-align: center;
+    border-bottom: 2px solid var(--sec-bg-clr);
+    width: 128px;
+    margin-inline: auto;
+    font-weight: 500;
+  }
+  .content {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+    font-size: 1.5rem;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+    .collName {
+      font-family: "chillax", sans-serif;
+      font-weight: 400;
+      font-size: 1.8rem;
+    }
+    .pName {
+      font-size: smaller;
+    }
+    button {
+      padding-inline: 25px;
+      height: 35px;
+      border-radius: 50px;
+      background: none;
+      border: 1px solid var(--sec-bg-clr);
+      font-weight: 500;
+      transition: 0.2s ease-in-out;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: var(--sec-bg-clr);
+      color: var(--main-bg-clr);
+    }
+  }
+}
