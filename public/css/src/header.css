@@ -29,6 +29,7 @@ header nav {
     font-weight: 500;
     width: 150px;
     font-family: "chillax", sans-serif;
+    cursor: pointer;
   }
 
   ul {
@@ -39,6 +40,7 @@ header nav {
       list-style: none;
       font-size: 0.7rem;
       font-family: "chillax", sans-serif;
+      cursor: pointer;
     }
   }
   .nav-right {
@@ -48,9 +50,11 @@ header nav {
 
     span {
       font-size: 1.3rem;
+      cursor: pointer;
     }
     svg {
       width: 20px;
+      cursor: pointer;
     }
 
     a {

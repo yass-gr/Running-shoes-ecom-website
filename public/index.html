@@ -18,9 +18,18 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <script src="js/index.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-4.0.0.js"
+      integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
+      <div class="menu show">
+        <div class="menuContent"></div>
+      </div>
       <p class="sale-announcement">
         30% Off Your Order When You Spend $140. Discount Automatically Applied
         at Checkout.
@@ -30,9 +39,9 @@
         <h1>Logo</h1>
 
         <ul>
-          <li>MEN</li>
-          <li>WOMEN</li>
-          <li>SALE</li>
+          <li class="nav-item" data-index="0">MEN</li>
+          <li class="nav-item" data-index="1">WOMEN</li>
+          <li class="nav-item" data-index="2">SALE</li>
         </ul>
 
         <div class="nav-right">
@@ -148,7 +157,7 @@
 
       <section id="categories2">
         <div class="category">
-          <img src="assets/images/c3.jpg" alt="" />
+          <img class="img1" src="assets/images/c3.jpg" alt="" />
           <h1>Road Running</h1>
 
           <div class="btns">
@@ -157,7 +166,7 @@
           </div>
         </div>
         <div class="category">
-          <img src="assets/images/c1.jpg" alt="" />
+          <img class="img2" src="assets/images/c1.jpg" alt="" />
           <h1>Trail Running</h1>
 
           <div class="btns">
@@ -166,7 +175,7 @@
           </div>
         </div>
         <div class="category">
-          <img src="assets/images/c2.jpg" alt="" />
+          <img class="img3" src="assets/images/c2.jpg" alt="" />
           <h1>Marathon</h1>
 
           <div class="btns">
