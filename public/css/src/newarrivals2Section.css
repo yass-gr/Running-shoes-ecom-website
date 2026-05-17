@@ -1,0 +1,22 @@
+.newArrivals2 {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .title {
+    font-size: 0.95rem;
+    text-align: left;
+    border-bottom: 2px solid var(--sec-bg-clr);
+    width: 110px;
+    margin-left: 10px;
+    font-weight: 500;
+  }
+  .content {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+    font-size: 1.5rem;
+  }
+}

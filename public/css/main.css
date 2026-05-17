@@ -5,6 +5,8 @@
 @import "src/categoriesSection.css";
 @import "src/newArrivalsSection.css";
 @import "src/specialCollectionsection.css";
+@import "src/newarrivals2Section.css";
+@import "src/categories2Section.css";
 
 :root {
   --main-bg-clr: #f0eee9;
