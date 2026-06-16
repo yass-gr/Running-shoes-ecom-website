@@ -10,7 +10,7 @@
   margin-top: 30px;
 
   .main {
-    background: url("../../assets/images/grid4.jpg");
+    background: url("../../images/grid4.jpg");
     grid-area: left;
     aspect-ratio: 1;
     background-position: center;
@@ -47,21 +47,21 @@
     }
   }
   div:nth-child(2) {
-    background: url("../../assets/images/grid3.jpg");
+    background: url("../../images/grid3.jpg");
     grid-area: rightT;
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
   }
   div:nth-child(3) {
-    background: url("../../assets/images/grid2.webp");
+    background: url("../../images/grid2.webp");
     grid-area: rightB1;
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
   }
   div:nth-child(4) {
-    background: url("../../assets/images/grid1.webp");
+    background: url("../../images/grid1.webp");
     grid-area: rightB2;
     background-position: bottom;
     background-size: cover;

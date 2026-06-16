@@ -18,12 +18,12 @@
 
 @font-face {
   font-family: "satoshi";
-  src: url("../assets/fonts/Satoshi.ttf") format("opentype");
+  src: url("../fonts/Satoshi.ttf") format("opentype");
   font-display: swap;
 }
 @font-face {
   font-family: "chillax";
-  src: url("../assets/fonts/Chillax.ttf") format("opentype");
+  src: url("../fonts/Chillax.ttf") format("opentype");
   font-display: swap;
 }
 * {

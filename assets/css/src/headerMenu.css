@@ -1,7 +1,7 @@
 .menu {
   overflow: hidden;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.163);
+  background-color: rgba(0, 0, 0, 0.329);
   width: 100%;
   z-index: -3;
   position: absolute;
@@ -14,6 +14,7 @@
     background-color: var(--main-bg-clr);
     display: grid;
     grid-template-columns: 67% 33% !important;
+    box-shadow: 0 0 10px black;
     animation: showMenu 0.4s ease-in-out;
     li {
       list-style: none;

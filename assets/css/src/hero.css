@@ -2,7 +2,7 @@
   padding-top: 40px;
 }
 #hero-section {
-  background: url("../../assets/images/heroBg.webp");
+  background: url("../../images/heroBg.webp");
   background-size: cover;
   background-position: center;
   height: 87vh;
