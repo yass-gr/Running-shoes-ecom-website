@@ -18,12 +18,14 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script type="module" src="assets/js/index.js" defer></script>
     <script
       src="https://code.jquery.com/jquery-4.0.0.js"
       integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
       crossorigin="anonymous"
     ></script>
+    
   </head>
   <body>
 
@@ -108,7 +110,7 @@
 
 
 
-      <!-- new arrivals 2 -->
+      <!-- special collection 2----------->
       <section class="specialCollectionSection">
         <div class="main">
           <h1>Bold By Nature</h1>
@@ -122,8 +124,15 @@
 
       <!-- new arrivals 2---- --> 
       <section class="newArrivals2">
-        <h2 class="title">NEW ARRIVALS</h2>
-        <div class="content">later...</div>
+        <div class="header">
+          <h2 class="title">NEW ARRIVALS </h2>
+          <div class="arrows">
+
+            <div class="left">⇠</div>
+            <div class="right">⇢</div>
+          </div>
+        </div>
+        <div class="content"></div>
       </section>
 
 
@@ -198,3 +207,22 @@
 
   <!-- footer------ -->
   <?php require_once __DIR__ . "/views/shared/footer.php" ?>
+
+
+
+  <!-- cart------ -->
+  <div class="cartContainer">f
+    
+  </div>
+  <div class="cart">
+      <div class="header">
+        <h2>CART (0)</h2>
+        <p class="info">you have free shipping!</p>
+
+        <p class="closeCart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Mono Icons by Mono - https://github.com/mono-company/mono-icons/blob/master/LICENSE.md --><path fill="currentColor" d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12L5.293 6.707a1 1 0 0 1 0-1.414"/></svg>
+        </p>
+
+      </div>
+    </div>
+

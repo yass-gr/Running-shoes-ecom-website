@@ -9,12 +9,14 @@
 @import "home/categories2Section.css";
 @import "home/headerMenu.css";
 @import "home/carousel1.css";
+@import "home/cart.css";
 
 :root {
   --main-bg-clr: #f0eee9;
   --main-font: "satoshi", sans-serif;
   --sec-bg-clr: #212121;
   --nav-bg: #ffffff;
+  --badge-bg-clr: #e7e3da;
 }
 
 @font-face {
@@ -39,6 +41,7 @@ body {
   height: 100vh;
   position: relative;
   scroll-behavior: smooth;
+  padding: 0;
 }
 
 .show {

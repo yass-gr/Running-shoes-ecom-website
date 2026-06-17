@@ -1,7 +1,7 @@
 let currProd = 3;
 let translate = -300;
 
-import { data } from "../../../testdata(temporary)/allbirds_products.js";
+import { data } from "../../../../testdata(temporary)/allbirds_products.js";
 
 const container = $(".newAriv1content");
 const newArrivals = data.filter(
@@ -20,14 +20,14 @@ newArrivals.forEach((a) => {
 const newArivalsContainer = $(".newAriv1content");
 const prodText = $(".pName");
 prodText.html(
-  `${decodeURIComponent(newArrivals[currProd].fullName)} - $${(newArrivals[currProd].price / 100).toFixed(2)}`,
+  `${decodeURIComponent(newArrivals[currProd].fullName)} - $${newArrivals[currProd].price / 100}`,
 );
 $(".leftControl").on("click", () => {
   translate = translate === 0 ? 0 : translate + 100;
   newArivalsContainer.attr("style", `transform : translateX(${translate}%)`);
   currProd = (translate * -1) / 100;
   prodText.html(
-    `${decodeURIComponent(newArrivals[currProd].fullName)} - $${(newArrivals[currProd].price / 100).toFixed(2)}`,
+    `${decodeURIComponent(newArrivals[currProd].fullName)} - $${newArrivals[currProd].price / 100}`,
   );
 });
 $(".rightControl").on("click", () => {
@@ -36,7 +36,7 @@ $(".rightControl").on("click", () => {
   newArivalsContainer.attr("style", `transform :translateX(${translate}%)`);
   currProd = (translate * -1) / 100;
   prodText.html(
-    `${decodeURIComponent(newArrivals[currProd].fullName)} - $${(newArrivals[currProd].price / 100).toFixed(2)}`,
+    `${decodeURIComponent(newArrivals[currProd].fullName)} - $${newArrivals[currProd].price / 100}`,
   );
 });
 
