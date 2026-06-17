@@ -1,13 +1,14 @@
-@import "src/footer.css";
-@import "src/infoCardsSection.css";
-@import "src/header.css";
-@import "src/hero.css";
-@import "src/categoriesSection.css";
-@import "src/newArrivalsSection.css";
-@import "src/specialCollectionsection.css";
-@import "src/newarrivals2Section.css";
-@import "src/categories2Section.css";
-@import "src/headerMenu.css";
+@import "home/footer.css";
+@import "home/infoCardsSection.css";
+@import "home/header.css";
+@import "home/hero.css";
+@import "home/categoriesSection.css";
+@import "home/newArrivalsSection.css";
+@import "home/specialCollectionsection.css";
+@import "home/newarrivals2Section.css";
+@import "home/categories2Section.css";
+@import "home/headerMenu.css";
+@import "home/carousel1.css";
 
 :root {
   --main-bg-clr: #f0eee9;

@@ -26,65 +26,14 @@
     ></script>
   </head>
   <body>
-    <header>
-      <div class="menu">
-        <div class="menuContent"></div>
-      </div>
-      <p class="sale-announcement">
-        30% Off Your Order When You Spend $140. Discount Automatically Applied
-        at Checkout.
-      </p>
 
-      <nav>
-        <h1>Logo</h1>
 
-        <ul>
-          <li class="nav-item" data-index="0">MEN</li>
-          <li class="nav-item" data-index="1">WOMEN</li>
-          <li class="nav-item" data-index="2">SALE</li>
-        </ul>
+  <!-- header------- -->
+   <?php require_once __DIR__ . "/views/shared/navbar.php" ?>
 
-        <div class="nav-right">
-          <a href="">About</a>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#1f1f1f"
-          >
-            <path
-              d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
-            />
-          </svg>
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#1f1f1f"
-          >
-            <path
-              d="M240-80q-33 0-56.5-23.5T160-160v-480q0-33 23.5-56.5T240-720h80q0-66 47-113t113-47q66 0 113 47t47 113h80q33 0 56.5 23.5T800-640v480q0 33-23.5 56.5T720-80H240Zm0-80h480v-480h-80v80q0 17-11.5 28.5T600-520q-17 0-28.5-11.5T560-560v-80H400v80q0 17-11.5 28.5T360-520q-17 0-28.5-11.5T320-560v-80h-80v480Zm160-560h160q0-33-23.5-56.5T480-800q-33 0-56.5 23.5T400-720ZM240-160v-480 480Z"
-            />
-          </svg>
-          <span class="material-symbols-outlined"> person </span>
-          <span class="material-symbols-outlined"> help </span>
-        </div>
 
-        <!-- <div class="menu-bar">
-          <ul>
-            <li>[Running]</li>
-            <li>MEN'S</li>
-            <li>WOMAN'S</li>
-            <li>NEW ARRIVALS</li>
-            <li>BESTSELLERS</li>
-          </ul>
-        </div>-->
-      </nav>
-    </header>
-
+   <!-- hero------ -->
     <section class="hero-container">
       <div id="hero-section">
         <div class="hero-txt">
@@ -97,7 +46,11 @@
       </div>
     </section>
 
+    
+
     <main>
+
+    <!-- categories------ -->
       <section id="category">
         <div>
           <span>
@@ -127,11 +80,24 @@
         </div>
       </section>
 
+
+
+
+
+    <!-- new arrivals 1-------- -->
       <section id="new-arrivals">
         <h2 class="title">NEW ARRIVALS</h2>
-        <div class="content">later...</div>
+        <div class="arrow">
+          ->
+        </div>
+         <span class="leftControl"></span>
+          <span class="rightControl">
+          </span>
+        <div class="newAriv1content">
+         
+        </div>
         <div class="info">
-          <h2 class="collName">Collection Name</h2>
+          <h2 class="collName">June's Collection</h2>
           <p class="pName">Product Name - price $</p>
           <div>
             <button>SHOP MEN</button>
@@ -140,6 +106,9 @@
         </div>
       </section>
 
+
+
+      <!-- new arrivals 2 -->
       <section class="specialCollectionSection">
         <div class="main">
           <h1>Bold By Nature</h1>
@@ -150,11 +119,15 @@
         <div></div>
         <div></div>
       </section>
+
+      <!-- new arrivals 2---- --> 
       <section class="newArrivals2">
         <h2 class="title">NEW ARRIVALS</h2>
         <div class="content">later...</div>
       </section>
 
+
+      <!-- categories 2 ---------- -->
       <section id="categories2">
         <div class="category">
           <img class="img1" src="assets/images/c3.jpg" alt="" />
@@ -184,6 +157,11 @@
           </div>
         </div>
       </section>
+
+
+
+
+      <!-- trust cards------ -->
       <section class="cards-section">
         <div class="cards-grid">
           <div class="card">
@@ -214,108 +192,9 @@
       </section>
     </main>
 
-    <footer class="footer-top">
-      <div class="footer-top-inner">
-        <div class="form">
-          <p class="subscribe-label">Subscribe to Our Emails</p>
-          <form class="subscribe-form">
-            <input type="email" placeholder="Email Address" />
-            <button type="submit">Sign Up</button>
-          </form>
-        </div>
 
-        <div class="footer-links">
-          <div class="footer-col">
-            <p class="footer-col-title">Help</p>
-            <ul>
-              <li><a href="#">Live Chat</a></li>
-              <li><a href="#">Call Us</a></li>
-              <li><a href="#">Text Us</a></li>
-              <li><a href="#">help@email.com</a></li>
-              <li><a href="#">FAQ / Contact Us</a></li>
-              <li><a href="#">Returns / Exchanges</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <p class="footer-col-title">Shop</p>
-            <ul>
-              <li><a href="#">Men's Shoes</a></li>
-              <li><a href="#">Women's Shoes</a></li>
-              <li><a href="#">Sales</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <p class="footer-col-title">Company</p>
-            <ul>
-              <li><a href="#">Store Locator</a></li>
-              <li><a href="#">Our Story</a></li>
-              <li><a href="#">Our Materials</a></li>
-              <li><a href="#">Sustainability</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <ul style="margin-top: 31px">
-              <li><a href="#">Community Offers</a></li>
-              <li><a href="#">Our Blog</a></li>
-              <li><a href="#">Terms of Use</a></li>
-            </ul>
-          </div>
-        </div>
 
-        <div class="footer-social">
-          <p class="social-label">Follow the Flock</p>
-          <div class="social-icons">
-            <a href="#" class="social-icon">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
-                />
-              </svg>
-            </a>
 
-            <a href="#" class="social-icon">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.025 1.791-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.513c-1.491 0-1.956.931-1.956 1.886v2.266h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"
-                />
-              </svg>
-            </a>
-            <a href="#" class="social-icon">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                />
-              </svg>
-            </a>
-            <a href="#" class="social-icon">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
-                />
-              </svg>
-            </a>
-            <a href="#" class="social-icon">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <hr id="line" />
-      <div class="footer-bottom">
-        <div class="footer-bottom-inner">
-          <div class="footer-bottom-bottom">
-            <p class="copyright">© 2025. All Rights Reserved</p>
-            <nav class="footer-legal">
-              <a href="#">Privacy policy</a>
-              <a href="#">Terms of service</a>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
+
+  <!-- footer------ -->
+  <?php require_once __DIR__ . "/views/shared/footer.php" ?>
