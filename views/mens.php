@@ -178,6 +178,9 @@ $categories = [
       </nav>
       <?php endif; ?>
 
+      <?php $infoTitle = "MEN'S SHOES"; $infoDesc = "Crafted from premium natural materials, our men's shoes deliver all-day comfort without compromising on style. From everyday sneakers to performance runners, each pair is designed to feel as good as it looks."; ?>
+      <?php require_once __DIR__ . "/components/info-faq.php"; ?>
+
       <section class="collection-categories" aria-label="Shop more categories">
         <?php foreach ($categories as $category): ?>
           <article class="collection-category">
@@ -191,6 +194,7 @@ $categories = [
       </section>
     </main>
 
+    <?php require_once __DIR__ . "/components/trust-cards.php"; ?>
     <?php require_once __DIR__ . "/components/footer.php"; ?>
   </body>
 </html>

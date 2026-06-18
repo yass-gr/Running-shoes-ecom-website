@@ -11,6 +11,7 @@
 @import "home/carousel1.css";
 @import "home/cart.css";
 @import "components/productCard.css";
+@import "components/infoFaq.css";
 @import "views/newArrivals.css";
 
 :root {

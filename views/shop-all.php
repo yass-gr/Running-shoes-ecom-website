@@ -178,6 +178,9 @@ $categories = [
       </nav>
       <?php endif; ?>
 
+      <?php $infoTitle = "SHOP ALL"; $infoDesc = "Explore our complete collection of footwear and apparel. Every product is thoughtfully designed and crafted from premium natural materials for comfort that lasts all day."; ?>
+      <?php require_once __DIR__ . "/components/info-faq.php"; ?>
+
       <section class="collection-categories" aria-label="Shop more categories">
         <?php foreach ($categories as $category): ?>
           <article class="collection-category">
@@ -191,6 +194,7 @@ $categories = [
       </section>
     </main>
 
+    <?php require_once __DIR__ . "/components/trust-cards.php"; ?>
     <?php require_once __DIR__ . "/components/footer.php"; ?>
   </body>
 </html>

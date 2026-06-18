@@ -41,3 +41,12 @@ if (!overlay || !panel || !openBtn || !closeBtn) {
     });
   });
 }
+
+document.querySelectorAll(".info-faq__question").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const item = btn.closest(".info-faq__item");
+    const isOpen = item.classList.contains("is-open");
+    item.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded", !isOpen);
+  });
+});

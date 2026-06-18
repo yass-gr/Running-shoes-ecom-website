@@ -178,6 +178,9 @@ $categories = [
       </nav>
       <?php endif; ?>
 
+      <?php $infoTitle = "SALE"; $infoDesc = "Premium comfort at exceptional value. Our sale collection features the same quality craftsmanship and natural materials you expect from Allbirds, now at reduced prices."; ?>
+      <?php require_once __DIR__ . "/components/info-faq.php"; ?>
+
       <section class="collection-categories" aria-label="Shop more categories">
         <?php foreach ($categories as $category): ?>
           <article class="collection-category">
@@ -191,6 +194,7 @@ $categories = [
       </section>
     </main>
 
+    <?php require_once __DIR__ . "/components/trust-cards.php"; ?>
     <?php require_once __DIR__ . "/components/footer.php"; ?>
   </body>
 </html>
