@@ -10,6 +10,8 @@
 @import "home/headerMenu.css";
 @import "home/carousel1.css";
 @import "home/cart.css";
+@import "components/productCard.css";
+@import "views/newArrivals.css";
 
 :root {
   --main-bg-clr: #f0eee9;

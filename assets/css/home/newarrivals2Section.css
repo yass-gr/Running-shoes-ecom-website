@@ -15,7 +15,7 @@
   }
   .content {
     margin: 15px;
-    height: 38vw;
+    min-height: 37vw;
     display: flex;
     font-size: 1.5rem;
     gap: 10px;
@@ -46,8 +46,8 @@
         }
         .hue {
           margin-top: 10px;
-          width: 30px;
-          height: 30px;
+          width: 2vw;
+          height: 2vw;
           cursor: pointer;
           border-radius: 50%;
           border: 1px solid var(--sec-bg-clr);

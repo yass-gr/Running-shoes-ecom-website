@@ -150,7 +150,10 @@ export const data = [
         "sku": "WR3WAWW110",
         "url": "/products/womens-wool-runners-natural-white?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 1878275686469,
@@ -303,7 +306,10 @@ export const data = [
         "sku": "WR3WABC110",
         "url": "/products/womens-wool-runners-natural-black?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 4826199687248,
@@ -456,7 +462,10 @@ export const data = [
         "sku": "WR3WTBK110",
         "url": "/products/womens-wool-runners-true-black?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 6744333746256,
@@ -609,7 +618,10 @@ export const data = [
         "sku": "AB009GW110",
         "url": "/products/womens-wool-runners-hazy-indigo?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 3689948315728,
@@ -762,7 +774,10 @@ export const data = [
         "sku": "WR3WSVN110",
         "url": "/products/womens-wool-runners-savanna-night-navy?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7366895894608,
@@ -915,7 +930,10 @@ export const data = [
         "sku": "WR3WNCW110",
         "url": "/products/womens-wool-runners-natural-grey?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7351256318032,
@@ -1100,7 +1118,10 @@ export const data = [
       }
     },
     "color": "#e0e0c0",
-    "colorcode": "#e0e0c0"
+    "colorcode": "#e0e0c0",
+    "colors": [
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7299467018320,
@@ -1301,7 +1322,10 @@ export const data = [
         "sku": "A12852W105",
         "url": "/products/womens-cruiser-canvas-sea-spray?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205191090256,
@@ -1502,7 +1526,10 @@ export const data = [
         "sku": "A12344W105",
         "url": "/products/womens-cruiser-canvas?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7215610724432,
@@ -1703,7 +1730,10 @@ export const data = [
         "sku": "A12848W105",
         "url": "/products/womens-cruiser-canvas-port?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7289264406608,
@@ -1869,7 +1899,10 @@ export const data = [
         "sku": "A12635M140",
         "url": "/products/mens-allbirds-slide-natural-black?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7289649299536,
@@ -2035,7 +2068,10 @@ export const data = [
         "sku": "A12389M140",
         "url": "/products/mens-allbirds-slide-anthracite?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7289264275536,
@@ -2201,7 +2237,10 @@ export const data = [
         "sku": "A12603M140",
         "url": "/products/mens-allbirds-slide-mushroom?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7289264472144,
@@ -2367,7 +2406,10 @@ export const data = [
         "sku": "A12629W110",
         "url": "/products/womens-allbirds-flip-flop-natural-black?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7289263620176,
@@ -2533,7 +2575,10 @@ export const data = [
         "sku": "A12596W110",
         "url": "/products/womens-allbirds-flip-flop?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7289263194192,
@@ -2699,7 +2744,10 @@ export const data = [
         "sku": "A12409W110",
         "url": "/products/womens-allbirds-flip-flop-anthracite?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7289263259728,
@@ -2865,7 +2913,10 @@ export const data = [
         "sku": "A12411W110",
         "url": "/products/womens-allbirds-slide-anthracite?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7289263521872,
@@ -3031,7 +3082,10 @@ export const data = [
         "sku": "A12589W110",
         "url": "/products/womens-allbirds-slide-mushroom?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7289264013392,
@@ -3197,7 +3251,10 @@ export const data = [
         "sku": "A12650W110",
         "url": "/products/womens-allbirds-slide-natural-black?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7289262702672,
@@ -3363,7 +3420,10 @@ export const data = [
         "sku": "A12410M140",
         "url": "/products/mens-allbirds-flip-flop-anthracite?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7289263685712,
@@ -3529,7 +3589,10 @@ export const data = [
         "sku": "A12615M140",
         "url": "/products/mens-allbirds-flip-flop-natural-black?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7289263947856,
@@ -3695,7 +3758,10 @@ export const data = [
         "sku": "A12606M140",
         "url": "/products/mens-allbirds-flip-flop?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7268166139984,
@@ -3890,7 +3956,10 @@ export const data = [
         "sku": "A12535M125",
         "url": "/products/mens-runner-nz-terralux-light-grey?size=12-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 6793657024592,
@@ -4022,7 +4091,13 @@ export const data = [
         "sku": "AR000LU004",
         "url": "/products/anytime-crew-sock-natural-black?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 6793656959056,
@@ -4154,7 +4229,13 @@ export const data = [
         "sku": "AR000RU004",
         "url": "/products/anytime-crew-sock?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 7205169135696,
@@ -4254,7 +4335,13 @@ export const data = [
         "sku": "A12164U004",
         "url": "/products/anytime-crew-sock-natural-grey-heather?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 7113658400848,
@@ -4358,7 +4445,13 @@ export const data = [
         "sku": "A11496U004",
         "url": "/products/anytime-crew-sock-sheep?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 7113653616720,
@@ -4462,7 +4555,13 @@ export const data = [
         "sku": "A11493U004",
         "url": "/products/anytime-crew-sock-cloudstripe?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 7113654403152,
@@ -4566,7 +4665,13 @@ export const data = [
         "sku": "A11490U004",
         "url": "/products/anytime-crew-sock-blizzard-kiwi-bird?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 7113657581648,
@@ -4671,7 +4776,13 @@ export const data = [
       }
     },
     "color": "#a0a0ff",
-    "colorcode": "#c0a0a0"
+    "colorcode": "#c0a0a0",
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 6889962045520,
@@ -4771,7 +4882,13 @@ export const data = [
         "sku": "A10848U004",
         "url": "/products/anytime-crew-sock-medium-grey?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 6889959882832,
@@ -4871,7 +4988,13 @@ export const data = [
         "sku": "A10850U004",
         "url": "/products/anytime-crew-sock-rugged-beige?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 7009770995792,
@@ -4971,7 +5094,13 @@ export const data = [
         "sku": "A11172U004",
         "url": "/products/anytime-crew-sock-deep-navy?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 6793656991824,
@@ -5074,7 +5203,13 @@ export const data = [
       }
     },
     "color": "#6060ff",
-    "colorcode": "#408040"
+    "colorcode": "#408040",
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 7113650995280,
@@ -5179,7 +5314,13 @@ export const data = [
       }
     },
     "color": "#808080",
-    "colorcode": "#808080"
+    "colorcode": "#808080",
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 7113653321808,
@@ -5282,7 +5423,13 @@ export const data = [
       }
     },
     "color": "#ff8080",
-    "colorcode": "#808080"
+    "colorcode": "#808080",
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 7194829783120,
@@ -5384,7 +5531,13 @@ export const data = [
         "sku": "A12131U004",
         "url": "/products/anytime-crew-sock-natural-black-dark-grey-stripe?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 7205177491536,
@@ -5486,7 +5639,13 @@ export const data = [
         "sku": "A12702U004",
         "url": "/products/anytime-crew-sock-heathered-ochre?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 7263415992400,
@@ -5588,7 +5747,13 @@ export const data = [
         "sku": "A12701U004",
         "url": "/products/anytime-crew-sock-heathered-spice?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 7205177819216,
@@ -5692,7 +5857,13 @@ export const data = [
         "sku": "A12705U004",
         "url": "/products/anytime-crew-sock-blizzard-verdant-green?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0a0a0",
+      "#408040",
+      "#808080"
+    ]
   },
   {
     "id": 7258384367696,
@@ -5894,7 +6065,10 @@ export const data = [
         "sku": "A12561W105",
         "url": "/products/womens-runner-nz-jersey-light-grey-anthracite?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7257961955408,
@@ -6097,7 +6271,10 @@ export const data = [
         "sku": "A12492W105",
         "url": "/products/womens-cruiser-slip-on-canvas-deep-navy-stripes?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205190238288,
@@ -6298,7 +6475,10 @@ export const data = [
         "sku": "A12364W105",
         "url": "/products/womens-cruiser-slip-on-canvas?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205197250640,
@@ -6508,7 +6688,10 @@ export const data = [
         "sku": "A12461M135",
         "url": "/products/mens-tree-runner-nz-blizzard-verdant-green?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7188363575376,
@@ -6716,7 +6899,10 @@ export const data = [
         "sku": "A11925M135",
         "url": "/products/mens-tree-runner-nz-medium-grey?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7188363771984,
@@ -6918,7 +7104,10 @@ export const data = [
         "sku": "A12096M135",
         "url": "/products/mens-tree-runner-nz-thunder-green?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7188363542608,
@@ -7126,7 +7315,10 @@ export const data = [
         "sku": "A11914M135",
         "url": "/products/mens-tree-runner-nz-natural-white?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7235056107600,
@@ -7328,7 +7520,10 @@ export const data = [
         "sku": "A12088M135",
         "url": "/products/mens-tree-runner-nz-luxe-gold?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205207605328,
@@ -7536,7 +7731,10 @@ export const data = [
         "sku": "A12634M135",
         "url": "/products/mens-tree-runner-nz-mushroom?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205188403280,
@@ -7744,7 +7942,10 @@ export const data = [
         "sku": "A12255M135",
         "url": "/products/mens-tree-runner-nz-ochre?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205199315024,
@@ -7946,7 +8147,10 @@ export const data = [
         "sku": "A12614W105",
         "url": "/products/womens-tree-runner-nz-mushroom?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7188364361808,
@@ -8148,7 +8352,10 @@ export const data = [
         "sku": "A11940W105",
         "url": "/products/womens-tree-runner-nz?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7221402665040,
@@ -8350,7 +8557,10 @@ export const data = [
         "sku": "A11971W105",
         "url": "/products/womens-tree-runner-nz-weathered-brown?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7188364329040,
@@ -8552,7 +8762,10 @@ export const data = [
         "sku": "A11960W105",
         "url": "/products/womens-tree-runner-nz-natural-white?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7188364460112,
@@ -8754,7 +8967,10 @@ export const data = [
         "sku": "A11959W105",
         "url": "/products/womens-tree-runner-nz-medium-grey?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199652446288,
@@ -8958,7 +9174,10 @@ export const data = [
         "sku": "A11927W105",
         "url": "/products/womens-tree-runner-nz-blizzard-dark-navy?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7235055943760,
@@ -9160,7 +9379,10 @@ export const data = [
         "sku": "A11968W105",
         "url": "/products/womens-tree-runner-nz-luxe-gold?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205194596432,
@@ -9362,7 +9584,10 @@ export const data = [
         "sku": "A12485W105",
         "url": "/products/womens-tree-runner-nz-burnt-olive?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7234438430800,
@@ -9564,7 +9789,10 @@ export const data = [
         "sku": "A11941M135",
         "url": "/products/mens-runner-nz-tweed-hazy-indigo?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7234403041360,
@@ -9766,7 +9994,10 @@ export const data = [
         "sku": "A11945M135",
         "url": "/products/mens-runner-nz-tweed-weathered-brown?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7234398978128,
@@ -9968,7 +10199,10 @@ export const data = [
         "sku": "A11902M135",
         "url": "/products/mens-cruiser-tweed-weathered-brown?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7234393964624,
@@ -10170,7 +10404,10 @@ export const data = [
         "sku": "A11583W105",
         "url": "/products/womens-lounger-lift-velvet-dark-grey?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7234404253776,
@@ -10372,7 +10609,10 @@ export const data = [
         "sku": "A11904M135",
         "url": "/products/mens-cruiser-slip-on-tweed-weathered-brown?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7234392424528,
@@ -10574,7 +10814,10 @@ export const data = [
         "sku": "A11550M135",
         "url": "/products/mens-cruiser-slip-on-tweed-dark-grey?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7223900471376,
@@ -10674,7 +10917,12 @@ export const data = [
         "sku": "A12163U004",
         "url": "/products/anytime-ankle-sock-natural-grey-heather?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#006080",
+      "#408040"
+    ]
   },
   {
     "id": 6793668558928,
@@ -10806,7 +11054,12 @@ export const data = [
         "sku": "AR000OU004",
         "url": "/products/anytime-ankle-sock?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#006080",
+      "#408040"
+    ]
   },
   {
     "id": 6793668657232,
@@ -10906,7 +11159,12 @@ export const data = [
         "sku": "AR000TU004",
         "url": "/products/anytime-ankle-sock-blizzard?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#006080",
+      "#408040"
+    ]
   },
   {
     "id": 6889961488464,
@@ -11006,7 +11264,12 @@ export const data = [
         "sku": "A10843U004",
         "url": "/products/anytime-ankle-sock-medium-grey?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#006080",
+      "#408040"
+    ]
   },
   {
     "id": 6889962209360,
@@ -11106,7 +11369,12 @@ export const data = [
         "sku": "A10845U004",
         "url": "/products/anytime-ankle-sock-rugged-beige?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#006080",
+      "#408040"
+    ]
   },
   {
     "id": 6992448979024,
@@ -11206,7 +11474,12 @@ export const data = [
         "sku": "A11170U004",
         "url": "/products/anytime-ankle-sock-deep-navy?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#006080",
+      "#408040"
+    ]
   },
   {
     "id": 7194715258960,
@@ -11308,7 +11581,12 @@ export const data = [
         "sku": "A12123U004",
         "url": "/products/anytime-ankle-sock-blizzard-royal-blue?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#006080",
+      "#408040"
+    ]
   },
   {
     "id": 7194715291728,
@@ -11412,7 +11690,12 @@ export const data = [
         "sku": "A12124U004",
         "url": "/products/anytime-ankle-sock-blizzard-sienna-blush?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#006080",
+      "#408040"
+    ]
   },
   {
     "id": 7194715521104,
@@ -11514,7 +11797,12 @@ export const data = [
         "sku": "A12125U004",
         "url": "/products/anytime-ankle-sock-blizzard-thunder-green?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#006080",
+      "#408040"
+    ]
   },
   {
     "id": 7205173493840,
@@ -11616,7 +11904,12 @@ export const data = [
         "sku": "A12699U004",
         "url": "/products/anytime-ankle-sock-heathered-blizzard-spice?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#006080",
+      "#408040"
+    ]
   },
   {
     "id": 7058237620304,
@@ -11700,7 +11993,12 @@ export const data = [
         "sku": "A11112U004",
         "url": "/products/anytime-ankle-sock-3-pack-blizzard?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#006080",
+      "#408040"
+    ]
   },
   {
     "id": 7058244599888,
@@ -11784,7 +12082,12 @@ export const data = [
         "sku": "A11115U004",
         "url": "/products/anytime-ankle-sock-3-pack-natural-black?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#006080",
+      "#408040"
+    ]
   },
   {
     "id": 6889962537040,
@@ -11887,7 +12190,12 @@ export const data = [
       }
     },
     "color": "#ff0060",
-    "colorcode": "#006080"
+    "colorcode": "#006080",
+    "colors": [
+      "#c8c8c8",
+      "#006080",
+      "#408040"
+    ]
   },
   {
     "id": 6793668624464,
@@ -11990,7 +12298,12 @@ export const data = [
       }
     },
     "color": "#6060ff",
-    "colorcode": "#408040"
+    "colorcode": "#408040",
+    "colors": [
+      "#c8c8c8",
+      "#006080",
+      "#408040"
+    ]
   },
   {
     "id": 6793668591696,
@@ -12093,7 +12406,12 @@ export const data = [
       }
     },
     "color": "#00ffe0",
-    "colorcode": "#408040"
+    "colorcode": "#408040",
+    "colors": [
+      "#c8c8c8",
+      "#006080",
+      "#408040"
+    ]
   },
   {
     "id": 7221394931792,
@@ -12295,7 +12613,10 @@ export const data = [
         "sku": "A12074M135",
         "url": "/products/mens-wool-runner-nz-weathered-brown?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199650447440,
@@ -12497,7 +12818,10 @@ export const data = [
         "sku": "A12058M135",
         "url": "/products/mens-wool-runner-nz-rugged-beige?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7218356060240,
@@ -12699,7 +13023,10 @@ export const data = [
         "sku": "A11768M135",
         "url": "/products/mens-strider-explore?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7218355863632,
@@ -12901,7 +13228,10 @@ export const data = [
         "sku": "A11855M135",
         "url": "/products/mens-strider-explore-rustic-green?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7218355601488,
@@ -13103,7 +13433,10 @@ export const data = [
         "sku": "A11685M135",
         "url": "/products/mens-strider-explore-hazy-burgundy?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7218355699792,
@@ -13305,7 +13638,10 @@ export const data = [
         "sku": "A11695W105",
         "url": "/products/womens-strider-explore-hazy-burgundy?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199657164880,
@@ -13507,7 +13843,10 @@ export const data = [
         "sku": "A12028W105",
         "url": "/products/womens-wool-runner-nz-rugged-beige?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199661752400,
@@ -13709,7 +14048,10 @@ export const data = [
         "sku": "A12018W105",
         "url": "/products/womens-wool-runner-nz-natural-black?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7216342925392,
@@ -13911,7 +14253,10 @@ export const data = [
         "sku": "A12075W105",
         "url": "/products/womens-wool-runner-nz-weathered-brown?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7214903656528,
@@ -14112,7 +14457,10 @@ export const data = [
         "sku": "A12020W105",
         "url": "/products/womens-wool-runner-nz-waterproof-medium-grey?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7214902247504,
@@ -14313,7 +14661,10 @@ export const data = [
         "sku": "A11987W105",
         "url": "/products/womens-wool-runner-nz-waterproof-dark-navy?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7215631466576,
@@ -14514,7 +14865,10 @@ export const data = [
         "sku": "A12069W105",
         "url": "/products/womens-wool-runner-nz-waterproof-weathered-brown?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7215632613456,
@@ -14715,7 +15069,10 @@ export const data = [
         "sku": "A12029W105",
         "url": "/products/womens-wool-runner-nz-waterproof-stony-cream-rugged-beige?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7215631106128,
@@ -14917,7 +15274,10 @@ export const data = [
         "sku": "A12007M135",
         "url": "/products/mens-wool-runner-nz-waterproof?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7215632482384,
@@ -15119,7 +15479,10 @@ export const data = [
         "sku": "A12019M135",
         "url": "/products/mens-wool-runner-nz-waterproof-natural-black?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7215631925328,
@@ -15321,7 +15684,10 @@ export const data = [
         "sku": "A12071M135",
         "url": "/products/mens-wool-runner-nz-waterproof-weathered-brown?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7215630680144,
@@ -15523,7 +15889,10 @@ export const data = [
         "sku": "A12032M135",
         "url": "/products/mens-wool-runner-nz-mid-waterproof-natural-black?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7215632023632,
@@ -15725,7 +16094,10 @@ export const data = [
         "sku": "A12023M135",
         "url": "/products/mens-wool-runner-nz-mid-waterproof?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7215632449616,
@@ -15927,7 +16299,10 @@ export const data = [
         "sku": "A12065M135",
         "url": "/products/mens-wool-runner-nz-mid-waterproof-weathered-brown?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205611077712,
@@ -16129,7 +16504,10 @@ export const data = [
         "sku": "A12060W105",
         "url": "/products/womens-wool-runner-nz-mid-waterproof-stony-cream-rugged-beige?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7215631302736,
@@ -16331,7 +16709,10 @@ export const data = [
         "sku": "A12070W105",
         "url": "/products/womens-wool-runner-nz-mid-waterproof-weathered-brown?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7215631990864,
@@ -16533,7 +16914,10 @@ export const data = [
         "sku": "A12002W105",
         "url": "/products/womens-wool-runner-nz-mid-waterproof-dark-jungle?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7215629402192,
@@ -16738,7 +17122,10 @@ export const data = [
       }
     },
     "color": "#404040",
-    "colorcode": "#404040"
+    "colorcode": "#404040",
+    "colors": [
+      "#404040"
+    ]
   },
   {
     "id": 7214806925392,
@@ -16940,7 +17327,10 @@ export const data = [
         "sku": "A12120W105",
         "url": "/products/womens-breezer-mary-jane-anthracite?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7211520294992,
@@ -17142,7 +17532,10 @@ export const data = [
         "sku": "A11871M135",
         "url": "/products/mens-cruiser-corduroy-stony-cream?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7211518885968,
@@ -17344,7 +17737,10 @@ export const data = [
         "sku": "A11874W105",
         "url": "/products/womens-cruiser-slip-on-corduroy-stony-cream?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7211507384400,
@@ -17546,7 +17942,10 @@ export const data = [
         "sku": "A11734M135",
         "url": "/products/mens-cruiser-slip-on-corduroy-dark-tan?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7211498700880,
@@ -17748,7 +18147,10 @@ export const data = [
         "sku": "A11571M135",
         "url": "/products/mens-cruiser-slip-on-corduroy?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7211513675856,
@@ -17950,7 +18352,10 @@ export const data = [
         "sku": "A11873M135",
         "url": "/products/mens-cruiser-slip-on-corduroy-stony-cream?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7211500699728,
@@ -18158,7 +18563,12 @@ export const data = [
         "sku": "A11625M135",
         "url": "/products/mens-wool-cruiser-dark-navy?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#60a060",
+      "#a00020"
+    ]
   },
   {
     "id": 7211512528976,
@@ -18299,7 +18709,12 @@ export const data = [
       }
     },
     "color": "#a060ff",
-    "colorcode": "#60a060"
+    "colorcode": "#60a060",
+    "colors": [
+      "#c8c8c8",
+      "#60a060",
+      "#a00020"
+    ]
   },
   {
     "id": 7211510235216,
@@ -18504,7 +18919,12 @@ export const data = [
       }
     },
     "color": "#0020ff",
-    "colorcode": "#a00020"
+    "colorcode": "#a00020",
+    "colors": [
+      "#c8c8c8",
+      "#60a060",
+      "#a00020"
+    ]
   },
   {
     "id": 7211501813840,
@@ -18706,7 +19126,15 @@ export const data = [
         "sku": "A11631W105",
         "url": "/products/womens-wool-cruiser-dark-camel?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#a08040",
+      "#60a060",
+      "#404040",
+      "#e0c060",
+      "#4060a0"
+    ]
   },
   {
     "id": 7199653101648,
@@ -18908,7 +19336,15 @@ export const data = [
         "sku": "A11724W105",
         "url": "/products/womens-wool-cruiser-natural-grey?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#a08040",
+      "#60a060",
+      "#404040",
+      "#e0c060",
+      "#4060a0"
+    ]
   },
   {
     "id": 7211512102992,
@@ -19113,7 +19549,15 @@ export const data = [
       }
     },
     "color": "#ffc080",
-    "colorcode": "#a08040"
+    "colorcode": "#a08040",
+    "colors": [
+      "#c8c8c8",
+      "#a08040",
+      "#60a060",
+      "#404040",
+      "#e0c060",
+      "#4060a0"
+    ]
   },
   {
     "id": 7211506925648,
@@ -19302,7 +19746,15 @@ export const data = [
       }
     },
     "color": "#a060ff",
-    "colorcode": "#60a060"
+    "colorcode": "#60a060",
+    "colors": [
+      "#c8c8c8",
+      "#a08040",
+      "#60a060",
+      "#404040",
+      "#e0c060",
+      "#4060a0"
+    ]
   },
   {
     "id": 7211506237520,
@@ -19507,7 +19959,15 @@ export const data = [
       }
     },
     "color": "#4040ff",
-    "colorcode": "#404040"
+    "colorcode": "#404040",
+    "colors": [
+      "#c8c8c8",
+      "#a08040",
+      "#60a060",
+      "#404040",
+      "#e0c060",
+      "#4060a0"
+    ]
   },
   {
     "id": 7206306742352,
@@ -19712,7 +20172,15 @@ export const data = [
       }
     },
     "color": "#ffe0a0",
-    "colorcode": "#e0c060"
+    "colorcode": "#e0c060",
+    "colors": [
+      "#c8c8c8",
+      "#a08040",
+      "#60a060",
+      "#404040",
+      "#e0c060",
+      "#4060a0"
+    ]
   },
   {
     "id": 7206299435088,
@@ -19917,7 +20385,15 @@ export const data = [
       }
     },
     "color": "#ff4060",
-    "colorcode": "#4060a0"
+    "colorcode": "#4060a0",
+    "colors": [
+      "#c8c8c8",
+      "#a08040",
+      "#60a060",
+      "#404040",
+      "#e0c060",
+      "#4060a0"
+    ]
   },
   {
     "id": 7205207670864,
@@ -20118,7 +20594,10 @@ export const data = [
         "sku": "A12647M125",
         "url": "/products/mens-dasher-nz-natural-black-blizzard?size=12-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205191319632,
@@ -20319,7 +20798,10 @@ export const data = [
         "sku": "A12418M135",
         "url": "/products/mens-runner-nz-slip-on?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205195481168,
@@ -20520,7 +21002,10 @@ export const data = [
         "sku": "A12493M135",
         "url": "/products/mens-runner-nz-slip-on-dark-navy?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205200232528,
@@ -20721,7 +21206,10 @@ export const data = [
         "sku": "A12564M135",
         "url": "/products/mens-runner-nz-slip-on-light-grey?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205207343184,
@@ -20922,7 +21410,10 @@ export const data = [
         "sku": "A12633M135",
         "url": "/products/mens-runner-nz-slip-on-mushroom?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205203771472,
@@ -21123,7 +21614,10 @@ export const data = [
         "sku": "A12672W105",
         "url": "/products/womens-breezer-point-warm-white?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205202559056,
@@ -21324,7 +21818,10 @@ export const data = [
         "sku": "A12673W105",
         "url": "/products/womens-breezer-point-warm-red?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205201543248,
@@ -21519,7 +22016,10 @@ export const data = [
         "sku": "A12641M125",
         "url": "/products/mens-dasher-nz-relay-natural-black-blizzard?size=12-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205201313872,
@@ -21721,7 +22221,10 @@ export const data = [
         "sku": "A12585M135",
         "url": "/products/mens-varsity-mushroom?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205192204368,
@@ -21922,7 +22425,10 @@ export const data = [
         "sku": "A12386W105",
         "url": "/products/womens-runner-nz-slip-on?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205194924112,
@@ -22123,7 +22629,10 @@ export const data = [
         "sku": "A12488W105",
         "url": "/products/womens-runner-nz-slip-on-dark-navy?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205199347792,
@@ -22324,7 +22833,10 @@ export const data = [
         "sku": "A12622W105",
         "url": "/products/womens-runner-nz-slip-on-mushroom?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205197742160,
@@ -22525,7 +23037,10 @@ export const data = [
         "sku": "A12451W105",
         "url": "/products/womens-cruiser-slip-on-blizzard?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205192335440,
@@ -22726,7 +23241,10 @@ export const data = [
         "sku": "A12447W105",
         "url": "/products/womens-dasher-nz-blizzard?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205182799952,
@@ -22928,7 +23446,10 @@ export const data = [
         "sku": "A12574W105",
         "url": "/products/womens-varsity-airy-mid-yellow?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205168676944,
@@ -23044,7 +23565,10 @@ export const data = [
         "sku": "A12728U004",
         "url": "/products/anytime-no-show-heel-grip-natural-grey-heather?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205165301840,
@@ -23160,7 +23684,10 @@ export const data = [
         "sku": "A12726U004",
         "url": "/products/anytime-no-show-heel-grip-natural-black?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205165105232,
@@ -23276,7 +23803,10 @@ export const data = [
         "sku": "A12729U004",
         "url": "/products/anytime-no-show-heel-grip?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205165531216,
@@ -23392,7 +23922,10 @@ export const data = [
         "sku": "A12727U004",
         "url": "/products/anytime-no-show-heel-grip-deep-navy?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205180571728,
@@ -23492,7 +24025,10 @@ export const data = [
         "sku": "A12709U004",
         "url": "/products/anytime-no-show-heel-grip-heathered-spice?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205167562832,
@@ -23592,7 +24128,10 @@ export const data = [
         "sku": "A12710U004",
         "url": "/products/anytime-no-show-heel-grip-heathered-ochre?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7205175296080,
@@ -23749,7 +24288,10 @@ export const data = [
       }
     },
     "color": "#404040",
-    "colorcode": "#404040"
+    "colorcode": "#404040",
+    "colors": [
+      "#404040"
+    ]
   },
   {
     "id": 7204716838992,
@@ -23945,7 +24487,10 @@ export const data = [
         "sku": "A11582U140",
         "url": "/products/allbirds-slipper-dark-grey-tweed?size=w15-5-m14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199656247376,
@@ -24147,7 +24692,10 @@ export const data = [
         "sku": "A11680M135",
         "url": "/products/mens-wool-strider?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199711461456,
@@ -24349,7 +24897,10 @@ export const data = [
         "sku": "A11840M135",
         "url": "/products/mens-wool-strider-rugged-beige?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199675252816,
@@ -24551,7 +25102,10 @@ export const data = [
         "sku": "A11657W105",
         "url": "/products/womens-strider?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199673745488,
@@ -24755,7 +25309,10 @@ export const data = [
         "sku": "A11659W105",
         "url": "/products/womens-strider-blizzard-dark-navy?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199699009616,
@@ -24957,7 +25514,10 @@ export const data = [
         "sku": "A11848W105",
         "url": "/products/womens-strider-rugged-beige?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199674728528,
@@ -25159,7 +25719,10 @@ export const data = [
         "sku": "A11729W105",
         "url": "/products/womens-strider-medium-grey?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199707955280,
@@ -25361,7 +25924,10 @@ export const data = [
         "sku": "A11745W105",
         "url": "/products/womens-strider-natural-black-blizzard?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199703203920,
@@ -25563,7 +26129,10 @@ export const data = [
         "sku": "A11841W105",
         "url": "/products/womens-wool-strider-rugged-beige?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199659262032,
@@ -25765,7 +26334,10 @@ export const data = [
         "sku": "A11679W105",
         "url": "/products/womens-wool-strider?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199676956752,
@@ -25967,7 +26539,10 @@ export const data = [
         "sku": "A11678M135",
         "url": "/products/mens-strider-dark-navy?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199673122896,
@@ -26171,7 +26746,10 @@ export const data = [
         "sku": "A11651M135",
         "url": "/products/mens-strider-blizzard-dark-navy?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199683346512,
@@ -26373,7 +26951,10 @@ export const data = [
         "sku": "A11847M135",
         "url": "/products/mens-strider-rugged-beige?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199699927120,
@@ -26575,7 +27156,10 @@ export const data = [
         "sku": "A11718M135",
         "url": "/products/mens-strider-medium-grey?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199681085520,
@@ -26777,7 +27361,10 @@ export const data = [
         "sku": "A11746M135",
         "url": "/products/mens-strider-natural-black-blizzard?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199672238160,
@@ -26979,7 +27566,10 @@ export const data = [
         "sku": "A11646M135",
         "url": "/products/mens-strider?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199700189264,
@@ -27181,7 +27771,10 @@ export const data = [
         "sku": "A11791M135",
         "url": "/products/mens-strider-natural-black?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199682953296,
@@ -27383,7 +27976,10 @@ export const data = [
         "sku": "A11955M135",
         "url": "/products/mens-runner-nz-remix?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199679578192,
@@ -27585,7 +28181,10 @@ export const data = [
         "sku": "A11820M135",
         "url": "/products/mens-cruiser-remix?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199678791760,
@@ -27787,7 +28386,10 @@ export const data = [
         "sku": "A11943W105",
         "url": "/products/womens-runner-nz-remix?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7193759645776,
@@ -27989,7 +28591,10 @@ export const data = [
         "sku": "A11818W105",
         "url": "/products/womens-cruiser-natural-white?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199651659856,
@@ -28193,7 +28798,10 @@ export const data = [
         "sku": "A11568W105",
         "url": "/products/womens-cruiser-blizzard-dark-navy?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7193759481936,
@@ -28395,7 +29003,10 @@ export const data = [
         "sku": "A11747W105",
         "url": "/products/womens-cruiser-natural-black-blizzard?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7193759449168,
@@ -28597,7 +29208,10 @@ export const data = [
         "sku": "A11566W105",
         "url": "/products/womens-cruiser-dark-navy?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7193759613008,
@@ -28799,7 +29413,10 @@ export const data = [
         "sku": "A11839W105",
         "url": "/products/womens-cruiser-rugged-beige?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7193758498896,
@@ -29007,7 +29624,10 @@ export const data = [
         "sku": "A11559M135",
         "url": "/products/mens-cruiser-dark-navy?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7193758466128,
@@ -29215,7 +29835,10 @@ export const data = [
         "sku": "A11599M135",
         "url": "/products/mens-cruiser-medium-grey?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7193758990416,
@@ -29423,7 +30046,10 @@ export const data = [
         "sku": "A11822M135",
         "url": "/products/mens-cruiser-natural-white?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7199586975824,
@@ -29627,7 +30253,10 @@ export const data = [
         "sku": "A11551M135",
         "url": "/products/mens-cruiser-blizzard-dark-navy?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7010075836496,
@@ -29727,7 +30356,11 @@ export const data = [
         "sku": "A11166U004",
         "url": "/products/anytime-no-show-sock?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#408040"
+    ]
   },
   {
     "id": 6793650798672,
@@ -29859,7 +30492,11 @@ export const data = [
         "sku": "AR000PU004",
         "url": "/products/anytime-no-show-sock-natural-black?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#408040"
+    ]
   },
   {
     "id": 6793650831440,
@@ -29959,7 +30596,11 @@ export const data = [
         "sku": "AR000UU004",
         "url": "/products/anytime-no-show-sock-blizzard?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#408040"
+    ]
   },
   {
     "id": 6889961291856,
@@ -30059,7 +30700,11 @@ export const data = [
         "sku": "A10852U004",
         "url": "/products/anytime-no-show-sock-medium-grey?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#408040"
+    ]
   },
   {
     "id": 6889961750608,
@@ -30159,7 +30804,11 @@ export const data = [
         "sku": "A10849U004",
         "url": "/products/anytime-no-show-sock-rugged-beige?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#408040"
+    ]
   },
   {
     "id": 6793650896976,
@@ -30262,7 +30911,11 @@ export const data = [
       }
     },
     "color": "#60ff40",
-    "colorcode": "#408040"
+    "colorcode": "#408040",
+    "colors": [
+      "#c8c8c8",
+      "#408040"
+    ]
   },
   {
     "id": 7058241224784,
@@ -30346,7 +30999,11 @@ export const data = [
         "sku": "A11113U004",
         "url": "/products/anytime-no-show-sock-3-pack-natural-black?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#408040"
+    ]
   },
   {
     "id": 7058243813456,
@@ -30430,7 +31087,11 @@ export const data = [
         "sku": "A11110U004",
         "url": "/products/anytime-no-show-sock-3-pack-blizzard?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#408040"
+    ]
   },
   {
     "id": 7113656795216,
@@ -30532,7 +31193,11 @@ export const data = [
         "sku": "A11495U004",
         "url": "/products/anytime-no-show-sock-natural-grey-heather-deep-navy?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#408040"
+    ]
   },
   {
     "id": 7113658761296,
@@ -30632,7 +31297,11 @@ export const data = [
         "sku": "A11494U004",
         "url": "/products/anytime-no-show-sock-natural-grey-heather-light-grey?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#408040"
+    ]
   },
   {
     "id": 7194715357264,
@@ -30734,7 +31403,11 @@ export const data = [
         "sku": "A12126U004",
         "url": "/products/anytime-no-show-sock-blizzard-royal-blue?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#408040"
+    ]
   },
   {
     "id": 7194715390032,
@@ -30836,7 +31509,11 @@ export const data = [
         "sku": "A12127U004",
         "url": "/products/anytime-no-show-sock-blizzard-sienna?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#408040"
+    ]
   },
   {
     "id": 7194715455568,
@@ -30938,7 +31615,11 @@ export const data = [
         "sku": "A12128U004",
         "url": "/products/anytime-no-show-sock-blizzard-thunder-green?size=xl-m13-14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#408040"
+    ]
   },
   {
     "id": 7091618349136,
@@ -31140,7 +31821,12 @@ export const data = [
         "sku": "A11268W105",
         "url": "/products/womens-lounger-lift-deep-navy?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#806060",
+      "#c0c0c0"
+    ]
   },
   {
     "id": 7193832652880,
@@ -31342,7 +32028,12 @@ export const data = [
         "sku": "A11844W105",
         "url": "/products/womens-lounger-lift-rugged-beige-stony-cream?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#806060",
+      "#c0c0c0"
+    ]
   },
   {
     "id": 7193832620112,
@@ -31544,7 +32235,12 @@ export const data = [
         "sku": "A11584W105",
         "url": "/products/womens-lounger-lift-blizzard?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#806060",
+      "#c0c0c0"
+    ]
   },
   {
     "id": 7091620773968,
@@ -31748,7 +32444,12 @@ export const data = [
         "sku": "A11274W105",
         "url": "/products/womens-lounger-lift-natural-white-hanami-night?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#806060",
+      "#c0c0c0"
+    ]
   },
   {
     "id": 7083158077520,
@@ -31950,7 +32651,12 @@ export const data = [
         "sku": "A11160W105",
         "url": "/products/womens-lounger-lift-stony-cream?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#806060",
+      "#c0c0c0"
+    ]
   },
   {
     "id": 7083158011984,
@@ -32173,7 +32879,12 @@ export const data = [
       }
     },
     "color": "#6060ff",
-    "colorcode": "#806060"
+    "colorcode": "#806060",
+    "colors": [
+      "#c8c8c8",
+      "#806060",
+      "#c0c0c0"
+    ]
   },
   {
     "id": 7130996211792,
@@ -32378,7 +33089,12 @@ export const data = [
       }
     },
     "color": "#c0c0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#806060",
+      "#c0c0c0"
+    ]
   },
   {
     "id": 7193764462672,
@@ -32582,7 +33298,10 @@ export const data = [
         "sku": "A11786M135",
         "url": "/products/mens-tree-dashers-utility-natural-black-dark-jungle?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7132496756816,
@@ -32786,7 +33505,10 @@ export const data = [
         "sku": "A11405M135",
         "url": "/products/mens-tree-dashers-utility-natural-white-rustic-brown?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7132532932688,
@@ -32990,7 +33712,10 @@ export const data = [
         "sku": "A11399M135",
         "url": "/products/mens-tree-dashers-utility-blizzard-deep-navy?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7132537487440,
@@ -33192,7 +33917,10 @@ export const data = [
         "sku": "A11408M135",
         "url": "/products/mens-tree-dashers-utility?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 6758262603856,
@@ -33394,7 +34122,11 @@ export const data = [
         "sku": "AA004FW105",
         "url": "/products/womens-tree-dasher-relay-blizzard?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7193764233296,
@@ -33567,7 +34299,11 @@ export const data = [
       }
     },
     "color": "#e0e0c0",
-    "colorcode": "#e0e0c0"
+    "colorcode": "#e0e0c0",
+    "colors": [
+      "#c8c8c8",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 6869041905744,
@@ -33769,7 +34505,11 @@ export const data = [
         "sku": "A10465W105",
         "url": "/products/womens-tree-dasher-relay-natural-black?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7031874125904,
@@ -33971,7 +34711,11 @@ export const data = [
         "sku": "A11055W105",
         "url": "/products/womens-tree-dasher-relay-deep-navy?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 6682353270864,
@@ -34141,7 +34885,11 @@ export const data = [
         "sku": "AA001ZW105",
         "url": "/products/womens-tree-dasher-relay?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 6884224073808,
@@ -34346,7 +35094,12 @@ export const data = [
         "sku": "A10814M135",
         "url": "/products/mens-tree-dashers-blizzard?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 6697913974864,
@@ -34535,7 +35288,12 @@ export const data = [
         "sku": "AA0022M135",
         "url": "/products/mens-tree-dashers-natural-black-natural-black?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 6858549559376,
@@ -34742,7 +35500,12 @@ export const data = [
         "sku": "A10684M135",
         "url": "/products/mens-tree-dashers-blizzard-hazy-cobalt?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 7193763905616,
@@ -34947,7 +35710,12 @@ export const data = [
         "sku": "A11849M135",
         "url": "/products/mens-tree-dashers-rugged-beige-stony-cream?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 6643980468304,
@@ -35136,7 +35904,12 @@ export const data = [
         "sku": "AA000YM135",
         "url": "/products/mens-tree-dashers?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 7003513094224,
@@ -35341,7 +36114,12 @@ export const data = [
         "sku": "A11043M135",
         "url": "/products/mens-tree-dashers-deep-navy?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 6644025557072,
@@ -35530,7 +36308,12 @@ export const data = [
         "sku": "AA000QM135",
         "url": "/products/mens-tree-dashers-blizzard-black?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 7193763938384,
@@ -35737,7 +36520,12 @@ export const data = [
         "sku": "A11891M135",
         "url": "/products/mens-tree-dashers-thunder-green-stony-cream?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 6919094108240,
@@ -35944,7 +36732,12 @@ export const data = [
         "sku": "A11039M135",
         "url": "/products/mens-tree-dashers-blizzard-thunder-red?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 7091668516944,
@@ -36156,7 +36949,12 @@ export const data = [
       }
     },
     "color": "#e0e0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 7030678454352,
@@ -36364,7 +37162,12 @@ export const data = [
       }
     },
     "color": "#c0c0ff",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 7091662913616,
@@ -36574,7 +37377,12 @@ export const data = [
       }
     },
     "color": "#00ffff",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 6919095418960,
@@ -36798,7 +37606,12 @@ export const data = [
       }
     },
     "color": "#ffc0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 6863981445200,
@@ -37008,7 +37821,12 @@ export const data = [
       }
     },
     "color": "#ff4040",
-    "colorcode": "#404040"
+    "colorcode": "#404040",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 6862257717328,
@@ -37245,7 +38063,12 @@ export const data = [
         "sku": "A10012M135",
         "url": "/products/mens-tree-dashers-bloom-red?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 7030703128656,
@@ -37452,7 +38275,12 @@ export const data = [
         "sku": "A11035M135",
         "url": "/products/mens-tree-dashers-natural-black-chasm-teal?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 7122428428368,
@@ -37646,7 +38474,12 @@ export const data = [
       }
     },
     "color": "#c0c0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 7083306221648,
@@ -37848,7 +38681,11 @@ export const data = [
         "sku": "A11448M135",
         "url": "/products/mens-tree-dasher-relay-hanami-blue?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 6758264373328,
@@ -38050,7 +38887,11 @@ export const data = [
         "sku": "AA004EM135",
         "url": "/products/mens-tree-dasher-relay-blizzard?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 6682351861840,
@@ -38236,7 +39077,11 @@ export const data = [
         "sku": "AA0020M135",
         "url": "/products/mens-tree-dasher-relay?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 6919094796368,
@@ -38438,7 +39283,11 @@ export const data = [
         "sku": "A11053M135",
         "url": "/products/mens-tree-dasher-relay-deep-navy?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7193763872848,
@@ -38643,7 +39492,11 @@ export const data = [
       }
     },
     "color": "#e0e0c0",
-    "colorcode": "#e0e0c0"
+    "colorcode": "#e0e0c0",
+    "colors": [
+      "#c8c8c8",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7132537815120,
@@ -38845,7 +39698,10 @@ export const data = [
         "sku": "A11488M135",
         "url": "/products/mens-tree-runner-go-utility?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7132535193680,
@@ -39049,7 +39905,10 @@ export const data = [
         "sku": "A11485M135",
         "url": "/products/mens-tree-runner-go-utility-blizzard-hazy-pine?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7132553019472,
@@ -39253,7 +40112,10 @@ export const data = [
         "sku": "A11484M135",
         "url": "/products/mens-tree-runner-go-utility-natural-white-rustic-brown?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7132541157456,
@@ -39457,7 +40319,10 @@ export const data = [
         "sku": "A11483M135",
         "url": "/products/mens-tree-runner-go-utility-blizzard-deep-navy?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7193763119184,
@@ -39661,7 +40526,10 @@ export const data = [
         "sku": "A11789M135",
         "url": "/products/mens-tree-runner-go-utility-natural-black-dark-jungle?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7193242992720,
@@ -39863,7 +40731,10 @@ export const data = [
         "sku": "A11594W105",
         "url": "/products/womens-tree-breezer-bow?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7142338625616,
@@ -40001,7 +40872,10 @@ export const data = [
         "sku": "A11210M005",
         "url": "/products/mens-merino-blend-sweatpant?size=xxl"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7134998790224,
@@ -40139,7 +41013,10 @@ export const data = [
         "sku": "A11215M005",
         "url": "/products/mens-merino-blend-sweatpant-natural-grey-heather?size=xxl"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7134997381200,
@@ -40343,7 +41220,11 @@ export const data = [
         "sku": "A11010W105",
         "url": "/products/womens-runner-chelsea-protect-rustic-brown?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#202020"
+    ]
   },
   {
     "id": 7138031272016,
@@ -40532,7 +41413,11 @@ export const data = [
       }
     },
     "color": "#202020",
-    "colorcode": "#202020"
+    "colorcode": "#202020",
+    "colors": [
+      "#c8c8c8",
+      "#202020"
+    ]
   },
   {
     "id": 7135000428624,
@@ -40686,7 +41571,10 @@ export const data = [
         "sku": "A11221W004",
         "url": "/products/womens-merino-blend-sweatshirt-natural-grey-heather?size=xl"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7134997872720,
@@ -40824,7 +41712,10 @@ export const data = [
         "sku": "A11216W004",
         "url": "/products/womens-merino-blend-sweatpant?size=xl"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7134998593616,
@@ -40962,7 +41853,10 @@ export const data = [
         "sku": "A11223W004",
         "url": "/products/womens-merino-blend-sweatpant-natural-grey-heather?size=xl"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7134114938960,
@@ -41166,7 +42060,11 @@ export const data = [
         "sku": "A11505M135",
         "url": "/products/mens-canvas-pipers-blizzard-bark-brown?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#404040"
+    ]
   },
   {
     "id": 7132536045648,
@@ -41368,7 +42266,11 @@ export const data = [
         "sku": "A11519M135",
         "url": "/products/mens-canvas-pipers-medium-grey?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#404040"
+    ]
   },
   {
     "id": 7132532047952,
@@ -41570,7 +42472,11 @@ export const data = [
         "sku": "A11508M135",
         "url": "/products/mens-canvas-pipers-natural-black-blizzard?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#404040"
+    ]
   },
   {
     "id": 7132534145104,
@@ -41777,7 +42683,11 @@ export const data = [
       }
     },
     "color": "#00ffff",
-    "colorcode": "#404040"
+    "colorcode": "#404040",
+    "colors": [
+      "#c8c8c8",
+      "#404040"
+    ]
   },
   {
     "id": 7132472737872,
@@ -41981,7 +42891,10 @@ export const data = [
         "sku": "A11398W105",
         "url": "/products/womens-tree-dashers-utility-blizzard-deep-navy?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7132577529936,
@@ -42185,7 +43098,10 @@ export const data = [
         "sku": "A11401W105",
         "url": "/products/womens-tree-dashers-utility-blizzard-hazy-pine?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7132479193168,
@@ -42387,7 +43303,10 @@ export const data = [
         "sku": "A11403W105",
         "url": "/products/womens-tree-dashers-utility?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 6995485360208,
@@ -42556,7 +43475,13 @@ export const data = [
       }
     },
     "color": "#ff2020",
-    "colorcode": "#404040"
+    "colorcode": "#404040",
+    "colors": [
+      "#404040",
+      "#c8c8c8",
+      "#c0c0c0",
+      "#202020"
+    ]
   },
   {
     "id": 7132576153680,
@@ -42724,7 +43649,13 @@ export const data = [
         "sku": "A11264M140",
         "url": "/products/mens-couriers-blizzard-light-khaki?size=14"
       }
-    }
+    },
+    "colors": [
+      "#404040",
+      "#c8c8c8",
+      "#c0c0c0",
+      "#202020"
+    ]
   },
   {
     "id": 7089018798160,
@@ -42911,7 +43842,13 @@ export const data = [
       }
     },
     "color": "#e0e0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#404040",
+      "#c8c8c8",
+      "#c0c0c0",
+      "#202020"
+    ]
   },
   {
     "id": 6884130553936,
@@ -43034,7 +43971,13 @@ export const data = [
       }
     },
     "color": "#202020",
-    "colorcode": "#202020"
+    "colorcode": "#202020",
+    "colors": [
+      "#404040",
+      "#c8c8c8",
+      "#c0c0c0",
+      "#202020"
+    ]
   },
   {
     "id": 6884109254736,
@@ -43157,7 +44100,13 @@ export const data = [
       }
     },
     "color": "#c0c0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#404040",
+      "#c8c8c8",
+      "#c0c0c0",
+      "#202020"
+    ]
   },
   {
     "id": 7132469231696,
@@ -43296,7 +44245,13 @@ export const data = [
       }
     },
     "color": "#00ffff",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#404040",
+      "#c8c8c8",
+      "#c0c0c0",
+      "#202020"
+    ]
   },
   {
     "id": 7132562849872,
@@ -43500,7 +44455,10 @@ export const data = [
         "sku": "A11486W105",
         "url": "/products/womens-tree-runner-go-utility-natural-white-rustic-brown?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7132538667088,
@@ -43702,7 +44660,10 @@ export const data = [
         "sku": "A11489W105",
         "url": "/products/womens-tree-runner-go-utility?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7132549185616,
@@ -43904,7 +44865,12 @@ export const data = [
         "sku": "A11518W105",
         "url": "/products/womens-canvas-pipers-medium-grey?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#202020"
+    ]
   },
   {
     "id": 7132538634320,
@@ -44108,7 +45074,12 @@ export const data = [
         "sku": "A11509W105",
         "url": "/products/womens-canvas-pipers-blizzard-bark-brown?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#202020"
+    ]
   },
   {
     "id": 7132504064080,
@@ -44310,7 +45281,12 @@ export const data = [
         "sku": "A11511W105",
         "url": "/products/womens-canvas-pipers-natural-black-blizzard?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#202020"
+    ]
   },
   {
     "id": 6927141601360,
@@ -44483,7 +45459,12 @@ export const data = [
       }
     },
     "color": "#c0c0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#202020"
+    ]
   },
   {
     "id": 6927141371984,
@@ -44672,7 +45653,12 @@ export const data = [
       }
     },
     "color": "#c0c0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#202020"
+    ]
   },
   {
     "id": 6927141011536,
@@ -44877,7 +45863,12 @@ export const data = [
       }
     },
     "color": "#202020",
-    "colorcode": "#202020"
+    "colorcode": "#202020",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#202020"
+    ]
   },
   {
     "id": 6962252972112,
@@ -45079,7 +46070,14 @@ export const data = [
         "sku": "A10962M135",
         "url": "/products/mens-tree-runner-go-stony-cream?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#e0e0c0",
+      "#a0a0a0"
+    ]
   },
   {
     "id": 6930103238736,
@@ -45281,7 +46279,14 @@ export const data = [
         "sku": "A10645M135",
         "url": "/products/mens-tree-runner-go?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#e0e0c0",
+      "#a0a0a0"
+    ]
   },
   {
     "id": 6930107105360,
@@ -45483,7 +46488,14 @@ export const data = [
         "sku": "A10612M135",
         "url": "/products/mens-tree-runner-go-rugged-beige?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#e0e0c0",
+      "#a0a0a0"
+    ]
   },
   {
     "id": 7030642344016,
@@ -45685,7 +46697,14 @@ export const data = [
         "sku": "A10954M135",
         "url": "/products/mens-tree-runner-go-deep-navy-true-navy?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#e0e0c0",
+      "#a0a0a0"
+    ]
   },
   {
     "id": 6930101272656,
@@ -45887,7 +46906,14 @@ export const data = [
         "sku": "A10610M135",
         "url": "/products/mens-tree-runner-go-medium-grey?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#e0e0c0",
+      "#a0a0a0"
+    ]
   },
   {
     "id": 6930101698640,
@@ -46089,7 +47115,14 @@ export const data = [
         "sku": "A10609M135",
         "url": "/products/mens-tree-runner-go-natural-black-blizzard-sole?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#e0e0c0",
+      "#a0a0a0"
+    ]
   },
   {
     "id": 7091623198800,
@@ -46232,7 +47265,14 @@ export const data = [
       }
     },
     "color": "#c0c0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#e0e0c0",
+      "#a0a0a0"
+    ]
   },
   {
     "id": 7075208036432,
@@ -46441,7 +47481,14 @@ export const data = [
       }
     },
     "color": "#40ff20",
-    "colorcode": "#404040"
+    "colorcode": "#404040",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#e0e0c0",
+      "#a0a0a0"
+    ]
   },
   {
     "id": 7091625328720,
@@ -46645,7 +47692,14 @@ export const data = [
         "sku": "A11353M135",
         "url": "/products/mens-tree-runner-go-blizzard-bold-red?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#e0e0c0",
+      "#a0a0a0"
+    ]
   },
   {
     "id": 6930102747216,
@@ -46850,7 +47904,14 @@ export const data = [
       }
     },
     "color": "#ff2020",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#e0e0c0",
+      "#a0a0a0"
+    ]
   },
   {
     "id": 7085936607312,
@@ -47059,7 +48120,14 @@ export const data = [
       }
     },
     "color": "#e0e0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#e0e0c0",
+      "#a0a0a0"
+    ]
   },
   {
     "id": 7132532244560,
@@ -47266,7 +48334,14 @@ export const data = [
       }
     },
     "color": "#ffff00",
-    "colorcode": "#e0e0c0"
+    "colorcode": "#e0e0c0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#e0e0c0",
+      "#a0a0a0"
+    ]
   },
   {
     "id": 7130994081872,
@@ -47471,7 +48546,14 @@ export const data = [
       }
     },
     "color": "#ffa0a0",
-    "colorcode": "#a0a0a0"
+    "colorcode": "#a0a0a0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#e0e0c0",
+      "#a0a0a0"
+    ]
   },
   {
     "id": 6885360205904,
@@ -47626,7 +48708,14 @@ export const data = [
       }
     },
     "color": "#c0c0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c0c0c0",
+      "#404060",
+      "#202020",
+      "#c8c8c8",
+      "#404040"
+    ]
   },
   {
     "id": 6848566132816,
@@ -47763,7 +48852,14 @@ export const data = [
       }
     },
     "color": "#6080ff",
-    "colorcode": "#404060"
+    "colorcode": "#404060",
+    "colors": [
+      "#c0c0c0",
+      "#404060",
+      "#202020",
+      "#c8c8c8",
+      "#404040"
+    ]
   },
   {
     "id": 7089018306640,
@@ -47934,7 +49030,14 @@ export const data = [
       }
     },
     "color": "#e0e0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c0c0c0",
+      "#404060",
+      "#202020",
+      "#c8c8c8",
+      "#404040"
+    ]
   },
   {
     "id": 6848562593872,
@@ -48103,7 +49206,14 @@ export const data = [
       }
     },
     "color": "#c0c0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c0c0c0",
+      "#404060",
+      "#202020",
+      "#c8c8c8",
+      "#404040"
+    ]
   },
   {
     "id": 6903669030992,
@@ -48272,7 +49382,14 @@ export const data = [
       }
     },
     "color": "#ffc0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c0c0c0",
+      "#404060",
+      "#202020",
+      "#c8c8c8",
+      "#404040"
+    ]
   },
   {
     "id": 6885336711248,
@@ -48443,7 +49560,14 @@ export const data = [
       }
     },
     "color": "#202020",
-    "colorcode": "#202020"
+    "colorcode": "#202020",
+    "colors": [
+      "#c0c0c0",
+      "#404060",
+      "#202020",
+      "#c8c8c8",
+      "#404040"
+    ]
   },
   {
     "id": 6848562004048,
@@ -48643,7 +49767,14 @@ export const data = [
         "sku": "A10198W110",
         "url": "/products/womens-couriers-natural-black-bloom-green?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c0c0c0",
+      "#404060",
+      "#202020",
+      "#c8c8c8",
+      "#404040"
+    ]
   },
   {
     "id": 6848438206544,
@@ -48841,7 +49972,14 @@ export const data = [
         "sku": "A10039W110",
         "url": "/products/womens-couriers-medium-grey?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c0c0c0",
+      "#404060",
+      "#202020",
+      "#c8c8c8",
+      "#404040"
+    ]
   },
   {
     "id": 7132508160080,
@@ -48996,7 +50134,14 @@ export const data = [
       }
     },
     "color": "#00ffff",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c0c0c0",
+      "#404060",
+      "#202020",
+      "#c8c8c8",
+      "#404040"
+    ]
   },
   {
     "id": 7132483518544,
@@ -49103,7 +50248,14 @@ export const data = [
       }
     },
     "color": "#00ffff",
-    "colorcode": "#404040"
+    "colorcode": "#404040",
+    "colors": [
+      "#c0c0c0",
+      "#404060",
+      "#202020",
+      "#c8c8c8",
+      "#404040"
+    ]
   },
   {
     "id": 6930103533648,
@@ -49305,7 +50457,15 @@ export const data = [
         "sku": "A10646W105",
         "url": "/products/womens-tree-runner-go?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7091623624784,
@@ -49509,7 +50669,15 @@ export const data = [
         "sku": "A11354W105",
         "url": "/products/womens-tree-runner-go-blizzard-hanami-night?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7091621757008,
@@ -49716,7 +50884,15 @@ export const data = [
       }
     },
     "color": "#4040ff",
-    "colorcode": "#404040"
+    "colorcode": "#404040",
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 6930100977744,
@@ -49918,7 +51094,15 @@ export const data = [
         "sku": "A10613W105",
         "url": "/products/womens-tree-runner-go-medium-grey?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 6930101567568,
@@ -50120,7 +51304,15 @@ export const data = [
         "sku": "A10611W105",
         "url": "/products/womens-tree-runner-go-deep-navy?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7091627098192,
@@ -50309,7 +51501,15 @@ export const data = [
       }
     },
     "color": "#ff4040",
-    "colorcode": "#404060"
+    "colorcode": "#404060",
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7091622674512,
@@ -50513,7 +51713,15 @@ export const data = [
         "sku": "A11346W105",
         "url": "/products/womens-tree-runner-go-blizzard-bold-red?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7091621101648,
@@ -50717,7 +51925,15 @@ export const data = [
         "sku": "A11351W105",
         "url": "/products/womens-tree-runner-go-blizzard-lux-liberty?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 6930104418384,
@@ -50937,7 +52153,15 @@ export const data = [
         "sku": "A10952W105",
         "url": "/products/womens-tree-runner-go-natural-black-navy?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7085936836688,
@@ -51146,7 +52370,15 @@ export const data = [
       }
     },
     "color": "#e0e0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7085935460432,
@@ -51369,7 +52601,15 @@ export const data = [
       }
     },
     "color": "#e0e0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 6930103599184,
@@ -51576,7 +52816,15 @@ export const data = [
       }
     },
     "color": "#a0a0a0",
-    "colorcode": "#a0a0a0"
+    "colorcode": "#a0a0a0",
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 6930103566416,
@@ -51797,7 +53045,15 @@ export const data = [
       }
     },
     "color": "#204060",
-    "colorcode": "#404060"
+    "colorcode": "#404060",
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 6930107236432,
@@ -51999,7 +53255,15 @@ export const data = [
         "sku": "A10608W105",
         "url": "/products/womens-tree-runner-go-natural-black-blizzard?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7030681534544,
@@ -52201,7 +53465,15 @@ export const data = [
         "sku": "A10951W105",
         "url": "/products/womens-tree-runner-go-deep-navy-true-navy?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7075208101968,
@@ -52376,7 +53648,15 @@ export const data = [
       }
     },
     "color": "#40ff20",
-    "colorcode": "#404040"
+    "colorcode": "#404040",
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7132473589840,
@@ -52583,7 +53863,15 @@ export const data = [
       }
     },
     "color": "#ffff00",
-    "colorcode": "#e0e0c0"
+    "colorcode": "#e0e0c0",
+    "colors": [
+      "#c8c8c8",
+      "#404040",
+      "#404060",
+      "#c0c0c0",
+      "#a0a0a0",
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7082681073744,
@@ -52785,7 +54073,10 @@ export const data = [
         "sku": "A11076M135",
         "url": "/products/mens-tree-gliders-deep-navy?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7082681008208,
@@ -52987,7 +54278,10 @@ export const data = [
         "sku": "A11077M135",
         "url": "/products/mens-tree-gliders-natural-black-blizzard?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7082681466960,
@@ -53189,7 +54483,10 @@ export const data = [
         "sku": "A11070M135",
         "url": "/products/mens-tree-gliders-natural-white?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7082688479312,
@@ -53391,7 +54688,10 @@ export const data = [
         "sku": "A11068M135",
         "url": "/products/mens-tree-gliders?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7131070103632,
@@ -53595,7 +54895,10 @@ export const data = [
         "sku": "A11464M135",
         "url": "/products/mens-tree-gliders-blizzard-natural-black?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7082683039824,
@@ -53797,7 +55100,10 @@ export const data = [
         "sku": "A11072M135",
         "url": "/products/mens-tree-gliders-blizzard?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7082683891792,
@@ -54001,7 +55307,10 @@ export const data = [
         "sku": "A11462M135",
         "url": "/products/mens-tree-gliders-blizzard-hanami-blue?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7082685562960,
@@ -54203,7 +55512,10 @@ export const data = [
         "sku": "A11473M135",
         "url": "/products/mens-tree-gliders-twilight-white?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7131046215760,
@@ -54369,7 +55681,10 @@ export const data = [
         "sku": "A11370M140",
         "url": "/products/mens-tree-toppers-hazy-pine?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7010120368208,
@@ -54535,7 +55850,10 @@ export const data = [
         "sku": "A11181M140",
         "url": "/products/mens-tree-toppers-stormy-grey-barely-grey?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7009938309200,
@@ -54701,7 +56019,10 @@ export const data = [
         "sku": "A11185M140",
         "url": "/products/mens-tree-toppers-natural-black?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7010095235152,
@@ -54867,7 +56188,10 @@ export const data = [
         "sku": "A11174M140",
         "url": "/products/mens-tree-toppers?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7009871495248,
@@ -55033,7 +56357,10 @@ export const data = [
         "sku": "A11179M140",
         "url": "/products/mens-tree-toppers-natural-black-blizzard?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7131035467856,
@@ -55199,7 +56526,10 @@ export const data = [
         "sku": "A11379W110",
         "url": "/products/womens-tree-toppers-hazy-pine?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7009927430224,
@@ -55365,7 +56695,10 @@ export const data = [
         "sku": "A11184W110",
         "url": "/products/womens-tree-toppers-natural-black?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7009830731856,
@@ -55531,7 +56864,10 @@ export const data = [
         "sku": "A11175W110",
         "url": "/products/womens-tree-toppers?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7091629490256,
@@ -55699,7 +57035,10 @@ export const data = [
         "sku": "A11368W110",
         "url": "/products/womens-tree-toppers-rustic-brown?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7009816019024,
@@ -55865,7 +57204,10 @@ export const data = [
         "sku": "A11178W110",
         "url": "/products/womens-tree-toppers-natural-black-blizzard?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7010216181840,
@@ -56031,7 +57373,10 @@ export const data = [
         "sku": "A11182W110",
         "url": "/products/womens-tree-toppers-stormy-grey-barely-grey?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7131008663632,
@@ -56233,7 +57578,10 @@ export const data = [
         "sku": "A11300W105",
         "url": "/products/womens-tree-breezers-light-khaki?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 6919093846096,
@@ -56437,7 +57785,10 @@ export const data = [
         "sku": "A10942W105",
         "url": "/products/womens-tree-breezers-natural-black-stormy-grey?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 4373801861264,
@@ -56623,7 +57974,10 @@ export const data = [
         "sku": "TB1WMST105",
         "url": "/products/womens-tree-breezers-mist?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 6786903539792,
@@ -56857,7 +58211,10 @@ export const data = [
         "sku": "AB00CZW105",
         "url": "/products/womens-tree-breezers-forage-tan?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7113658630224,
@@ -57048,7 +58405,11 @@ export const data = [
       }
     },
     "color": "#404040",
-    "colorcode": "#202020"
+    "colorcode": "#202020",
+    "colors": [
+      "#202020",
+      "#a0a0a0"
+    ]
   },
   {
     "id": 7130990674000,
@@ -57253,7 +58614,11 @@ export const data = [
       }
     },
     "color": "#a0a0a0",
-    "colorcode": "#a0a0a0"
+    "colorcode": "#a0a0a0",
+    "colors": [
+      "#202020",
+      "#a0a0a0"
+    ]
   },
   {
     "id": 7127431118928,
@@ -57435,7 +58800,10 @@ export const data = [
         "sku": "A10876M140",
         "url": "/products/mens-courier-luxe-true-navy?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7126099132496,
@@ -57637,7 +59005,10 @@ export const data = [
         "sku": "A10906M135",
         "url": "/products/mens-runner-go-luxe?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7114065379408,
@@ -57842,7 +59213,12 @@ export const data = [
       }
     },
     "color": "#ffc0a0",
-    "colorcode": "#a08060"
+    "colorcode": "#a08060",
+    "colors": [
+      "#a08060",
+      "#202020",
+      "#404040"
+    ]
   },
   {
     "id": 7114065313872,
@@ -58047,7 +59423,12 @@ export const data = [
       }
     },
     "color": "#202020",
-    "colorcode": "#202020"
+    "colorcode": "#202020",
+    "colors": [
+      "#a08060",
+      "#202020",
+      "#404040"
+    ]
   },
   {
     "id": 7118900133968,
@@ -58236,7 +59617,12 @@ export const data = [
       }
     },
     "color": "#404040",
-    "colorcode": "#404040"
+    "colorcode": "#404040",
+    "colors": [
+      "#a08060",
+      "#202020",
+      "#404040"
+    ]
   },
   {
     "id": 7125753757776,
@@ -58461,7 +59847,12 @@ export const data = [
       }
     },
     "color": "#4040ff",
-    "colorcode": "#404040"
+    "colorcode": "#404040",
+    "colors": [
+      "#a08060",
+      "#202020",
+      "#404040"
+    ]
   },
   {
     "id": 7124641316944,
@@ -58683,7 +60074,10 @@ export const data = [
         "sku": "A10905M135",
         "url": "/products/mens-runner-up-protect-natural-black-chasm-teal?size=13-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 6885146918992,
@@ -58888,7 +60282,12 @@ export const data = [
         "sku": "A10816W105",
         "url": "/products/womens-tree-dashers-blizzard?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#604020"
+    ]
   },
   {
     "id": 6644022640720,
@@ -59077,7 +60476,12 @@ export const data = [
         "sku": "AA000PW105",
         "url": "/products/womens-tree-dashers?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#604020"
+    ]
   },
   {
     "id": 6858515120208,
@@ -59284,7 +60688,12 @@ export const data = [
         "sku": "A10683W105",
         "url": "/products/womens-tree-dashers-blizzard-hazy-cobalt?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#604020"
+    ]
   },
   {
     "id": 7003493924944,
@@ -59489,7 +60898,12 @@ export const data = [
         "sku": "A11044W105",
         "url": "/products/womens-tree-dashers-deep-navy?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#604020"
+    ]
   },
   {
     "id": 6863984918608,
@@ -59696,7 +61110,12 @@ export const data = [
         "sku": "A10767W105",
         "url": "/products/womens-tree-dashers-hazy-cocoa-stony-cream?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#604020"
+    ]
   },
   {
     "id": 7091688144976,
@@ -59901,7 +61320,12 @@ export const data = [
         "sku": "A11454W105",
         "url": "/products/womens-tree-dashers-rustic-brown?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#604020"
+    ]
   },
   {
     "id": 6643980075088,
@@ -60090,7 +61514,12 @@ export const data = [
         "sku": "AA000SW105",
         "url": "/products/womens-tree-dashers-natural-black?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#604020"
+    ]
   },
   {
     "id": 6644023623760,
@@ -60279,7 +61708,12 @@ export const data = [
         "sku": "AA000RW105",
         "url": "/products/womens-tree-dashers-medium-grey?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#604020"
+    ]
   },
   {
     "id": 6919094992976,
@@ -60489,7 +61923,12 @@ export const data = [
       }
     },
     "color": "#c0c0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#604020"
+    ]
   },
   {
     "id": 6910593433680,
@@ -60699,7 +62138,12 @@ export const data = [
       }
     },
     "color": "#ffc0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#604020"
+    ]
   },
   {
     "id": 6697918038096,
@@ -60888,7 +62332,12 @@ export const data = [
         "sku": "AA0023W105",
         "url": "/products/womens-tree-dashers-natural-black-natural-black?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#604020"
+    ]
   },
   {
     "id": 6858359898192,
@@ -61095,7 +62544,12 @@ export const data = [
         "sku": "A10467W105",
         "url": "/products/womens-tree-dashers-blizzard-natural-black?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#604020"
+    ]
   },
   {
     "id": 7131038187600,
@@ -61305,7 +62759,12 @@ export const data = [
       }
     },
     "color": "#c0c0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#604020"
+    ]
   },
   {
     "id": 7122442879056,
@@ -61513,7 +62972,12 @@ export const data = [
       }
     },
     "color": "#4020ff",
-    "colorcode": "#604020"
+    "colorcode": "#604020",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#604020"
+    ]
   },
   {
     "id": 7113875292240,
@@ -61702,7 +63166,11 @@ export const data = [
       }
     },
     "color": "#404040",
-    "colorcode": "#404040"
+    "colorcode": "#404040",
+    "colors": [
+      "#404040",
+      "#202020"
+    ]
   },
   {
     "id": 7113914417232,
@@ -61891,7 +63359,11 @@ export const data = [
       }
     },
     "color": "#202020",
-    "colorcode": "#202020"
+    "colorcode": "#202020",
+    "colors": [
+      "#404040",
+      "#202020"
+    ]
   },
   {
     "id": 7113649291344,
@@ -62096,7 +63568,11 @@ export const data = [
       }
     },
     "color": "#c0c0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 7113657122896,
@@ -62301,7 +63777,11 @@ export const data = [
       }
     },
     "color": "#404040",
-    "colorcode": "#404040"
+    "colorcode": "#404040",
+    "colors": [
+      "#c0c0c0",
+      "#404040"
+    ]
   },
   {
     "id": 7113655025744,
@@ -62519,7 +63999,10 @@ export const data = [
         "sku": "A10888W105",
         "url": "/products/womens-lounger-lift-cozy?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7113645883472,
@@ -62692,7 +64175,10 @@ export const data = [
       }
     },
     "color": "#202020",
-    "colorcode": "#202020"
+    "colorcode": "#202020",
+    "colors": [
+      "#202020"
+    ]
   },
   {
     "id": 7113634578512,
@@ -62894,7 +64380,10 @@ export const data = [
         "sku": "A11226W105",
         "url": "/products/womens-lounger-lift-corduroy?size=10-5"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7091623067728,
@@ -63065,7 +64554,13 @@ export const data = [
         "sku": "A11377W110",
         "url": "/products/womens-tree-runners-blizzard-hanami-night?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#808080"
+    ]
   },
   {
     "id": 4870548062288,
@@ -63218,7 +64713,13 @@ export const data = [
         "sku": "TR3WNNW110",
         "url": "/products/womens-tree-runners-navy-night?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#808080"
+    ]
   },
   {
     "id": 4870547963984,
@@ -63371,7 +64872,13 @@ export const data = [
         "sku": "TR3WJBW110",
         "url": "/products/womens-tree-runners-jet-black-white?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#808080"
+    ]
   },
   {
     "id": 7091628965968,
@@ -63545,7 +65052,13 @@ export const data = [
       }
     },
     "color": "#ffff00",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#808080"
+    ]
   },
   {
     "id": 7091624116304,
@@ -63714,7 +65227,13 @@ export const data = [
         "sku": "A11386W110",
         "url": "/products/womens-tree-runners-zen-blue?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#808080"
+    ]
   },
   {
     "id": 7091621888080,
@@ -63885,7 +65404,13 @@ export const data = [
         "sku": "A11372W110",
         "url": "/products/womens-tree-runners-blizzard-bold-red?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#808080"
+    ]
   },
   {
     "id": 6910585962576,
@@ -63993,7 +65518,13 @@ export const data = [
       }
     },
     "color": "#ff6060",
-    "colorcode": "#404040"
+    "colorcode": "#404040",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#808080"
+    ]
   },
   {
     "id": 6822714867792,
@@ -64162,7 +65693,13 @@ export const data = [
         "sku": "AB00FUW110",
         "url": "/products/womens-tree-runners-hazy-indigo?size=11"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#808080"
+    ]
   },
   {
     "id": 6847368265808,
@@ -64304,7 +65841,13 @@ export const data = [
       }
     },
     "color": "#808080",
-    "colorcode": "#808080"
+    "colorcode": "#808080",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#808080"
+    ]
   },
   {
     "id": 7131039826000,
@@ -64478,7 +66021,13 @@ export const data = [
       }
     },
     "color": "#ffff00",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c8c8c8",
+      "#c0c0c0",
+      "#404040",
+      "#808080"
+    ]
   },
   {
     "id": 4873015754832,
@@ -64631,7 +66180,10 @@ export const data = [
         "sku": "TR3MMST140",
         "url": "/products/mens-tree-runners-mist?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 6586109395024,
@@ -64786,7 +66338,10 @@ export const data = [
         "sku": "TR3MWHE140",
         "url": "/products/mens-tree-runners-wheat-dark-beige?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7091622707280,
@@ -64957,7 +66512,10 @@ export const data = [
         "sku": "A11375M140",
         "url": "/products/mens-tree-runners-blizzard-hanami-night?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 4868994039888,
@@ -65110,7 +66668,10 @@ export const data = [
         "sku": "TR3MKWW140",
         "url": "/products/mens-tree-runners-kaikoura-white?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 6822979174480,
@@ -65279,7 +66840,10 @@ export const data = [
         "sku": "AB00FVM140",
         "url": "/products/mens-tree-runners-hazy-indigo?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 6910582980688,
@@ -65448,7 +67012,10 @@ export const data = [
         "sku": "A10658M140",
         "url": "/products/mens-tree-runners-light-grey?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7091621527632,
@@ -65619,7 +67186,10 @@ export const data = [
         "sku": "A11366M140",
         "url": "/products/mens-tree-runners-blizzard-bold-red?size=14"
       }
-    }
+    },
+    "colors": [
+      "#c8c8c8"
+    ]
   },
   {
     "id": 7091609501776,
@@ -65790,7 +67360,13 @@ export const data = [
       }
     },
     "color": "#c0c0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c0c0c0",
+      "#c0c0a0",
+      "#404040",
+      "#202020"
+    ]
   },
   {
     "id": 6858597171280,
@@ -65943,7 +67519,13 @@ export const data = [
       }
     },
     "color": "#c0c0c0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c0c0c0",
+      "#c0c0a0",
+      "#404040",
+      "#202020"
+    ]
   },
   {
     "id": 6939677229136,
@@ -66052,7 +67634,13 @@ export const data = [
       }
     },
     "color": "#00ffff",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c0c0c0",
+      "#c0c0a0",
+      "#404040",
+      "#202020"
+    ]
   },
   {
     "id": 6893324927056,
@@ -66253,7 +67841,13 @@ export const data = [
       }
     },
     "color": "#6080a0",
-    "colorcode": "#c0c0c0"
+    "colorcode": "#c0c0c0",
+    "colors": [
+      "#c0c0c0",
+      "#c0c0a0",
+      "#404040",
+      "#202020"
+    ]
   },
   {
     "id": 6923989778512,
@@ -66374,7 +67968,13 @@ export const data = [
       }
     },
     "color": "#ffc0c0",
-    "colorcode": "#c0c0a0"
+    "colorcode": "#c0c0a0",
+    "colors": [
+      "#c0c0c0",
+      "#c0c0a0",
+      "#404040",
+      "#202020"
+    ]
   },
   {
     "id": 6858603135056,
@@ -66543,7 +68143,13 @@ export const data = [
       }
     },
     "color": "#2020ff",
-    "colorcode": "#404040"
+    "colorcode": "#404040",
+    "colors": [
+      "#c0c0c0",
+      "#c0c0a0",
+      "#404040",
+      "#202020"
+    ]
   },
   {
     "id": 6826297229392,
@@ -66728,7 +68334,13 @@ export const data = [
       }
     },
     "color": "#202020",
-    "colorcode": "#202020"
+    "colorcode": "#202020",
+    "colors": [
+      "#c0c0c0",
+      "#c0c0a0",
+      "#404040",
+      "#202020"
+    ]
   },
   {
     "id": 7086412136528,
@@ -66851,7 +68463,10 @@ export const data = [
       }
     },
     "color": "#e0e0c0",
-    "colorcode": "#e0e0c0"
+    "colorcode": "#e0e0c0",
+    "colors": [
+      "#e0e0c0"
+    ]
   },
   {
     "id": 7086412038224,
@@ -67038,6 +68653,9 @@ export const data = [
       }
     },
     "color": "#e0e0c0",
-    "colorcode": "#e0e0c0"
+    "colorcode": "#e0e0c0",
+    "colors": [
+      "#e0e0c0"
+    ]
   }
 ];

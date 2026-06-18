@@ -58,3 +58,36 @@
         </div>-->
       </nav>
     </header>
+    <!-- cart------ -->
+  <div class="cartContainer">
+    
+  </div>
+  <div class="cart">
+      <div class="header">
+        <h2>CART (0)</h2>
+        <p class="info">Spend $100 more to earn free shipping!</p>
+
+        <p class="closeCart">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Mono Icons by Mono - https://github.com/mono-company/mono-icons/blob/master/LICENSE.md --><path fill="currentColor" d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12L5.293 6.707a1 1 0 0 1 0-1.414"/></svg>
+        </p>
+
+      </div>
+      <div class="progress">
+
+      </div>
+
+      <div class="noItemsInCart">
+        <h1>Your cart is empty. Start shopping!</h1>
+        <div class="btnGroup">
+          <a href=""><button>SHOP WOMENS</button></a>
+        <a href=""><button>SHOP MENS</button></a>
+        <a href=""><button>SHOP ALL</button></a>
+        <a href=""><button>SHOP WOMENS SALE</button></a>
+        <a href=""><button>SHOP MENS SALE</button></a>
+        </div>
+        
+      </div>
+    </div>
+
+  </body>
+</html>
