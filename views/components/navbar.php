@@ -2,10 +2,15 @@
       <div class="menu">
         <div class="menuContent"></div>
       </div>
-      <p class="sale-announcement">
-        30% Off Your Order When You Spend $140. Discount Automatically Applied
-        at Checkout.
-      </p>
+      <div class="sale-announcement">
+        <button class="ann-arrow ann-arrow--left" aria-label="Previous announcement">&#8249;</button>
+        <div class="ann-track">
+          <div class="ann-slide active">30% Off Your Order When You Spend $140. Discount Automatically Applied at Checkout.</div>
+          <div class="ann-slide">Free Shipping on All Orders Over $100. Limited Time Offer!</div>
+          <div class="ann-slide">New Summer Collection Just Dropped. Shop Now Before It's Gone!</div>
+        </div>
+        <button class="ann-arrow ann-arrow--right" aria-label="Next announcement">&#8250;</button>
+      </div>
 
       <nav>
         <h1>Logo</h1>

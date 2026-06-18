@@ -15,13 +15,18 @@
   transform: scale(1.02);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
   z-index: 5;
+  overflow: visible;
+  border-radius: 16px 16px 0 0;
 }
 
 .product-card__media {
   position: relative;
   display: block;
+  width: 100%;
   aspect-ratio: 1;
   overflow: hidden;
+  border-radius: 16px 16px 0 0;
+  background: var(--nav-bg);
 }
 
 .product-card__badge {
@@ -45,6 +50,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   transition:
     opacity 0.2s ease,
     transform 0.35s ease;
@@ -107,30 +113,58 @@
   gap: 9px;
 }
 
-.product-card__swatch {
-  width: 24px;
-  height: 24px;
-  flex: 0 0 auto;
-  border-radius: 50%;
-  border: 1px solid rgba(33, 33, 33, 0.45);
-  box-shadow: inset 0 0 0 2px white;
+.product-card__swatches {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
-.product-card__sizes {
-  min-width: 0;
-  color: rgba(33, 33, 33, 0.62);
-  font-size: 0.72rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.product-card__swatch {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(33, 33, 33, 0.25);
+  box-shadow: inset 0 0 0 2px white;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+  text-decoration: none;
+}
+
+.product-card__swatch:hover {
+  transform: scale(1.25);
+  border-color: rgba(33, 33, 33, 0.7);
+}
+
+.product-card__swatch--active {
+  border-color: var(--sec-bg-clr);
+  transform: scale(1.15);
+}
+
+.product-card__swatch-more {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: rgba(33, 33, 33, 0.5);
+  text-decoration: none;
+  cursor: default;
+  line-height: 22px;
 }
 
 .product-card__quick-add {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 5;
   grid-template-columns: repeat(auto-fit, minmax(38px, 1fr));
   gap: 6px;
-  padding: 0 14px 14px;
+  padding: 14px;
   background: var(--nav-bg);
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
+  clip-path: inset(0 -30px -30px -30px);
 }
 
 .product-card:hover .product-card__quick-add {
@@ -166,6 +200,8 @@
 
   .product-card:hover {
     transform: none;
+    border-radius: 14px;
+    overflow: hidden;
   }
 
   .product-card__badge {

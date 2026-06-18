@@ -2,7 +2,7 @@
 require_once __DIR__ . "/../utils/products.php";
 
 $allProducts = loadAllProducts();
-$products = getCollectionProducts($allProducts);
+$products = getSaleProducts($allProducts);
 $variantMap = buildVariantMap($allProducts);
 [$filterTypes, $filterGenders, $filterMaterials, $filterEditions, $filterHues] = extractFilterOptions($products);
 
@@ -14,8 +14,8 @@ $pageProducts = array_slice($products, ($currentPage - 1) * $perPage, $perPage);
 $productCount = count($products);
 
 $categories = [
-  ["title" => "Men's", "image" => "https://www.allbirds.com/cdn/shop/files/26Q2_CanvasCruiser_Site_Homepage_CategoryRow-01_Desktop-Mobile_2x3_01_Lifestyle.jpg?v=1774909856&width=1024", "href" => "#", "cta" => "Shop Men's"],
-  ["title" => "Women's", "image" => "https://www.allbirds.com/cdn/shop/files/26Q2_CanvasCruiser_Site_Homepage_CategoryRow-01_Desktop-Mobile_2x3_04_Lifestyle.jpg?v=1774909855&width=1024", "href" => "#", "cta" => "Shop Women's"],
+  ["title" => "Men's", "image" => "https://www.allbirds.com/cdn/shop/files/26Q2_CanvasCruiser_Site_Homepage_CategoryRow-01_Desktop-Mobile_2x3_01_Lifestyle.jpg?v=1774909856&width=1024", "href" => "mens.php", "cta" => "Shop Men's"],
+  ["title" => "Women's", "image" => "https://www.allbirds.com/cdn/shop/files/26Q2_CanvasCruiser_Site_Homepage_CategoryRow-01_Desktop-Mobile_2x3_04_Lifestyle.jpg?v=1774909855&width=1024", "href" => "womens.php", "cta" => "Shop Women's"],
   ["title" => "Apparel", "image" => "https://www.allbirds.com/cdn/shop/files/25Q2_BAU_Site_Collections_3xPromo-Apparel_Lifestyle_Desktop_2x3_1.png?v=1751420661&width=1024", "href" => "#", "cta" => "Shop Apparel"],
 ];
 ?>
@@ -24,7 +24,7 @@ $categories = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NEW ARRIVALS '26</title>
+    <title>SALE</title>
     <link rel="stylesheet" href="../assets/css/main.css" />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
@@ -144,7 +144,7 @@ $categories = [
         </div>
       </div>
 
-      <section class="collection-grid" aria-label="New arrivals products">
+      <section class="collection-grid" aria-label="Sale products">
         <?php foreach ($pageProducts as $product): ?>
           <?php [$pGender, $pMaterial, $pEdition, $pHue] = extractProductTags($product); ?>
           <div class="product-card-wrap"

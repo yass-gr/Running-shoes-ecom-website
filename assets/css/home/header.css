@@ -9,8 +9,61 @@ header {
   background-color: var(--sec-bg-clr);
   color: white;
   font-size: 0.7rem;
-  padding-block: 8px;
+  padding-block: 10px;
+  padding-inline: 28px;
   text-align: center;
+  position: relative;
+}
+
+.ann-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  align-content: center;
+}
+.ann-arrow--left {
+  left: 4px;
+}
+.ann-arrow--right {
+  right: 4px;
+}
+.ann-arrow:hover {
+  opacity: 1;
+}
+
+.ann-track {
+  position: relative;
+  height: 1em;
+  overflow: hidden;
+}
+
+.ann-slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(100%);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+  pointer-events: none;
+}
+.ann-slide.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 header nav {

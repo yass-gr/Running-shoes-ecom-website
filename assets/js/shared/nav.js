@@ -213,3 +213,36 @@ const refreshMenu = () => {
 };
 
 refreshMenu();
+
+const annSlides = $(".ann-slide");
+const annLeft = $(".ann-arrow--left");
+const annRight = $(".ann-arrow--right");
+let annCurrent = 0;
+let annTimer;
+
+function annGoTo(idx) {
+  annSlides.removeClass("active");
+  annCurrent = (idx + annSlides.length) % annSlides.length;
+  annSlides.eq(annCurrent).addClass("active");
+}
+
+function annStartAutoplay() {
+  annTimer = setInterval(() => annGoTo(annCurrent + 1), 4000);
+}
+
+function annResetAutoplay() {
+  clearInterval(annTimer);
+  annStartAutoplay();
+}
+
+annLeft.on("click", () => {
+  annGoTo(annCurrent - 1);
+  annResetAutoplay();
+});
+
+annRight.on("click", () => {
+  annGoTo(annCurrent + 1);
+  annResetAutoplay();
+});
+
+annStartAutoplay();
