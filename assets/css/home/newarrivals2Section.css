@@ -59,8 +59,13 @@
           font-size: 0.9rem;
           font-weight: bold;
         }
-        .hue {
+        .swatches {
+          display: flex;
+          gap: 5px;
+          flex-wrap: wrap;
           margin-top: 10px;
+        }
+        .hue {
           width: 2vw;
           height: 2vw;
           cursor: pointer;

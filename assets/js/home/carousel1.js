@@ -21,6 +21,27 @@ $(".leftControl").on("mousemove", (e) => {
   arrow.css("left", e.clientX);
   arrow.css("top", e.clientY);
 });
+$(".leftControl").on("mouseleave", () => {
+  arrow.hide();
+  $("body").css("cursor", "default");
+});
+
+$(".rightControl").on("mousemove", (e) => {
+  arrow.html("⇢");
+  $("body").css("cursor", "none");
+  arrow.fadeIn(300);
+  arrow.css("left", e.clientX);
+  arrow.css("top", e.clientY);
+});
+$(".rightControl").on("mouseleave", () => {
+  arrow.hide();
+  $("body").css("cursor", "default");
+});
+
+$(window).on("blur", () => {
+  arrow.hide();
+  $("body").css("cursor", "default");
+});
 
 $(".leftControl").on("mouseout", () => {
   arrow.hide();

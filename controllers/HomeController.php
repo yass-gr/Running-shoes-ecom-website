@@ -40,13 +40,20 @@ class HomeController
             $first = $variants[0] ?? [];
             $thumb = $first["thumbnail"] ?? "";
             if ($thumb === "" || $thumb === null) continue;
-            $colorName = $first["color"] ?? "";
+            $seen = [];
+            $swatches = [];
+            foreach ($variants as $v) {
+                $c = $v["color"] ?? "";
+                if ($c === "" || isset($seen[$c])) continue;
+                $seen[$c] = true;
+                $swatches[] = ["name" => $c, "hex" => colorToHex($c)];
+            }
             $items[] = [
                 "name" => $p["name"],
                 "price" => $p["base_price"],
                 "image" => $thumb,
-                "color" => $colorName,
-                "swatch" => colorToHex($colorName),
+                "color" => $swatches[0]["name"] ?? "",
+                "swatches" => $swatches,
             ];
         }
 
