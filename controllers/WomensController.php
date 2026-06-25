@@ -34,11 +34,13 @@ class WomensController
             }
 
             $badge = null;
+            $totalStock = 0;
             $hasLowStock = false;
             foreach ($variants as $v) {
-                if (($v["stock_quantity"] ?? 0) <= 20) {
+                $qty = (int) ($v["stock_quantity"] ?? 0);
+                $totalStock += $qty;
+                if ($qty <= 20) {
                     $hasLowStock = true;
-                    break;
                 }
             }
             if ($hasLowStock) {
@@ -59,6 +61,7 @@ class WomensController
                 "price" => $p["base_price"],
                 "sale"  => $salePct,
                 "sale_price" => $salePrice,
+                "total_stock" => $totalStock,
                 "image" => $thumb,
                 "color" => $swatches[0]["name"] ?? "",
                 "swatches" => $swatches,

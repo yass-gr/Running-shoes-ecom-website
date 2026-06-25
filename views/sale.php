@@ -151,6 +151,9 @@ $pageUrl = "?" . http_build_query($queryParams);
                     $<?= number_format($item["price"]) ?>
                   <?php endif; ?>
                 </p>
+                <?php if (isset($item["total_stock"])): ?>
+                  <p class="stock"><?= $item["total_stock"] ?> in stock</p>
+                <?php endif; ?>
               </div>
             </a>
           </div>

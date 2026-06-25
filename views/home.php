@@ -124,6 +124,9 @@
                     $<?= number_format($item["price"]) ?>
                   <?php endif; ?>
                 </p>
+                <?php if (isset($item["total_stock"])): ?>
+                  <p class="stock"><?= $item["total_stock"] ?> in stock</p>
+                <?php endif; ?>
                 <div class="swatches">
                   <?php foreach ($item["swatches"] as $s): ?>
                     <div class="hue" style="background-color: <?= $s["hex"] ?>" data-thumb="<?= $s["thumb"] ?>"></div>
