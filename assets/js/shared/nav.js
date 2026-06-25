@@ -6,7 +6,7 @@ let selected = 0;
 
 navItem.on("mouseenter", (e) => {
   menu.addClass("show");
-  selected = $(e.target).data("tab");
+  selected = $(e.currentTarget).data("tab");
   refreshMenu();
 });
 
