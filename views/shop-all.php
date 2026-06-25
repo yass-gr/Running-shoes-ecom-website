@@ -143,7 +143,14 @@ $pageUrl = "?" . http_build_query($queryParams);
               <div class="info">
                 <p class="name"><?= $item["name"] ?></p>
                 <p class="color"><?= $item["color"] ?></p>
-                <p class="price">$<?= number_format($item["price"]) ?></p>
+                <p class="price">
+                  <?php if (isset($item["sale_price"])): ?>
+                    <span style="text-decoration:line-through;color:#999;">$<?= number_format($item["price"]) ?></span>
+                    <span style="color:#d32f2f;">$<?= number_format($item["sale_price"]) ?></span>
+                  <?php else: ?>
+                    $<?= number_format($item["price"]) ?>
+                  <?php endif; ?>
+                </p>
               </div>
             </a>
           </div>

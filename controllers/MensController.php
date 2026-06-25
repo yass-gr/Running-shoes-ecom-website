@@ -36,7 +36,7 @@ class MensController
             $badge = null;
             $hasLowStock = false;
             foreach ($variants as $v) {
-                if (($v["stock_quantity"] ?? 0) <= 1) {
+                if (($v["stock_quantity"] ?? 0) <= 20) {
                     $hasLowStock = true;
                     break;
                 }
@@ -45,15 +45,20 @@ class MensController
                 $badge = "LAST FEW";
             } else {
                 $createdAt = strtotime($p["created_at"]);
-                if ($createdAt && (time() - $createdAt) < 7 * 24 * 60 * 60) {
+                if ($createdAt && (time() - $createdAt) < 30 * 24 * 60 * 60) {
                     $badge = "NEW";
                 }
             }
+
+            $salePct = (float) ($p["sale"] ?? 0);
+            $salePrice = $salePct > 0 ? $p["base_price"] * (1 - $salePct / 100) : null;
 
             $products[] = [
                 "id"    => $p["id"],
                 "name"  => $p["name"],
                 "price" => $p["base_price"],
+                "sale"  => $salePct,
+                "sale_price" => $salePrice,
                 "image" => $thumb,
                 "color" => $swatches[0]["name"] ?? "",
                 "swatches" => $swatches,

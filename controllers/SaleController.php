@@ -70,7 +70,7 @@ class SaleController
                 $badge = null;
                 $hasLowStock = false;
                 foreach ($variants as $v) {
-                    if (($v["stock_quantity"] ?? 0) <= 1) {
+                    if (($v["stock_quantity"] ?? 0) <= 20) {
                         $hasLowStock = true;
                         break;
                     }
@@ -79,7 +79,7 @@ class SaleController
                     $badge = "LAST FEW";
                 } else {
                     $createdAt = strtotime($p["created_at"]);
-                    if ($createdAt && (time() - $createdAt) < 7 * 24 * 60 * 60) {
+                    if ($createdAt && (time() - $createdAt) < 30 * 24 * 60 * 60) {
                         $badge = "NEW";
                     }
                 }
