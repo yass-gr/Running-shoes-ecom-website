@@ -119,7 +119,7 @@
                 <p class="price">$<?= number_format($item["price"], 2) ?></p>
                 <div class="swatches">
                   <?php foreach ($item["swatches"] as $s): ?>
-                    <div class="hue" style="background-color: <?= $s["hex"] ?>"></div>
+                    <div class="hue" style="background-color: <?= $s["hex"] ?>" data-thumb="<?= $s["thumb"] ?>"></div>
                   <?php endforeach; ?>
                 </div>
               </div>

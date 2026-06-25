@@ -23,3 +23,8 @@ cardPositions = content
   .find(".card")
   .map((i, el) => el.getBoundingClientRect().left)
   .get();
+
+$(".newArrivals2").on("click", ".hue", function () {
+  const thumb = $(this).data("thumb");
+  $(this).closest(".card").find("img").attr("src", thumb);
+});

@@ -46,7 +46,7 @@ class HomeController
                 $c = $v["color"] ?? "";
                 if ($c === "" || isset($seen[$c])) continue;
                 $seen[$c] = true;
-                $swatches[] = ["name" => $c, "hex" => colorToHex($c)];
+                $swatches[] = ["name" => $c, "hex" => colorToHex($c), "thumb" => $v["thumbnail"] ?? ""];
             }
             $items[] = [
                 "name" => $p["name"],

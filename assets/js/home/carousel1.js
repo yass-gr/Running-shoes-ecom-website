@@ -43,6 +43,11 @@ $(window).on("blur", () => {
   $("body").css("cursor", "default");
 });
 
+$(window).on("wheel", () => {
+  arrow.hide();
+  $("body").css("cursor", "default");
+});
+
 $(".leftControl").on("mouseout", () => {
   arrow.hide();
   $("body").css("cursor", "default");
