@@ -1,3 +1,4 @@
+<div class="navTitle">SHOP WOMEN'S</div>
 <div class="colsContainer">
   <ul>
     <li><a>COLLECTION 1</a></li>

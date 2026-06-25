@@ -1,3 +1,4 @@
+<div class="navTitle">SHOP SALE</div>
 <div class="colsContainer">
   <div class="col">
     <h3>MEN</h3>

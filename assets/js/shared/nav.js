@@ -1,13 +1,6 @@
 const navItem = $(".nav-item");
 const menu = $(".menu");
 const menuContent = $(".menuContent");
-const navTitle = $(".navTitle");
-
-const tabTitles = {
-  men: "SHOP MEN'S",
-  women: "SHOP WOMEN'S",
-  sale: "SHOP SALE",
-};
 
 let selected = 0;
 
@@ -26,7 +19,6 @@ menuContent.on("mouseleave", () => {
 const refreshMenu = () => {
   $(".tab-content").hide();
   $(`.tab-content[data-tab="${selected}"]`).show();
-  navTitle.text(tabTitles[selected] || "SHOP");
 };
 
 $(".tab-content").hide();
