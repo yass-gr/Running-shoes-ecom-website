@@ -29,12 +29,33 @@ class HomeController
                 if ($c === "") continue;
                 $swatches[] = ["name" => $c, "hex" => colorToHex($c), "thumb" => $v["thumbnail"] ?? ""];
             }
+
+            $badge = null;
+            $hasLowStock = false;
+            foreach ($variants as $v) {
+                if (($v["stock_quantity"] ?? 0) <= ($v["reorder_level"] ?? 5)) {
+                    $hasLowStock = true;
+                    break;
+                }
+            }
+            if ($hasLowStock) {
+                $badge = "LAST FEW";
+            } elseif ($p["sales"] >= 500) {
+                $badge = "BESTSELLER";
+            } else {
+                $createdAt = strtotime($p["created_at"]);
+                if ($createdAt && (time() - $createdAt) < 30 * 24 * 60 * 60) {
+                    $badge = "NEW";
+                }
+            }
+
             $items[] = [
                 "name" => $p["name"],
                 "price" => $p["base_price"],
                 "image" => $thumb,
                 "color" => $swatches[0]["name"] ?? "",
                 "swatches" => $swatches,
+                "badge" => $badge,
             ];
         }
 

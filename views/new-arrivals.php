@@ -137,6 +137,9 @@ $pageUrl = "?" . http_build_query($queryParams);
           <div class="card">
             <a href="?route=product&id=<?= $item["id"] ?>">
               <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
+              <?php if ($item["badge"]): ?>
+                <span class="card__badge"><?= $item["badge"] ?></span>
+              <?php endif; ?>
               <div class="info">
                 <p class="name"><?= $item["name"] ?></p>
                 <p class="color"><?= $item["color"] ?></p>

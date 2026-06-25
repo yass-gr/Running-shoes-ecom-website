@@ -13,7 +13,7 @@ class WomensController
         $productModel = new Product($pdo);
         $variantModel = new ProductVariant($pdo);
 
-        $all = $productModel->findAll();
+        $all = $productModel->findByGender("womens");
 
         $products = [];
         foreach ($all as $p) {
@@ -33,6 +33,25 @@ class WomensController
                 ];
             }
 
+            $badge = null;
+            $hasLowStock = false;
+            foreach ($variants as $v) {
+                if (($v["stock_quantity"] ?? 0) <= ($v["reorder_level"] ?? 5)) {
+                    $hasLowStock = true;
+                    break;
+                }
+            }
+            if ($hasLowStock) {
+                $badge = "LAST FEW";
+            } elseif ($p["sales"] >= 500) {
+                $badge = "BESTSELLER";
+            } else {
+                $createdAt = strtotime($p["created_at"]);
+                if ($createdAt && (time() - $createdAt) < 30 * 24 * 60 * 60) {
+                    $badge = "NEW";
+                }
+            }
+
             $products[] = [
                 "id"    => $p["id"],
                 "name"  => $p["name"],
@@ -40,6 +59,7 @@ class WomensController
                 "image" => $thumb,
                 "color" => $swatches[0]["name"] ?? "",
                 "swatches" => $swatches,
+                "badge" => $badge,
             ];
         }
 

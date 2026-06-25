@@ -30,6 +30,7 @@ CREATE TABLE Products (
     description TEXT,
     base_price  DECIMAL(10,2) NOT NULL DEFAULT 0.00,
     sales       INT NOT NULL DEFAULT 0,
+    gender      ENUM('mens','womens','unisex') NOT NULL DEFAULT 'unisex',
     created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (brand_id)    REFERENCES Brands(id)    ON DELETE CASCADE,
     FOREIGN KEY (category_id) REFERENCES Categories(id) ON DELETE CASCADE

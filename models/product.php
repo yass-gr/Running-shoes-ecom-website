@@ -16,6 +16,18 @@ class Product extends Model {
         );
     }
 
+    public function findByGender(string $gender): array {
+        return $this->fetchAll(
+            'SELECT p.*, b.name AS brand_name, c.material AS category_material
+             FROM Products p
+             JOIN Brands b     ON b.id = p.brand_id
+             JOIN Categories c ON c.id = p.category_id
+             WHERE p.gender = ?
+             ORDER BY p.name',
+            [$gender]
+        );
+    }
+
     public function findById(int $id): ?array {
         return $this->fetchOne(
             'SELECT p.*, b.name AS brand_name, c.material AS category_material
@@ -82,12 +94,13 @@ class Product extends Model {
         int    $brandId,
         int    $categoryId,
         string $description,
-        float  $basePrice
+        float  $basePrice,
+        string $gender = 'unisex'
     ): int {
         return $this->insert(
-            'INSERT INTO Products (name, brand_id, category_id, description, base_price, sales)
-             VALUES (?, ?, ?, ?, ?, 0)',
-            [$name, $brandId, $categoryId, $description, $basePrice]
+            'INSERT INTO Products (name, brand_id, category_id, description, base_price, gender, sales)
+             VALUES (?, ?, ?, ?, ?, ?, 0)',
+            [$name, $brandId, $categoryId, $description, $basePrice, $gender]
         );
     }
 
@@ -99,13 +112,14 @@ class Product extends Model {
         int    $brandId,
         int    $categoryId,
         string $description,
-        float  $basePrice
+        float  $basePrice,
+        string $gender = 'unisex'
     ): int {
         return $this->execute(
             'UPDATE Products
-             SET name = ?, brand_id = ?, category_id = ?, description = ?, base_price = ?
+             SET name = ?, brand_id = ?, category_id = ?, description = ?, base_price = ?, gender = ?
              WHERE id = ?',
-            [$name, $brandId, $categoryId, $description, $basePrice, $id]
+            [$name, $brandId, $categoryId, $description, $basePrice, $gender, $id]
         );
     }
 
