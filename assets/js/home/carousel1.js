@@ -14,54 +14,32 @@ $(".rightControl").on("click", () => {
 
 const arrow = $(".arrow");
 
+function hideArrow() {
+  arrow.stop(true).hide();
+  $("body").css("cursor", "default");
+}
+
+function showArrow(e, symbol) {
+  arrow.html(symbol);
+  $("body").css("cursor", "none");
+  arrow.css("left", e.clientX).css("top", e.clientY);
+  arrow.stop(true).fadeIn(0);
+}
+
+$(".leftControl").on("mouseenter", (e) => {
+  showArrow(e, "⇠");
+});
 $(".leftControl").on("mousemove", (e) => {
-  arrow.html("⇠");
-  $("body").css("cursor", "none");
-  arrow.fadeIn(300);
-  arrow.css("left", e.clientX);
-  arrow.css("top", e.clientY);
+  arrow.css("left", e.clientX).css("top", e.clientY);
 });
-$(".leftControl").on("mouseleave", () => {
-  arrow.hide();
-  $("body").css("cursor", "default");
-});
+$(".leftControl").on("mouseleave", hideArrow);
 
+$(".rightControl").on("mouseenter", (e) => {
+  showArrow(e, "⇢");
+});
 $(".rightControl").on("mousemove", (e) => {
-  arrow.html("⇢");
-  $("body").css("cursor", "none");
-  arrow.fadeIn(300);
-  arrow.css("left", e.clientX);
-  arrow.css("top", e.clientY);
+  arrow.css("left", e.clientX).css("top", e.clientY);
 });
-$(".rightControl").on("mouseleave", () => {
-  arrow.hide();
-  $("body").css("cursor", "default");
-});
+$(".rightControl").on("mouseleave", hideArrow);
 
-$(window).on("blur", () => {
-  arrow.hide();
-  $("body").css("cursor", "default");
-});
-
-$(window).on("wheel", () => {
-  arrow.hide();
-  $("body").css("cursor", "default");
-});
-
-$(".leftControl").on("mouseout", () => {
-  arrow.hide();
-  $("body").css("cursor", "default");
-});
-
-$(".rightControl").on("mousemove", (e) => {
-  arrow.html("⇢");
-  $("body").css("cursor", "none");
-  arrow.fadeIn(300);
-  arrow.css("left", e.clientX);
-  arrow.css("top", e.clientY);
-});
-
-$(".rightControl").on("mouseout", () => {
-  arrow.hide();
-  $("body").css("cursor", "default");
-});
+$(window).on("blur", hideArrow);
