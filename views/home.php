@@ -18,7 +18,6 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
-    <script>
     <script type="module" src="assets/js/index.js" defer></script>
     <script
       src="https://code.jquery.com/jquery-4.0.0.js"
@@ -77,11 +76,16 @@
         <span class="leftControl"></span>
         <span class="rightControl"></span>
         <div class="newAriv1content">
-          <?= $carousel1Slides ?>
+          <?php foreach ($newArrivals as $i => $item): ?>
+            <?php if ($i >= 20) break; ?>
+            <div data-name="<?= $item["name"] ?>" data-price="<?= $item["price"] ?>">
+              <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
+            </div>
+          <?php endforeach; ?>
         </div>
         <div class="info">
           <h2 class="collName">June's Collection</h2>
-          <p class="pName"><?= $initialName ?> - $<?= $initialPrice ?></p>
+          <p class="pName"><?= $newArrivals[0]["name"] ?> - $<?= number_format($newArrivals[0]["price"], 2) ?></p>
           <div>
             <button>SHOP MEN</button>
             <button>SHOP WOMEN</button>
@@ -109,7 +113,19 @@
           </div>
         </div>
         <div class="content">
-          <?= $carousel2Cards ?>
+          <?php foreach ($newArrivals as $i => $item): ?>
+            <?php if ($i < 20) continue; ?>
+            <div class="card">
+              <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
+              <div class="info">
+                <p class="name"><?= $item["name"] ?></p>
+                <p class="cName"><?= $item["color"] ?></p>
+                <p class="price">$<?= number_format($item["price"], 2) ?></p>
+                <div class="hue"></div>
+              </div>
+              <span class="badge">NEW</span>
+            </div>
+          <?php endforeach; ?>
         </div>
       </section>
 
