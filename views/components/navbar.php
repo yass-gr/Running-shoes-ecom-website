@@ -15,13 +15,19 @@
       <nav>
         <h1>Logo</h1>
 
+        <?php $navItems = [
+            ["label" => "NEW ARRIVALS", "route" => "new-arrivals"],
+            ["label" => "SHOP ALL",    "route" => "shop-all"],
+            ["label" => "MEN",         "route" => "mens",      "index" => 0],
+            ["label" => "WOMEN",       "route" => "womens",    "index" => 1],
+            ["label" => "SALE",        "route" => "sale",      "index" => 2],
+        ]; ?>
         <ul>
-          <li  class="nav-item">NEW ARRIVALS</li>
-          <li  class="nav-item">SHOP ALL</li>
-          <li class="nav-item" data-index="0">MEN</li>
-          <li class="nav-item" data-index="1">WOMEN</li>
-          <li class="nav-item" data-index="2">SALE</li>
-          
+          <?php foreach ($navItems as $item): ?>
+            <li class="nav-item"<?= isset($item["index"]) ? " data-index=\"{$item["index"]}\"" : "" ?>>
+              <a href="?route=<?= $item["route"] ?>"><?= $item["label"] ?></a>
+            </li>
+          <?php endforeach; ?>
         </ul>
 
         <div class="nav-right">

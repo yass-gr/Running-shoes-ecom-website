@@ -96,6 +96,12 @@ header nav {
       cursor: pointer;
       font-weight: 500;
       letter-spacing: 0.5px;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+      }
     }
   }
   .nav-right {
