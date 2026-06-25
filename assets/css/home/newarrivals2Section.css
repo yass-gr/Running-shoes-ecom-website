@@ -26,12 +26,16 @@
       background-color: var(--nav-bg);
       min-width: 26vw;
       padding: 15px;
+      display: flex;
+      flex-direction: column;
       img {
         width: 100%;
         aspect-ratio: 1;
         object-fit: cover;
+        flex-shrink: 0;
       }
       .info {
+        flex: 1;
         display: flex;
         flex-direction: column;
         gap: 5px;
