@@ -1,8 +1,6 @@
  <header>
       <div class="menu">
         <div class="menuContent">
-          <div class="tab-content" data-tab="new-arrivals"><?php require __DIR__ . "/../tabs/new-arrivals.php" ?></div>
-          <div class="tab-content" data-tab="shop-all"><?php require __DIR__ . "/../tabs/shop-all.php" ?></div>
           <div class="tab-content" data-tab="men"><?php require __DIR__ . "/../tabs/men.php" ?></div>
           <div class="tab-content" data-tab="women"><?php require __DIR__ . "/../tabs/women.php" ?></div>
           <div class="tab-content" data-tab="sale"><?php require __DIR__ . "/../tabs/sale.php" ?></div>
@@ -22,15 +20,15 @@
         <h1>Logo</h1>
 
         <?php $navItems = [
-            ["label" => "NEW ARRIVALS", "route" => "new-arrivals", "tab" => "new-arrivals"],
-            ["label" => "SHOP ALL",    "route" => "shop-all",     "tab" => "shop-all"],
+            ["label" => "NEW ARRIVALS", "route" => "new-arrivals"],
+            ["label" => "SHOP ALL",    "route" => "shop-all"],
             ["label" => "MEN",         "route" => "mens",         "tab" => "men"],
             ["label" => "WOMEN",       "route" => "womens",       "tab" => "women"],
             ["label" => "SALE",        "route" => "sale",         "tab" => "sale"],
         ]; ?>
         <ul>
           <?php foreach ($navItems as $item): ?>
-            <li class="nav-item" data-tab="<?= $item["tab"] ?>">
+            <li class="nav-item"<?= isset($item["tab"]) ? " data-tab=\"{$item["tab"]}\"" : "" ?>>
               <a href="?route=<?= $item["route"] ?>"><?= $item["label"] ?></a>
             </li>
           <?php endforeach; ?>

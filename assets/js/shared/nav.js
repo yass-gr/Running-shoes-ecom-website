@@ -5,8 +5,10 @@ const menuContent = $(".menuContent");
 let selected = 0;
 
 navItem.on("mouseenter", (e) => {
+  const tab = $(e.currentTarget).data("tab");
+  if (!tab) return;
   menu.addClass("show");
-  selected = $(e.currentTarget).data("tab");
+  selected = tab;
   refreshMenu();
 });
 
