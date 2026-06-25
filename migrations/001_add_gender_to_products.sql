@@ -1,4 +1,4 @@
-ALTER TABLE Products ADD COLUMN gender ENUM('mens','womens','unisex') NOT NULL DEFAULT 'unisex' AFTER sales;
+ALTER TABLE Products ADD COLUMN gender ENUM('mens','womens','unisex') NOT NULL DEFAULT 'unisex' AFTER sale;
 
 UPDATE Products SET gender = 'mens' WHERE name LIKE "Men's%";
 UPDATE Products SET gender = 'womens' WHERE name LIKE "Women's%";
