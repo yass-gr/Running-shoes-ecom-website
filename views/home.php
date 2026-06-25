@@ -19,8 +19,6 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
     <script>
-      window.newArrivalsData = <?= json_encode(array_values($newArrivals)) ?>;
-    </script>
     <script type="module" src="assets/js/index.js" defer></script>
     <script
       src="https://code.jquery.com/jquery-4.0.0.js"
@@ -79,13 +77,11 @@
         <span class="leftControl"></span>
         <span class="rightControl"></span>
         <div class="newAriv1content">
-          <?php foreach (array_slice($newArrivals, 0, 20) as $item): ?>
-            <div><img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>"></div>
-          <?php endforeach; ?>
+          <?= $carousel1Slides ?>
         </div>
         <div class="info">
           <h2 class="collName">June's Collection</h2>
-          <p class="pName"><?= $newArrivals[0]["name"] ?? "Product" ?> - $<?= number_format($newArrivals[0]["price"] ?? 0, 2) ?></p>
+          <p class="pName"><?= $initialName ?> - $<?= $initialPrice ?></p>
           <div>
             <button>SHOP MEN</button>
             <button>SHOP WOMEN</button>
@@ -113,18 +109,7 @@
           </div>
         </div>
         <div class="content">
-          <?php foreach (array_slice($newArrivals, 20) as $item): ?>
-            <div class="card">
-              <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
-              <div class="info">
-                <p class="name"><?= $item["name"] ?></p>
-                <p class="cName"><?= $item["color"] ?></p>
-                <p class="price">$<?= number_format($item["price"], 2) ?></p>
-                <div class="hue" style="background-color:#ccc"></div>
-              </div>
-              <span class="badge">NEW</span>
-            </div>
-          <?php endforeach; ?>
+          <?= $carousel2Cards ?>
         </div>
       </section>
 

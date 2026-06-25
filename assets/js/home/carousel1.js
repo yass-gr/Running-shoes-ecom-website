@@ -1,30 +1,28 @@
 let currProd = 3;
 let translate = -300;
 
-const newArrivals = window.newArrivalsData || [];
 const container = $(".newAriv1content");
 const prodText = $(".pName");
 
-if (newArrivals[currProd]) {
-  prodText.html(`${newArrivals[currProd].name} - $${parseFloat(newArrivals[currProd].price).toFixed(2)}`);
+function updateText() {
+  const slide = container.children().eq(currProd);
+  prodText.html(`${slide.data("name")} - $${slide.data("price")}`);
 }
+
+updateText();
 
 $(".leftControl").on("click", () => {
   translate = translate === 0 ? 0 : translate + 100;
   container.attr("style", `transform : translateX(${translate}%)`);
   currProd = (translate * -1) / 100;
-  if (newArrivals[currProd]) {
-    prodText.html(`${newArrivals[currProd].name} - $${parseFloat(newArrivals[currProd].price).toFixed(2)}`);
-  }
+  updateText();
 });
 
 $(".rightControl").on("click", () => {
   translate = translate === -1900 ? -1900 : translate - 100;
   container.attr("style", `transform :translateX(${translate}%)`);
   currProd = (translate * -1) / 100;
-  if (newArrivals[currProd]) {
-    prodText.html(`${newArrivals[currProd].name} - $${parseFloat(newArrivals[currProd].price).toFixed(2)}`);
-  }
+  updateText();
 });
 
 const arrow = $(".arrow");
