@@ -11,28 +11,26 @@ class HomeController
         $productModel = new Product($pdo);
         $variantModel = new ProductVariant($pdo);
 
-        $dbProducts = $productModel->getTopSellers(30);
+        $all = $productModel->findAll();
+        usort($all, fn($a, $b) => strtotime($b["created_at"]) - strtotime($a["created_at"]));
+        $newest = array_slice($all, 0, 30);
 
-        $carousel1 = [];
-        $carousel2 = [];
-        foreach ($dbProducts as $i => $p) {
+        $newArrivals = [];
+        foreach ($newest as $p) {
             $variants = $variantModel->findByProduct($p["id"]);
             $first = $variants[0] ?? [];
 
-            $item = [
+            $newArrivals[] = [
                 "id" => $p["id"],
                 "name" => $p["name"],
+                "fullName" => $p["name"],
+                "masterName" => $p["name"],
                 "price" => $p["base_price"],
                 "image" => $first["thumbnail"] ?? "",
                 "color" => $first["color"] ?? "",
+                "colorName" => $first["color"] ?? "",
                 "colorcode" => "",
             ];
-
-            if ($i < 20) {
-                $carousel1[] = $item;
-            } else {
-                $carousel2[] = $item;
-            }
         }
 
         require __DIR__ . "/../views/home.php";

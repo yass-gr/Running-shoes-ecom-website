@@ -76,13 +76,13 @@
         <span class="leftControl"></span>
         <span class="rightControl"></span>
         <div class="newAriv1content">
-          <?php foreach ($carousel1 as $item): ?>
+          <?php foreach (array_slice($newArrivals, 0, 20) as $item): ?>
             <div><img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>"></div>
           <?php endforeach; ?>
         </div>
         <div class="info">
           <h2 class="collName">June's Collection</h2>
-          <p class="pName"><?= $carousel1[0]["name"] ?? "Product" ?> - $<?= number_format($carousel1[0]["price"] ?? 0, 2) ?></p>
+          <p class="pName"><?= $newArrivals[0]["name"] ?? "Product" ?> - $<?= number_format($newArrivals[0]["price"] ?? 0, 2) ?></p>
           <div>
             <button>SHOP MEN</button>
             <button>SHOP WOMEN</button>
@@ -110,7 +110,7 @@
           </div>
         </div>
         <div class="content">
-          <?php foreach ($carousel2 as $item): ?>
+          <?php foreach (array_slice($newArrivals, 20) as $item): ?>
             <div class="card">
               <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
               <div class="info">
