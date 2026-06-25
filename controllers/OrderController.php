@@ -104,7 +104,6 @@ class OrderController
 
             foreach ($items as $item) {
                 $orderModel->addItem($orderId, $item["variant_id"], $item["quantity"], $item["price"]);
-                $productModel->incrementSales((int) $productId, $item["quantity"]);
                 $variantModel->decrementStock($item["variant_id"], $item["quantity"]);
             }
 

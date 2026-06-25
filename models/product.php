@@ -81,7 +81,7 @@ class Product extends Model {
             'SELECT p.*, b.name AS brand_name
              FROM Products p
              JOIN Brands b ON b.id = p.brand_id
-             ORDER BY p.sales DESC
+             ORDER BY p.sale DESC
              LIMIT ?',
             [$limit]
         );
@@ -98,8 +98,8 @@ class Product extends Model {
         string $gender = 'unisex'
     ): int {
         return $this->insert(
-            'INSERT INTO Products (name, brand_id, category_id, description, base_price, gender, sales)
-             VALUES (?, ?, ?, ?, ?, ?, 0)',
+            'INSERT INTO Products (name, brand_id, category_id, description, base_price, gender, sale)
+             VALUES (?, ?, ?, ?, ?, ?, 0.00)',
             [$name, $brandId, $categoryId, $description, $basePrice, $gender]
         );
     }
@@ -120,13 +120,6 @@ class Product extends Model {
              SET name = ?, brand_id = ?, category_id = ?, description = ?, base_price = ?, gender = ?
              WHERE id = ?',
             [$name, $brandId, $categoryId, $description, $basePrice, $gender, $id]
-        );
-    }
-
-    public function incrementSales(int $id, int $qty = 1): int {
-        return $this->execute(
-            'UPDATE Products SET sales = sales + ? WHERE id = ?',
-            [$qty, $id]
         );
     }
 
