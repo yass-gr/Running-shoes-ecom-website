@@ -4,37 +4,18 @@
 <div class="navTitle">SHOP MEN'S</div>
 <div class="colsContainer">
   <ul>
-    <li><a>COLLECTION 1</a></li>
-    <li><a>COLLECTION 2</a></li>
-    <li><a>COLLECTION 3</a></li>
-    <li><a>COLLECTION 4</a></li>
-    <li><a>COLLECTION 5</a></li>
+    <li><a>New arrivals</a></li>
+    <li><a>Best sellers</a></li>
+    
   </ul>
   <div class="col">
     <h3>MEN'S SHOES</h3>
     <ul>
       <li><a>Shop All</a></li>
-      <li><a>item 1</a></li>
-      <li><a>item 2</a></li>
-      <li><a>item 3</a></li>
+      
     </ul>
   </div>
-  <div class="col">
-    <h3>COSTUMER FAVORITES</h3>
-    <ul>
-      <li><a>item 1</a></li>
-      <li><a>item 2</a></li>
-      <li><a>item 3</a></li>
-    </ul>
-  </div>
-  <div class="col">
-    <h3>ACCESSORIES</h3>
-    <ul>
-      <li><a>item 1</a></li>
-      <li><a>item 2</a></li>
-      <li><a>item 3</a></li>
-    </ul>
-  </div>
+
 </div>
 <div class="imgGrid">
   <div class="gridItem">

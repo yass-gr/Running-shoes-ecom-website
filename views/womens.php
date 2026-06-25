@@ -1,23 +1,9 @@
 <?php
-require_once __DIR__ . "/../utils/products.php";
-
-$allProducts = loadAllProducts();
-$products = getProductsByGender($allProducts, "womens");
-$variantMap = buildVariantMap($allProducts);
-[$filterTypes, $filterGenders, $filterMaterials, $filterEditions, $filterHues] = extractFilterOptions($products);
-
-$perPage = 24;
-$totalPages = (int) ceil(count($products) / $perPage);
-$currentPage = max(1, min((int) ($_GET["page"] ?? 1), $totalPages));
-$pageProducts = array_slice($products, ($currentPage - 1) * $perPage, $perPage);
-
 $productCount = count($products);
-
-$categories = [
-  ["title" => "Everyday", "image" => "https://www.allbirds.com/cdn/shop/files/26Q2_CanvasCruiser_Site_Homepage_CategoryRow-01_Desktop-Mobile_2x3_01_Lifestyle.jpg?v=1774909856&width=1024", "href" => "#", "cta" => "Shop Everyday"],
-  ["title" => "Running", "image" => "https://www.allbirds.com/cdn/shop/files/26Q2_CanvasCruiser_Site_Homepage_CategoryRow-01_Desktop-Mobile_2x3_04_Lifestyle.jpg?v=1774909855&width=1024", "href" => "#", "cta" => "Shop Running"],
-  ["title" => "Apparel", "image" => "https://www.allbirds.com/cdn/shop/files/25Q2_BAU_Site_Collections_3xPromo-Apparel_Lifestyle_Desktop_2x3_1.png?v=1751420661&width=1024", "href" => "#", "cta" => "Shop Apparel"],
-];
+$queryParams = $_GET;
+$queryParams["route"] = "womens";
+unset($queryParams["page"]);
+$pageUrl = "?" . http_build_query($queryParams);
 ?>
 <!doctype html>
 <html lang="en">
@@ -30,7 +16,6 @@ $categories = [
     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <script type="module" src="../assets/js/shared/nav.js" defer></script>
     <script type="module" src="../assets/js/shared/cart.js" defer></script>
-    <script type="module" src="../assets/js/shared/productCard.js" defer></script>
     <script type="module" src="../assets/js/shared/filterModal.js" defer></script>
   </head>
   <body>
@@ -48,11 +33,11 @@ $categories = [
           <span class="collection-toolbar__count">(<?= $productCount ?> products)</span>
         </div>
         <select class="collection-toolbar__sort" aria-label="Sort by">
-          <option>Date, new to old</option>
-          <option>Featured</option>
-          <option>Best selling</option>
-          <option>Price, low to high</option>
-          <option>Price, high to low</option>
+          <option value="featured" <?= ($sort ?? 'featured') === 'featured' ? 'selected' : '' ?>>Featured</option>
+          <option value="newest" <?= ($sort ?? '') === 'newest' ? 'selected' : '' ?>>Date, new to old</option>
+          <option value="best_selling" <?= ($sort ?? '') === 'best_selling' ? 'selected' : '' ?>>Best selling</option>
+          <option value="price_asc" <?= ($sort ?? '') === 'price_asc' ? 'selected' : '' ?>>Price, low to high</option>
+          <option value="price_desc" <?= ($sort ?? '') === 'price_desc' ? 'selected' : '' ?>>Price, high to low</option>
         </select>
       </section>
 
@@ -144,50 +129,54 @@ $categories = [
         </div>
       </div>
 
-      <section class="collection-grid" aria-label="Women's new arrivals">
-        <?php foreach ($pageProducts as $product): ?>
-          <?php [$pGender, $pMaterial, $pEdition, $pHue] = extractProductTags($product); ?>
-          <div class="product-card-wrap"
-               data-type="<?= e($product["type"] ?? "") ?>"
-               data-gender="<?= e($pGender) ?>"
-               data-material="<?= e($pMaterial) ?>"
-               data-edition="<?= e($pEdition) ?>"
-               data-hue="<?= e($pHue) ?>">
-            <?php $colorVariants = $variantMap[$product["master"] ?? "__standalone__"] ?? []; ?>
-            <?php require __DIR__ . "/components/product-card.php"; ?>
+      <section class="collection-grid" aria-label="Women's products">
+        <?php if (empty($pageProducts)): ?>
+          <p class="collection-grid__empty">No products match your criteria.</p>
+        <?php else: ?>
+        <?php foreach ($pageProducts as $item): ?>
+          <div class="card">
+            <a href="?route=product&id=<?= $item["id"] ?>">
+              <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
+              <div class="info">
+                <p class="name"><?= $item["name"] ?></p>
+                <p class="color"><?= $item["color"] ?></p>
+                <p class="price">$<?= number_format($item["price"]) ?></p>
+              </div>
+            </a>
           </div>
         <?php endforeach; ?>
+        <?php endif; ?>
       </section>
 
       <?php if ($totalPages > 1): ?>
       <nav class="pagination" aria-label="Page navigation">
         <a class="pagination__btn <?= $currentPage <= 1 ? 'pagination__btn--disabled' : '' ?>"
-           href="?page=<?= $currentPage - 1 ?>" <?= $currentPage <= 1 ? 'aria-disabled="true" tabindex="-1"' : '' ?>>
+           href="<?= $pageUrl ?>&amp;page=<?= $currentPage - 1 ?>" <?= $currentPage <= 1 ? 'aria-disabled="true" tabindex="-1"' : '' ?>>
           &#8249; Prev
         </a>
         <div class="pagination__pages">
           <?php for ($i = 1; $i <= $totalPages; $i++): ?>
             <a class="pagination__page <?= $i === $currentPage ? 'pagination__page--active' : '' ?>"
-               href="?page=<?= $i ?>"><?= $i ?></a>
+               href="<?= $pageUrl ?>&amp;page=<?= $i ?>"><?= $i ?></a>
           <?php endfor; ?>
         </div>
         <a class="pagination__btn <?= $currentPage >= $totalPages ? 'pagination__btn--disabled' : '' ?>"
-           href="?page=<?= $currentPage + 1 ?>" <?= $currentPage >= $totalPages ? 'aria-disabled="true" tabindex="-1"' : '' ?>>
+           href="<?= $pageUrl ?>&amp;page=<?= $currentPage + 1 ?>" <?= $currentPage >= $totalPages ? 'aria-disabled="true" tabindex="-1"' : '' ?>>
           Next &#8250;
         </a>
       </nav>
       <?php endif; ?>
 
-      <?php $infoTitle = "WOMEN'S SHOES"; $infoDesc = "Designed for comfort, crafted with care. Our women's collection blends natural materials with modern silhouettes for shoes that move with you from morning to night."; ?>
+      <?php $infoTitle = "WOMEN'S SHOES"; $infoDesc = "Designed for comfort, crafted with care. Our women's collection blends natural materials with modern silhouettes."; ?>
       <?php require_once __DIR__ . "/components/info-faq.php"; ?>
 
       <section class="collection-categories" aria-label="Shop more categories">
         <?php foreach ($categories as $category): ?>
           <article class="collection-category">
-            <img src="<?= e($category["image"]) ?>" alt="" loading="lazy" />
+            <img src="<?= e($category["image"]) ?>" alt="<?= e($category["title"]) ?>" loading="lazy" />
             <div class="collection-category__content">
               <h2><?= e($category["title"]) ?></h2>
-              <a href="<?= e($category["href"]) ?>"><?= e($category["cta"]) ?></a>
+              <a href="?route=<?= $category["route"] ?>"><?= $category["cta"] ?></a>
             </div>
           </article>
         <?php endforeach; ?>
@@ -196,5 +185,13 @@ $categories = [
 
     <?php require_once __DIR__ . "/components/trust-cards.php"; ?>
     <?php require_once __DIR__ . "/components/footer.php"; ?>
+    <script>
+      document.querySelector('.collection-toolbar__sort')?.addEventListener('change', function() {
+        var url = new URL(window.location.href);
+        url.searchParams.set('sort', this.value);
+        url.searchParams.delete('page');
+        window.location.href = url.toString();
+      });
+    </script>
   </body>
 </html>
