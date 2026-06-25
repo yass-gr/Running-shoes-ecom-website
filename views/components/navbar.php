@@ -1,6 +1,10 @@
  <header>
       <div class="menu">
-        <div class="menuContent"></div>
+        <div class="menuContent">
+          <div class="tab-content" data-tab="0"><?php require __DIR__ . "/../tabs/men.php" ?></div>
+          <div class="tab-content" data-tab="1"><?php require __DIR__ . "/../tabs/women.php" ?></div>
+          <div class="tab-content" data-tab="2"><?php require __DIR__ . "/../tabs/sale.php" ?></div>
+        </div>
       </div>
       <div class="sale-announcement">
         <button class="ann-arrow ann-arrow--left" aria-label="Previous announcement">&#8249;</button>

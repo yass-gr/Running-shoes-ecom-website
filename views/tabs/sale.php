@@ -1,0 +1,28 @@
+<div class="colsContainer">
+  <div class="col">
+    <h3>MEN</h3>
+    <ul>
+      <li><a>item 1</a></li>
+      <li><a>item 2</a></li>
+      <li><a>item 3</a></li>
+    </ul>
+  </div>
+  <div class="col">
+    <h3>WOMEN</h3>
+    <ul>
+      <li><a>item 1</a></li>
+      <li><a>item 2</a></li>
+      <li><a>item 3</a></li>
+    </ul>
+  </div>
+</div>
+<div class="imgGridSale">
+  <div class="gridItemSale">
+    <img src="./assets/images/cat1.webp" alt="">
+    <p>NAME</p>
+  </div>
+  <div class="gridItemSale">
+    <img src="./assets/images/cat1.webp" alt="">
+    <p>NAME</p>
+  </div>
+</div>
