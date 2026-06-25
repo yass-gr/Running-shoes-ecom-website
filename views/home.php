@@ -130,7 +130,9 @@
                   <?php endforeach; ?>
                 </div>
               </div>
-              <span class="badge">NEW</span>
+              <?php if ($item["badge"]): ?>
+                <span class="card__badge card__badge--<?= str_replace(' ', '_', strtolower($item["badge"])) ?>"><?= $item["badge"] ?></span>
+              <?php endif; ?>
             </div>
           <?php endforeach; ?>
         </div>
