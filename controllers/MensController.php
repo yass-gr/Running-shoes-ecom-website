@@ -35,15 +35,11 @@ class MensController
 
             $badge = null;
             $totalStock = 0;
-            $hasLowStock = false;
             foreach ($variants as $v) {
                 $qty = (int) ($v["stock_quantity"] ?? 0);
                 $totalStock += $qty;
-                if ($qty <= 20) {
-                    $hasLowStock = true;
-                }
             }
-            if ($hasLowStock) {
+            if ($totalStock <= 400) {
                 $badge = "LAST FEW";
             } else {
                 $createdAt = strtotime($p["created_at"]);
