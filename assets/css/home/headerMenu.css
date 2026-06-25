@@ -162,4 +162,16 @@
   font-family: "chillax", sans-serif;
   font-weight: 500;
   letter-spacing: 1px;
+  animation: slideTitle 0.3s ease;
+}
+
+@keyframes slideTitle {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
