@@ -6,9 +6,7 @@ let selected = 0;
 
 navItem.on("mouseenter", (e) => {
   menu.addClass("show");
-  const index = parseInt($(e.target).data("index"));
-  if (isNaN(index)) return;
-  selected = index;
+  selected = $(e.target).data("tab");
   refreshMenu();
 });
 
