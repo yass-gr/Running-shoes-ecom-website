@@ -117,7 +117,7 @@
                 <p class="name"><?= $item["name"] ?></p>
                 <p class="cName"><?= $item["color"] ?></p>
                 <p class="price">$<?= number_format($item["price"], 2) ?></p>
-                <div class="hue"></div>
+                <div class="hue" style="background-color: <?= $item["swatch"] ?>"></div>
               </div>
               <span class="badge">NEW</span>
             </div>
