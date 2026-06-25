@@ -23,12 +23,10 @@ class HomeController
             $first = $variants[0] ?? [];
             $thumb = $first["thumbnail"] ?? "";
             if ($thumb === "" || $thumb === null) continue;
-            $seen = [];
             $swatches = [];
             foreach ($variants as $v) {
                 $c = $v["color"] ?? "";
-                if ($c === "" || isset($seen[$c])) continue;
-                $seen[$c] = true;
+                if ($c === "") continue;
                 $swatches[] = ["name" => $c, "hex" => colorToHex($c), "thumb" => $v["thumbnail"] ?? ""];
             }
             $items[] = [

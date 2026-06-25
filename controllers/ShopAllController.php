@@ -22,12 +22,10 @@ class ShopAllController
             $thumb = $first["thumbnail"] ?? "";
             if ($thumb === "" || $thumb === null) continue;
 
-            $seen = [];
             $swatches = [];
             foreach ($variants as $v) {
                 $c = $v["color"] ?? "";
-                if ($c === "" || isset($seen[$c])) continue;
-                $seen[$c] = true;
+                if ($c === "") continue;
                 $swatches[] = [
                     "name" => $c,
                     "hex" => colorToHex($c),
@@ -39,11 +37,19 @@ class ShopAllController
                 "id"    => $p["id"],
                 "name"  => $p["name"],
                 "price" => $p["base_price"],
-                "brand" => $p["brand_name"],
                 "image" => $thumb,
                 "color" => $swatches[0]["name"] ?? "",
                 "swatches" => $swatches,
             ];
+        }
+
+        $sort = $_GET["sort"] ?? "featured";
+        if ($sort === "price_asc") {
+            usort($products, fn($a, $b) => $a["price"] <=> $b["price"]);
+        } elseif ($sort === "price_desc") {
+            usort($products, fn($a, $b) => $b["price"] <=> $a["price"]);
+        } elseif ($sort === "name") {
+            usort($products, fn($a, $b) => strcmp($a["name"], $b["name"]));
         }
 
         $perPage = 24;
@@ -57,9 +63,6 @@ class ShopAllController
             ["title" => "Women's", "image" => "https://www.allbirds.com/cdn/shop/files/26Q2_CanvasCruiser_Site_Homepage_CategoryRow-01_Desktop-Mobile_2x3_04_Lifestyle.jpg?v=1774909855&width=1024", "route" => "womens", "cta" => "Shop Women's"],
             ["title" => "Apparel", "image" => "https://www.allbirds.com/cdn/shop/files/25Q2_BAU_Site_Collections_3xPromo-Apparel_Lifestyle_Desktop_2x3_1.png?v=1751420661&width=1024", "route" => "shop-all", "cta" => "Shop Apparel"],
         ];
-
-        $infoTitle = "SHOP ALL";
-        $infoDesc = "Explore our complete collection of footwear and apparel. Every product is thoughtfully designed and crafted from premium natural materials for comfort that lasts all day.";
 
         require __DIR__ . "/../views/shop-all.php";
     }

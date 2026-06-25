@@ -82,7 +82,7 @@
         </div>
         <div class="info">
           <h2 class="collName">June's Collection</h2>
-          <p class="pName"><?= $items[0]["name"] ?? "Product" ?> - $<?= number_format($items[0]["price"] ?? 0, 2) ?></p>
+          <p class="pName"><?= $items[0]["name"] ?? "Product" ?> - $<?= number_format($items[0]["price"] ?? 0) ?></p>
           <div>
             <button>SHOP MEN</button>
             <button>SHOP WOMEN</button>
@@ -115,8 +115,8 @@
               <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
               <div class="info">
                 <p class="name"><?= $item["name"] ?></p>
-                <p class="cName"><?= $item["color"] ?></p>
-                <p class="price">$<?= number_format($item["price"], 2) ?></p>
+                <p class="color"><?= $item["color"] ?></p>
+                <p class="price">$<?= number_format($item["price"]) ?></p>
                 <div class="swatches">
                   <?php foreach ($item["swatches"] as $s): ?>
                     <div class="hue" style="background-color: <?= $s["hex"] ?>" data-thumb="<?= $s["thumb"] ?>"></div>
