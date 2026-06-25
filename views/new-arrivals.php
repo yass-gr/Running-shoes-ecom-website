@@ -138,7 +138,7 @@ $pageUrl = "?" . http_build_query($queryParams);
             <a href="?route=product&id=<?= $item["id"] ?>">
               <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
               <?php if ($item["badge"]): ?>
-                <span class="card__badge"><?= $item["badge"] ?></span>
+                <span class="card__badge card__badge--<?= str_replace(' ', '_', strtolower($item["badge"])) ?>"><?= $item["badge"] ?></span>
               <?php endif; ?>
               <div class="info">
                 <p class="name"><?= $item["name"] ?></p>
