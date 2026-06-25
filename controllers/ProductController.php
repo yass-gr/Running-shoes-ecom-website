@@ -14,17 +14,18 @@ class ProductController
                     echo "Product not found";
                     return;
                 }
-                require __DIR__ . "/../models/product.php";
-                require __DIR__ . "/../models/product_variant.php";
-                require __DIR__ . "/../models/product_img.php";
-                $product = (new Product())->findById($id);
+                require_once __DIR__ . "/../config/database.php";
+                require_once __DIR__ . "/../models/product.php";
+                require_once __DIR__ . "/../models/product_variant.php";
+                require_once __DIR__ . "/../models/product_img.php";
+                $product = (new Product($pdo))->findById($id);
                 if (!$product) {
                     http_response_code(404);
                     echo "Product not found";
                     return;
                 }
-                $variants = (new ProductVariant())->findByProduct($id);
-                $images = (new ProductImg())->findByVariantProduct($id);
+                $variants = (new ProductVariant($pdo))->findByProduct($id);
+                $images = (new ProductImg($pdo))->findByVariantProduct($id);
                 require __DIR__ . "/../views/product-detail.php";
                 break;
 

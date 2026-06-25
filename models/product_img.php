@@ -13,6 +13,16 @@ class ProductImg extends Model {
         );
     }
 
+    public function findByVariantProduct(int $productId): array {
+        return $this->fetchAll(
+            'SELECT DISTINCT pi.*
+             FROM Product_img pi
+             JOIN Product_variants pv ON pv.product_img_id = pi.id
+             WHERE pv.product_id = ?',
+            [$productId]
+        );
+    }
+
     // ── CREATE ───────────────────────────────────────────────────────────────
 
     /**
