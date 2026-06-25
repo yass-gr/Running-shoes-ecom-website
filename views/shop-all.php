@@ -1,24 +1,4 @@
-<?php
-require_once __DIR__ . "/../utils/products.php";
-
-$allProducts = loadAllProducts();
-$products = getAllProducts($allProducts);
-$variantMap = buildVariantMap($allProducts);
-[$filterTypes, $filterGenders, $filterMaterials, $filterEditions, $filterHues] = extractFilterOptions($products);
-
-$perPage = 24;
-$totalPages = (int) ceil(count($products) / $perPage);
-$currentPage = max(1, min((int) ($_GET["page"] ?? 1), $totalPages));
-$pageProducts = array_slice($products, ($currentPage - 1) * $perPage, $perPage);
-
-$productCount = count($products);
-
-$categories = [
-  ["title" => "Men's", "image" => "https://www.allbirds.com/cdn/shop/files/26Q2_CanvasCruiser_Site_Homepage_CategoryRow-01_Desktop-Mobile_2x3_01_Lifestyle.jpg?v=1774909856&width=1024", "href" => "mens.php", "cta" => "Shop Men's"],
-  ["title" => "Women's", "image" => "https://www.allbirds.com/cdn/shop/files/26Q2_CanvasCruiser_Site_Homepage_CategoryRow-01_Desktop-Mobile_2x3_04_Lifestyle.jpg?v=1774909855&width=1024", "href" => "womens.php", "cta" => "Shop Women's"],
-  ["title" => "Apparel", "image" => "https://www.allbirds.com/cdn/shop/files/25Q2_BAU_Site_Collections_3xPromo-Apparel_Lifestyle_Desktop_2x3_1.png?v=1751420661&width=1024", "href" => "#", "cta" => "Shop Apparel"],
-];
-?>
+<?php $productCount = count($products); ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -145,17 +125,27 @@ $categories = [
       </div>
 
       <section class="collection-grid" aria-label="All products">
-        <?php foreach ($pageProducts as $product): ?>
-          <?php [$pGender, $pMaterial, $pEdition, $pHue] = extractProductTags($product); ?>
-          <div class="product-card-wrap"
-               data-type="<?= e($product["type"] ?? "") ?>"
-               data-gender="<?= e($pGender) ?>"
-               data-material="<?= e($pMaterial) ?>"
-               data-edition="<?= e($pEdition) ?>"
-               data-hue="<?= e($pHue) ?>">
-            <?php $colorVariants = $variantMap[$product["master"] ?? "__standalone__"] ?? []; ?>
-            <?php require __DIR__ . "/components/product-card.php"; ?>
-          </div>
+        <?php foreach ($pageProducts as $item): ?>
+          <article class="product-card">
+            <a class="product-card__media" href="?route=product&id=<?= $item["id"] ?>" aria-label="<?= $item["name"] ?>">
+              <span class="product-card__badge">NEW</span>
+              <img class="product-card__image" src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>" loading="lazy" width="1024" height="1024">
+            </a>
+            <div class="product-card__body">
+              <a class="product-card__link" href="?route=product&id=<?= $item["id"] ?>">
+                <h2 class="product-card__name"><?= $item["name"] ?></h2>
+                <p class="product-card__color"><?= $item["color"] ?></p>
+                <p class="product-card__price">$<?= number_format($item["price"], 2) ?></p>
+              </a>
+              <div class="product-card__meta">
+                <div class="product-card__swatches">
+                  <?php foreach ($item["swatches"] as $s): ?>
+                    <span class="product-card__swatch" style="background-color: <?= $s["hex"] ?>" data-url="?route=product&amp;id=<?= $item["id"] ?>" data-image="<?= $s["thumb"] ?>" data-hover=""></span>
+                  <?php endforeach; ?>
+                </div>
+              </div>
+            </div>
+          </article>
         <?php endforeach; ?>
       </section>
 
@@ -187,7 +177,7 @@ $categories = [
             <img src="<?= e($category["image"]) ?>" alt="" loading="lazy" />
             <div class="collection-category__content">
               <h2><?= e($category["title"]) ?></h2>
-              <a href="<?= e($category["href"]) ?>"><?= e($category["cta"]) ?></a>
+              <a href="?route=<?= $category["route"] ?>"><?= $category["cta"] ?></a>
             </div>
           </article>
         <?php endforeach; ?>
