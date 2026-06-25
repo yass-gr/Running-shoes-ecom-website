@@ -34,14 +34,17 @@ class HomeController
         usort($all, fn($a, $b) => strtotime($b["created_at"]) - strtotime($a["created_at"]));
 
         $items = [];
-        foreach (array_slice($all, 0, 30) as $p) {
+        foreach ($all as $p) {
+            if (count($items) >= 30) break;
             $variants = $variantModel->findByProduct($p["id"]);
             $first = $variants[0] ?? [];
+            $thumb = $first["thumbnail"] ?? "";
+            if ($thumb === "" || $thumb === null) continue;
             $colorName = $first["color"] ?? "";
             $items[] = [
                 "name" => $p["name"],
                 "price" => $p["base_price"],
-                "image" => $first["thumbnail"] ?? "",
+                "image" => $thumb,
                 "color" => $colorName,
                 "swatch" => colorToHex($colorName),
             ];
