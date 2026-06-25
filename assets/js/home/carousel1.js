@@ -1,28 +1,15 @@
-let currProd = 3;
-let translate = -300;
-
+let curr = 3;
+let tx = -300;
 const container = $(".newAriv1content");
-const prodText = $(".pName");
-
-function updateText() {
-  const slide = container.children().eq(currProd);
-  prodText.html(`${slide.data("name")} - $${slide.data("price")}`);
-}
-
-updateText();
 
 $(".leftControl").on("click", () => {
-  translate = translate === 0 ? 0 : translate + 100;
-  container.attr("style", `transform : translateX(${translate}%)`);
-  currProd = (translate * -1) / 100;
-  updateText();
+  tx = tx === 0 ? 0 : tx + 100;
+  container.css("transform", `translateX(${tx}%)`);
 });
 
 $(".rightControl").on("click", () => {
-  translate = translate === -1900 ? -1900 : translate - 100;
-  container.attr("style", `transform :translateX(${translate}%)`);
-  currProd = (translate * -1) / 100;
-  updateText();
+  tx = tx === -1900 ? -1900 : tx - 100;
+  container.css("transform", `translateX(${tx}%)`);
 });
 
 const arrow = $(".arrow");

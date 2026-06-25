@@ -14,17 +14,14 @@ class HomeController
         $all = $productModel->findAll();
         usort($all, fn($a, $b) => strtotime($b["created_at"]) - strtotime($a["created_at"]));
 
-        $newArrivals = [];
+        $items = [];
         foreach (array_slice($all, 0, 30) as $p) {
             $variants = $variantModel->findByProduct($p["id"]);
             $first = $variants[0] ?? [];
-            $img = $first["thumbnail"] ?? "";
-
-            $newArrivals[] = [
-                "id" => $p["id"],
+            $items[] = [
                 "name" => $p["name"],
                 "price" => $p["base_price"],
-                "image" => $img,
+                "image" => $first["thumbnail"] ?? "",
                 "color" => $first["color"] ?? "",
             ];
         }

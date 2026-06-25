@@ -76,16 +76,13 @@
         <span class="leftControl"></span>
         <span class="rightControl"></span>
         <div class="newAriv1content">
-          <?php foreach ($newArrivals as $i => $item): ?>
-            <?php if ($i >= 20) break; ?>
-            <div data-name="<?= $item["name"] ?>" data-price="<?= $item["price"] ?>">
-              <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
-            </div>
+          <?php foreach (array_slice($items, 0, 20) as $item): ?>
+            <div><img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>"></div>
           <?php endforeach; ?>
         </div>
         <div class="info">
           <h2 class="collName">June's Collection</h2>
-          <p class="pName"><?= $newArrivals[0]["name"] ?> - $<?= number_format($newArrivals[0]["price"], 2) ?></p>
+          <p class="pName"><?= $items[0]["name"] ?? "Product" ?> - $<?= number_format($items[0]["price"] ?? 0, 2) ?></p>
           <div>
             <button>SHOP MEN</button>
             <button>SHOP WOMEN</button>
@@ -113,8 +110,7 @@
           </div>
         </div>
         <div class="content">
-          <?php foreach ($newArrivals as $i => $item): ?>
-            <?php if ($i < 20) continue; ?>
+          <?php foreach (array_slice($items, 20) as $item): ?>
             <div class="card">
               <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
               <div class="info">
