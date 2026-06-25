@@ -18,6 +18,9 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script>
+      window.newArrivalsData = <?= json_encode(array_values($newArrivals)) ?>;
+    </script>
     <script type="module" src="assets/js/index.js" defer></script>
     <script
       src="https://code.jquery.com/jquery-4.0.0.js"

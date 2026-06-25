@@ -1,34 +1,30 @@
 let currProd = 3;
 let translate = -300;
 
-import { data } from "../../../../testdata(temporary)/allbirds_products.js";
-
-const newArrivals = data.filter(
-  (i) => i.tags.includes("collection:apr26") && i.type === "shoes",
-);
-newArrivals.length = 20;
-
-const newArivalsContainer = $(".newAriv1content");
+const newArrivals = window.newArrivalsData || [];
+const container = $(".newAriv1content");
 const prodText = $(".pName");
-prodText.html(
-  `${decodeURIComponent(newArrivals[currProd].fullName)} - $${newArrivals[currProd].price / 100}`,
-);
+
+if (newArrivals[currProd]) {
+  prodText.html(`${newArrivals[currProd].name} - $${parseFloat(newArrivals[currProd].price).toFixed(2)}`);
+}
+
 $(".leftControl").on("click", () => {
   translate = translate === 0 ? 0 : translate + 100;
-  newArivalsContainer.attr("style", `transform : translateX(${translate}%)`);
+  container.attr("style", `transform : translateX(${translate}%)`);
   currProd = (translate * -1) / 100;
-  prodText.html(
-    `${decodeURIComponent(newArrivals[currProd].fullName)} - $${newArrivals[currProd].price / 100}`,
-  );
+  if (newArrivals[currProd]) {
+    prodText.html(`${newArrivals[currProd].name} - $${parseFloat(newArrivals[currProd].price).toFixed(2)}`);
+  }
 });
+
 $(".rightControl").on("click", () => {
   translate = translate === -1900 ? -1900 : translate - 100;
-
-  newArivalsContainer.attr("style", `transform :translateX(${translate}%)`);
+  container.attr("style", `transform :translateX(${translate}%)`);
   currProd = (translate * -1) / 100;
-  prodText.html(
-    `${decodeURIComponent(newArrivals[currProd].fullName)} - $${newArrivals[currProd].price / 100}`,
-  );
+  if (newArrivals[currProd]) {
+    prodText.html(`${newArrivals[currProd].name} - $${parseFloat(newArrivals[currProd].price).toFixed(2)}`);
+  }
 });
 
 const arrow = $(".arrow");
@@ -36,12 +32,12 @@ const arrow = $(".arrow");
 $(".leftControl").on("mousemove", (e) => {
   arrow.html("⇠");
   $("body").css("cursor", "none");
-
   arrow.fadeIn(300);
   arrow.css("left", e.clientX);
   arrow.css("top", e.clientY);
 });
-$(".leftControl").on("mouseout", (e) => {
+
+$(".leftControl").on("mouseout", () => {
   arrow.hide();
   $("body").css("cursor", "default");
 });
@@ -49,12 +45,12 @@ $(".leftControl").on("mouseout", (e) => {
 $(".rightControl").on("mousemove", (e) => {
   arrow.html("⇢");
   $("body").css("cursor", "none");
-
   arrow.fadeIn(300);
   arrow.css("left", e.clientX);
   arrow.css("top", e.clientY);
 });
-$(".rightControl").on("mouseout", (e) => {
+
+$(".rightControl").on("mouseout", () => {
   arrow.hide();
   $("body").css("cursor", "default");
 });
