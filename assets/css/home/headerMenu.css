@@ -13,7 +13,7 @@
 
   .menuContent {
     padding: 25px;
-    padding-top: 180px;
+    padding-top: 110px;
     transition: 0.4s ease-in-out;
     background-color: var(--main-bg-clr);
     display: grid;
@@ -150,4 +150,16 @@
   to {
     opacity: 1;
   }
+}
+.navTitle {
+  background-color: var(--menu-title-clr);
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+  font-family: "chillax", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
 }

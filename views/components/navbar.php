@@ -1,6 +1,7 @@
  <header>
       <div class="menu">
         <div class="menuContent">
+          <div class="navTitle">SHOP MEN'S</div>
           <div class="tab-content" data-tab="men"><?php require __DIR__ . "/../tabs/men.php" ?></div>
           <div class="tab-content" data-tab="women"><?php require __DIR__ . "/../tabs/women.php" ?></div>
           <div class="tab-content" data-tab="sale"><?php require __DIR__ . "/../tabs/sale.php" ?></div>
