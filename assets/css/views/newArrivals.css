@@ -124,6 +124,68 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 10px;
   padding: 0 10px 32px;
+
+  .card {
+    min-width: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    overflow: hidden;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .info {
+      padding: 8px 0 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+
+      .name {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--sec-bg-clr);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .cName {
+        font-size: 0.75rem;
+        opacity: 0.7;
+      }
+      .price {
+        font-size: 0.8rem;
+        font-weight: 700;
+      }
+    }
+
+    .badge {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      height: 22px;
+      padding-inline: 8px;
+      border-radius: 40px;
+      font-size: 0.6rem;
+      background-color: var(--badge-bg-clr);
+      text-align: center;
+      align-content: center;
+      font-weight: 700;
+      color: var(--sec-bg-clr);
+    }
+  }
 }
 
 .pagination {

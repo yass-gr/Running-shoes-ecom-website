@@ -126,26 +126,17 @@
 
       <section class="collection-grid" aria-label="All products">
         <?php foreach ($pageProducts as $item): ?>
-          <article class="product-card">
-            <a class="product-card__media" href="?route=product&id=<?= $item["id"] ?>" aria-label="<?= $item["name"] ?>">
-              <span class="product-card__badge">NEW</span>
-              <img class="product-card__image" src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>" loading="lazy" width="1024" height="1024">
+          <div class="card">
+            <a href="?route=product&id=<?= $item["id"] ?>">
+              <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
             </a>
-            <div class="product-card__body">
-              <a class="product-card__link" href="?route=product&id=<?= $item["id"] ?>">
-                <h2 class="product-card__name"><?= $item["name"] ?></h2>
-                <p class="product-card__color"><?= $item["color"] ?></p>
-                <p class="product-card__price">$<?= number_format($item["price"], 2) ?></p>
-              </a>
-              <div class="product-card__meta">
-                <div class="product-card__swatches">
-                  <?php foreach ($item["swatches"] as $s): ?>
-                    <span class="product-card__swatch" style="background-color: <?= $s["hex"] ?>" data-url="?route=product&amp;id=<?= $item["id"] ?>" data-image="<?= $s["thumb"] ?>" data-hover=""></span>
-                  <?php endforeach; ?>
-                </div>
-              </div>
+            <div class="info">
+              <p class="name"><?= $item["name"] ?></p>
+              <p class="cName"><?= $item["color"] ?></p>
+              <p class="price">$<?= number_format($item["price"], 2) ?></p>
             </div>
-          </article>
+            <span class="badge">NEW</span>
+          </div>
         <?php endforeach; ?>
       </section>
 
