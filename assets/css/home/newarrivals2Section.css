@@ -15,7 +15,7 @@
   }
   .content {
     margin: 15px;
-    min-height: 37vw;
+    height: 70vw;
     display: flex;
     font-size: 1.5rem;
     gap: 10px;
@@ -44,10 +44,16 @@
           font-size: 1.1rem;
           font-weight: bold;
           color: var(--sec-bg-clr);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         .cName {
           font-size: 0.9rem;
           opacity: 0.9;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         .price {
           font-size: 0.9rem;
