@@ -143,17 +143,17 @@
       <?php if ($totalPages > 1): ?>
       <nav class="pagination" aria-label="Page navigation">
         <a class="pagination__btn <?= $currentPage <= 1 ? 'pagination__btn--disabled' : '' ?>"
-           href="?page=<?= $currentPage - 1 ?>" <?= $currentPage <= 1 ? 'aria-disabled="true" tabindex="-1"' : '' ?>>
+           href="?route=shop-all&amp;page=<?= $currentPage - 1 ?>" <?= $currentPage <= 1 ? 'aria-disabled="true" tabindex="-1"' : '' ?>>
           &#8249; Prev
         </a>
         <div class="pagination__pages">
           <?php for ($i = 1; $i <= $totalPages; $i++): ?>
             <a class="pagination__page <?= $i === $currentPage ? 'pagination__page--active' : '' ?>"
-               href="?page=<?= $i ?>"><?= $i ?></a>
+               href="?route=shop-all&amp;page=<?= $i ?>"><?= $i ?></a>
           <?php endfor; ?>
         </div>
         <a class="pagination__btn <?= $currentPage >= $totalPages ? 'pagination__btn--disabled' : '' ?>"
-           href="?page=<?= $currentPage + 1 ?>" <?= $currentPage >= $totalPages ? 'aria-disabled="true" tabindex="-1"' : '' ?>>
+           href="?route=shop-all&amp;page=<?= $currentPage + 1 ?>" <?= $currentPage >= $totalPages ? 'aria-disabled="true" tabindex="-1"' : '' ?>>
           Next &#8250;
         </a>
       </nav>
