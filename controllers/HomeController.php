@@ -6,20 +6,33 @@ class HomeController
     {
         require_once __DIR__ . "/../config/database.php";
         require_once __DIR__ . "/../models/product.php";
-        require_once __DIR__ . "/../models/category.php";
-        require_once __DIR__ . "/../models/product_img.php";
+        require_once __DIR__ . "/../models/product_variant.php";
 
         $productModel = new Product($pdo);
-        $categoryModel = new Category($pdo);
-        $imgModel = new ProductImg($pdo);
+        $variantModel = new ProductVariant($pdo);
 
-        $newArrivals = $productModel->getTopSellers(8);
-        $categories = $categoryModel->findAll();
+        $dbProducts = $productModel->getTopSellers(30);
 
-        $newArrivalsImgs = [];
-        foreach ($newArrivals as $p) {
-            $img = $imgModel->findByVariantProduct($p["id"]);
-            $newArrivalsImgs[$p["id"]] = $img[0]["url"] ?? null;
+        $carousel1 = [];
+        $carousel2 = [];
+        foreach ($dbProducts as $i => $p) {
+            $variants = $variantModel->findByProduct($p["id"]);
+            $first = $variants[0] ?? [];
+
+            $item = [
+                "id" => $p["id"],
+                "name" => $p["name"],
+                "price" => $p["base_price"],
+                "image" => $first["thumbnail"] ?? "",
+                "color" => $first["color"] ?? "",
+                "colorcode" => "",
+            ];
+
+            if ($i < 20) {
+                $carousel1[] = $item;
+            } else {
+                $carousel2[] = $item;
+            }
         }
 
         require __DIR__ . "/../views/home.php";

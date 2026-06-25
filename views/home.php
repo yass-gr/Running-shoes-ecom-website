@@ -75,10 +75,14 @@
         <div class="arrow">-></div>
         <span class="leftControl"></span>
         <span class="rightControl"></span>
-        <div class="newAriv1content"></div>
+        <div class="newAriv1content">
+          <?php foreach ($carousel1 as $item): ?>
+            <div><img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>"></div>
+          <?php endforeach; ?>
+        </div>
         <div class="info">
           <h2 class="collName">June's Collection</h2>
-          <p class="pName">Product Name - price $</p>
+          <p class="pName"><?= $carousel1[0]["name"] ?? "Product" ?> - $<?= number_format($carousel1[0]["price"] ?? 0, 2) ?></p>
           <div>
             <button>SHOP MEN</button>
             <button>SHOP WOMEN</button>
@@ -105,7 +109,20 @@
             <div class="right">⇢</div>
           </div>
         </div>
-        <div class="content"></div>
+        <div class="content">
+          <?php foreach ($carousel2 as $item): ?>
+            <div class="card">
+              <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
+              <div class="info">
+                <p class="name"><?= $item["name"] ?></p>
+                <p class="cName"><?= $item["color"] ?></p>
+                <p class="price">$<?= number_format($item["price"], 2) ?></p>
+                <div class="hue" style="background-color:#ccc"></div>
+              </div>
+              <span class="badge">NEW</span>
+            </div>
+          <?php endforeach; ?>
+        </div>
       </section>
 
       <section id="categories2">
