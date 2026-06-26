@@ -136,11 +136,21 @@ $pageUrl = "?" . http_build_query($queryParams);
         <?php foreach ($pageProducts as $item): ?>
           <div class="card">
             <a href="?route=product&id=<?= $item["id"] ?>">
-              <img src="<?= $item["image"] ?? "" ?>" alt="<?= $item["name"] ?>">
+              <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
+              <?php if ($item["badge"]): ?>
+                <span class="card__badge card__badge--<?= str_replace(' ', '_', strtolower($item["badge"])) ?>"><?= $item["badge"] ?></span>
+              <?php endif; ?>
               <div class="info">
                 <p class="name"><?= $item["name"] ?></p>
-                <p class="color"><?= $item["brand_name"] ?? "" ?></p>
-                <p class="price">$<?= number_format($item["base_price"]) ?></p>
+                <p class="color"><?= $item["color"] ?></p>
+                <p class="price">
+                  <?php if (isset($item["sale_price"])): ?>
+                    <span style="color:#d32f2f;">$<?= number_format($item["sale_price"]) ?></span>
+                    <span style="text-decoration:line-through;color:#999;">$<?= number_format($item["price"]) ?></span>
+                  <?php else: ?>
+                    $<?= number_format($item["price"]) ?>
+                  <?php endif; ?>
+                </p>
               </div>
             </a>
           </div>
