@@ -99,17 +99,7 @@ $pageUrl = "?" . http_build_query($queryParams);
       <?php $infoTitle = "NEW ARRIVALS"; $infoDesc = "Discover our latest collection of thoughtfully designed footwear and apparel, crafted from premium natural materials."; ?>
       <?php require_once __DIR__ . "/components/info-faq.php"; ?>
 
-      <section class="collection-categories" aria-label="Shop more categories">
-        <?php foreach ($categories as $category): ?>
-          <article class="collection-category">
-            <img src="<?= e($category["image"]) ?>" alt="<?= e($category["title"]) ?>" loading="lazy" />
-            <div class="collection-category__content">
-              <h2><?= e($category["title"]) ?></h2>
-              <a href="?route=<?= $category["route"] ?>"><?= $category["cta"] ?></a>
-            </div>
-          </article>
-        <?php endforeach; ?>
-      </section>
+      <?php require_once __DIR__ . "/components/collection-categories.php"; ?>
     </main>
 
     <?php require_once __DIR__ . "/components/trust-cards.php"; ?>

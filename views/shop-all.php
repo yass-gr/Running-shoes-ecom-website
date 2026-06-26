@@ -98,6 +98,8 @@ $pageUrl = "?" . http_build_query($queryParams);
 
       <?php $infoTitle = "SHOP ALL"; $infoDesc = "Explore our complete collection of footwear and apparel. Every product is thoughtfully designed and crafted from premium natural materials for comfort that lasts all day."; ?>
       <?php require_once __DIR__ . "/components/info-faq.php"; ?>
+
+      <?php require_once __DIR__ . "/components/collection-categories.php"; ?>
     </main>
 
     <?php require_once __DIR__ . "/components/trust-cards.php"; ?>
