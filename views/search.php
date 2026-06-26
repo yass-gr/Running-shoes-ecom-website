@@ -106,6 +106,8 @@ $pageUrl = "?" . http_build_query($queryParams);
       $(".collection-grid").on("click", ".hue", function () {
         const thumb = $(this).data("thumb");
         $(this).closest(".card").find("img").attr("src", thumb);
+        $(this).closest(".swatches").find(".hue").removeClass("hue--active");
+        $(this).addClass("hue--active");
       });
     </script>
 

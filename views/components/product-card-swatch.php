@@ -15,8 +15,8 @@ $item = $item ?? [];
   </p>
   <?php if (!empty($item["swatches"])): ?>
     <div class="swatches">
-      <?php foreach ($item["swatches"] as $s): ?>
-        <div class="hue" style="background-color: <?= $s["hex"] ?>" data-thumb="<?= $s["thumb"] ?>"></div>
+      <?php foreach ($item["swatches"] as $i => $s): ?>
+        <div class="hue <?= $i === 0 ? 'hue--active' : '' ?>" style="background-color: <?= $s["hex"] ?>" data-thumb="<?= $s["thumb"] ?>"></div>
       <?php endforeach; ?>
     </div>
   <?php endif; ?>

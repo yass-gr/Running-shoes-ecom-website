@@ -27,4 +27,6 @@ cardPositions = content
 $(".newArrivals2").on("click", ".hue", function () {
   const thumb = $(this).data("thumb");
   $(this).closest(".card").find("img").attr("src", thumb);
+  $(this).closest(".swatches").find(".hue").removeClass("hue--active");
+  $(this).addClass("hue--active");
 });
