@@ -120,6 +120,11 @@
   line-height: 1.6;
 }
 
+.search-page .collection-grid {
+  width: 80%;
+  margin-inline: auto;
+}
+
 .search-pagination {
   display: flex;
   align-items: center;
