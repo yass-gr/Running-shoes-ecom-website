@@ -115,7 +115,7 @@
         <div class="content">
           <?php foreach (array_slice($items, 20) as $item): ?>
             <div class="card">
-              <?php require __DIR__ . "/components/product-card.php"; ?>
+              <?php require __DIR__ . "/components/product-card-home.php"; ?>
             </div>
           <?php endforeach; ?>
         </div>
