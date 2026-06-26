@@ -52,7 +52,7 @@ $pageUrl = "?" . http_build_query($queryParams);
         </p>
       <?php endif; ?>
 
-      <section class="search-grid" aria-label="Search results">
+      <section class="collection-grid" aria-label="Search results">
         <?php if (empty($pageProducts)): ?>
           <div class="search-empty">
             <svg class="search-empty__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
