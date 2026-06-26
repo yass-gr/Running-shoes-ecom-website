@@ -86,7 +86,7 @@ class NewArrivalsController
         $categories = [
             ["title" => "Men's", "image" => "https://www.allbirds.com/cdn/shop/files/26Q2_CanvasCruiser_Site_Homepage_CategoryRow-01_Desktop-Mobile_2x3_01_Lifestyle.jpg?v=1774909856&width=1024", "route" => "mens", "cta" => "Shop Men's"],
             ["title" => "Women's", "image" => "https://www.allbirds.com/cdn/shop/files/26Q2_CanvasCruiser_Site_Homepage_CategoryRow-01_Desktop-Mobile_2x3_04_Lifestyle.jpg?v=1774909855&width=1024", "route" => "womens", "cta" => "Shop Women's"],
-            ["title" => "Apparel", "image" => "https://www.allbirds.com/cdn/shop/files/25Q2_BAU_Site_Collections_3xPromo-Apparel_Lifestyle_Desktop_2x3_1.png?v=1751420661&width=1024", "route" => "shop-all", "cta" => "Shop Apparel"],
+            ["title" => "Best Sellers", "image" => "https://www.allbirds.com/cdn/shop/files/26Q2_CanvasCruiser_Site_Homepage_CategoryRow-01_Desktop-Mobile_2x3_01_Lifestyle.jpg?v=1774909856&width=1024", "route" => "shop-all", "cta" => "Shop Best Sellers"],
         ];
 
         require __DIR__ . "/../views/new-arrivals.php";
