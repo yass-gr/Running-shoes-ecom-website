@@ -16,7 +16,6 @@ $pageUrl = "?" . http_build_query($queryParams);
     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <script type="module" src="../assets/js/shared/nav.js" defer></script>
     <script type="module" src="../assets/js/shared/cart.js" defer></script>
-    <script type="module" src="../assets/js/shared/productCard.js" defer></script>
     <script type="module" src="../assets/js/shared/filterModal.js" defer></script>
   </head>
   <body>
@@ -34,11 +33,11 @@ $pageUrl = "?" . http_build_query($queryParams);
           <span class="collection-toolbar__count">(<?= $productCount ?> products)</span>
         </div>
         <select class="collection-toolbar__sort" aria-label="Sort by">
-          <option value="featured" <?= ($sort ?? 'featured') === 'featured' ? 'selected' : '' ?>>Featured</option>
-          <option value="newest" <?= ($sort ?? '') === 'newest' ? 'selected' : '' ?>>Date, new to old</option>
-          <option value="best_selling" <?= ($sort ?? '') === 'best_selling' ? 'selected' : '' ?>>Best selling</option>
-          <option value="price_asc" <?= ($sort ?? '') === 'price_asc' ? 'selected' : '' ?>>Price, low to high</option>
-          <option value="price_desc" <?= ($sort ?? '') === 'price_desc' ? 'selected' : '' ?>>Price, high to low</option>
+          <option value="featured">Featured</option>
+          <option value="newest">Date, new to old</option>
+          <option value="best_selling">Best selling</option>
+          <option value="price_asc">Price, low to high</option>
+          <option value="price_desc">Price, high to low</option>
         </select>
       </section>
 
@@ -137,21 +136,11 @@ $pageUrl = "?" . http_build_query($queryParams);
         <?php foreach ($pageProducts as $item): ?>
           <div class="card">
             <a href="?route=product&id=<?= $item["id"] ?>">
-              <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
-              <?php if ($item["badge"]): ?>
-                <span class="card__badge card__badge--<?= str_replace(' ', '_', strtolower($item["badge"])) ?>"><?= $item["badge"] ?></span>
-              <?php endif; ?>
+              <img src="<?= $item["image"] ?? "" ?>" alt="<?= $item["name"] ?>">
               <div class="info">
                 <p class="name"><?= $item["name"] ?></p>
-                <p class="color"><?= $item["color"] ?></p>
-                <p class="price">
-                  <?php if (isset($item["sale_price"])): ?>
-                    <span style="color:#d32f2f;">$<?= number_format($item["sale_price"]) ?></span>
-                    <span style="text-decoration:line-through;color:#999;">$<?= number_format($item["price"]) ?></span>
-                  <?php else: ?>
-                    $<?= number_format($item["price"]) ?>
-                  <?php endif; ?>
-                </p>
+                <p class="color"><?= $item["brand_name"] ?? "" ?></p>
+                <p class="price">$<?= number_format($item["base_price"]) ?></p>
               </div>
             </a>
           </div>
@@ -180,18 +169,6 @@ $pageUrl = "?" . http_build_query($queryParams);
 
       <?php $infoTitle = "SHOP ALL"; $infoDesc = "Explore our complete collection of footwear and apparel. Every product is thoughtfully designed and crafted from premium natural materials for comfort that lasts all day."; ?>
       <?php require_once __DIR__ . "/components/info-faq.php"; ?>
-
-      <section class="collection-categories" aria-label="Shop more categories">
-        <?php foreach ($categories as $category): ?>
-          <article class="collection-category">
-            <img src="<?= e($category["image"]) ?>" alt="" loading="lazy" />
-            <div class="collection-category__content">
-              <h2><?= e($category["title"]) ?></h2>
-              <a href="?route=<?= e($category["route"]) ?>"><?= e($category["cta"]) ?></a>
-            </div>
-          </article>
-        <?php endforeach; ?>
-      </section>
     </main>
 
     <?php require_once __DIR__ . "/components/trust-cards.php"; ?>
