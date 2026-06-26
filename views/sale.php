@@ -98,18 +98,6 @@ $pageUrl = "?" . http_build_query($queryParams);
 
       <?php $infoTitle = "SALE"; $infoDesc = "Premium comfort at exceptional value. Our sale collection features the same quality craftsmanship and natural materials at reduced prices."; ?>
       <?php require_once __DIR__ . "/components/info-faq.php"; ?>
-
-      <section class="collection-categories" aria-label="Shop more categories">
-        <?php foreach ($categories as $category): ?>
-          <article class="collection-category">
-            <img src="<?= e($category["image"]) ?>" alt="<?= e($category["title"]) ?>" loading="lazy" />
-            <div class="collection-category__content">
-              <h2><?= e($category["title"]) ?></h2>
-              <a href="?route=<?= $category["route"] ?>"><?= $category["cta"] ?></a>
-            </div>
-          </article>
-        <?php endforeach; ?>
-      </section>
     </main>
 
     <?php require_once __DIR__ . "/components/trust-cards.php"; ?>
