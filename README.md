@@ -1,6 +1,6 @@
 # Running Shoes E-Commerce Website
 
-A PHP-based e-commerce platform for running shoes (Allbirds brand), featuring product catalog browsing, filtering, cart management, checkout, user accounts, and admin panel.
+A PHP-based e-commerce platform for running shoes, featuring product catalog browsing, filtering, cart management, checkout, user accounts, and admin panel.
 
 ## Tech Stack
 
