@@ -34,19 +34,11 @@ class NewArrivalsController
                 ];
             }
 
-            $badge = null;
+            $badge = "NEW";
             $totalStock = 0;
             foreach ($variants as $v) {
                 $qty = (int) ($v["stock_quantity"] ?? 0);
                 $totalStock += $qty;
-            }
-            if ($totalStock <= 400) {
-                $badge = "LAST FEW";
-            } else {
-                $createdAt = strtotime($p["created_at"]);
-                if ($createdAt && (time() - $createdAt) < 30 * 24 * 60 * 60) {
-                    $badge = "NEW";
-                }
             }
 
             $salePct = (float) ($p["sale"] ?? 0);

@@ -32,8 +32,8 @@
           <p class="product-detail__brand"><?= e($product["brand_name"] ?? "") ?></p>
           <p class="product-detail__price">
             <?php if ($salePrice): ?>
-              <span style="text-decoration:line-through;color:#999;">$<?= number_format($product["base_price"]) ?></span>
               <span style="color:#d32f2f;">$<?= number_format($salePrice) ?></span>
+              <span style="text-decoration:line-through;color:#999;">$<?= number_format($product["base_price"]) ?></span>
             <?php else: ?>
               $<?= number_format($product["base_price"]) ?>
             <?php endif; ?>
