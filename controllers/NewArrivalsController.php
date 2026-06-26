@@ -12,6 +12,7 @@ class NewArrivalsController
 
         $productModel = new Product($pdo);
         $variantModel = new ProductVariant($pdo);
+        $availableColors = getFilterColors($variantModel);
 
         $all = $productModel->findAll();
         usort($all, fn($a, $b) => strtotime($b["created_at"]) - strtotime($a["created_at"]));
@@ -24,14 +25,22 @@ class NewArrivalsController
             if ($thumb === "" || $thumb === null) continue;
 
             $swatches = [];
+            $seenColors = [];
+            $sizes = [];
             foreach ($variants as $v) {
                 $c = $v["color"] ?? "";
-                if ($c === "") continue;
+                if ($c === "" || isset($seenColors[$c])) continue;
+                $seenColors[$c] = true;
+                $c = stripColorSole($c);
                 $swatches[] = [
                     "name" => $c,
                     "hex" => colorToHex($c),
                     "thumb" => $v["thumbnail"] ?? "",
                 ];
+                $s = (string)($v["size"] ?? "");
+                if ($s !== "" && !in_array($s, $sizes)) {
+                    $sizes[] = $s;
+                }
             }
 
             $badge = "NEW";
@@ -41,20 +50,21 @@ class NewArrivalsController
                 $totalStock += $qty;
             }
 
-            $salePct = (float) ($p["sale"] ?? 0);
-            $salePrice = $salePct > 0 ? $p["base_price"] * (1 - $salePct / 100) : null;
+            $discount = computeVariantDiscount($variants, (float)$p["base_price"]);
 
             $products[] = [
                 "id"    => $p["id"],
                 "name"  => $p["name"],
                 "price" => $p["base_price"],
-                "sale"  => $salePct,
-                "sale_price" => $salePrice,
+                "sales" => $discount,
+                "sale_price" => $discount["sale_price"] ?? null,
                 "total_stock" => $totalStock,
                 "image" => $thumb,
                 "color" => $swatches[0]["name"] ?? "",
                 "swatches" => $swatches,
                 "badge" => $badge,
+                "material" => $p["category_material"] ?? "",
+                "sizes" => $sizes,
             ];
         }
 

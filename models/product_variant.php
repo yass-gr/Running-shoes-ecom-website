@@ -33,6 +33,10 @@ class ProductVariant extends Model {
         );
     }
 
+    public function getDistinctColors(): array {
+        return $this->fetchAll('SELECT DISTINCT color FROM Product_variants WHERE color IS NOT NULL AND color != \'\' ORDER BY color');
+    }
+
     public function findBySku(string $sku): ?array {
         return $this->fetchOne(
             'SELECT * FROM Product_variants WHERE sku = ?',

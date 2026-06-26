@@ -18,7 +18,9 @@ class SearchController
         if ($query !== "") {
             $all = $productModel->search($query);
         } else {
-            $all = [];
+            $all = $productModel->findAll();
+            shuffle($all);
+            $all = array_slice($all, 0, 10);
         }
 
         $products = [];
@@ -26,12 +28,13 @@ class SearchController
             $variants = $variantModel->findByProduct($p["id"]);
             $first = $variants[0] ?? [];
             $thumb = $first["thumbnail"] ?? "";
-            if ($thumb === "" || $thumb === null) continue;
 
             $swatches = [];
+            $seenColors = [];
             foreach ($variants as $v) {
                 $c = $v["color"] ?? "";
-                if ($c === "") continue;
+                if ($c === "" || isset($seenColors[$c])) continue;
+                $seenColors[$c] = true;
                 $swatches[] = ["name" => $c, "hex" => colorToHex($c), "thumb" => $v["thumbnail"] ?? ""];
             }
 
@@ -41,7 +44,10 @@ class SearchController
                 $qty = (int) ($v["stock_quantity"] ?? 0);
                 $totalStock += $qty;
             }
-            if ($totalStock <= 400) {
+            $sales = (int) ($p["sales"] ?? 0);
+            if ($sales >= 400) {
+                $badge = "BESTSELLER";
+            } elseif ($totalStock <= 400) {
                 $badge = "LAST FEW";
             } else {
                 $createdAt = strtotime($p["created_at"]);
@@ -50,15 +56,14 @@ class SearchController
                 }
             }
 
-            $salePct = (float) ($p["sale"] ?? 0);
-            $salePrice = $salePct > 0 ? $p["base_price"] * (1 - $salePct / 100) : null;
+            $discount = computeVariantDiscount($variants, (float)$p["base_price"]);
 
             $products[] = [
                 "id"    => $p["id"],
                 "name"  => $p["name"],
                 "price" => $p["base_price"],
-                "sale"  => $salePct,
-                "sale_price" => $salePrice,
+                "sales" => $discount,
+                "sale_price" => $discount["sale_price"] ?? null,
                 "total_stock" => $totalStock,
                 "image" => $thumb,
                 "color" => $swatches[0]["name"] ?? "",

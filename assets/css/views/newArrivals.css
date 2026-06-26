@@ -120,6 +120,22 @@
   background-repeat: no-repeat;
 }
 
+.chip-remove {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  margin-left: 4px;
+  padding: 0;
+  vertical-align: middle;
+  opacity: 0.6;
+}
+.chip-remove:hover {
+  opacity: 1;
+}
+
 .collection-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -201,6 +217,25 @@
       align-content: center;
       font-weight: 700;
       color: var(--sec-bg-clr);
+    }
+
+    .card__badge {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      padding: 5px 10px;
+      border-radius: 40px;
+      font-size: 0.6rem;
+      background-color: var(--badge-bg-clr);
+      text-align: center;
+      font-weight: 700;
+      color: var(--sec-bg-clr);
+      z-index: 2;
+    }
+
+    .card__badge--bestseller {
+      background-color: #1a1a1a;
+      color: #fff;
     }
   }
 }
@@ -479,24 +514,38 @@
   color: rgba(33, 33, 33, 0.4);
 }
 
-.filter-panel__apply {
-  display: none;
-  margin-left: auto;
+.filter-panel__apply,
+.filter-panel__clear {
   padding: 10px 24px;
   border: none;
   border-radius: 999px;
-  background: var(--sec-bg-clr);
-  color: var(--nav-bg);
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
   transition: opacity 0.15s;
 }
+.filter-panel__apply {
+  display: none;
+  margin-left: auto;
+  background: var(--sec-bg-clr);
+  color: var(--nav-bg);
+}
 .filter-panel__apply:hover {
   opacity: 0.85;
 }
-.filter-panel.has-selection .filter-panel__apply {
+.filter-panel__clear {
+  display: none;
+  background: transparent;
+  color: var(--sec-bg-clr);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.filter-panel__clear:hover {
+  opacity: 0.65;
+}
+.filter-panel.has-selection .filter-panel__apply,
+.filter-panel.has-selection .filter-panel__clear {
   display: inline-flex;
 }
 
@@ -581,12 +630,19 @@
   color: var(--nav-bg);
   border-color: var(--sec-bg-clr);
 }
+.filter-size--disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+  pointer-events: none;
+}
 
 /* ── Color swatches ── */
 .filter-colors {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
+  overflow-y: auto;
+  padding-right: 4px;
 }
 
 .filter-color {
@@ -622,6 +678,13 @@
   box-shadow:
     0 0 0 2px var(--nav-bg),
     0 0 0 4px var(--sec-bg-clr);
+}
+.filter-color--disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.filter-color--disabled .filter-color__swatch {
+  filter: grayscale(1);
 }
 
 /* ── Checkbox list ── */

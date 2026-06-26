@@ -12,6 +12,7 @@ class ProductDetailController
         }
 
         require_once __DIR__ . "/../config/database.php";
+        require_once __DIR__ . "/../utils/helpers.php";
         require_once __DIR__ . "/../models/product.php";
         require_once __DIR__ . "/../models/product_variant.php";
         require_once __DIR__ . "/../models/product_img.php";
@@ -26,8 +27,8 @@ class ProductDetailController
         $variants = (new ProductVariant($pdo))->findByProduct($id);
         $images = (new ProductImg($pdo))->findByVariantProduct($id);
 
-        $salePct = (float) ($product["sale"] ?? 0);
-        $salePrice = $salePct > 0 ? $product["base_price"] * (1 - $salePct / 100) : null;
+        $discount = computeVariantDiscount($variants, (float)$product["base_price"]);
+        $salePrice = $discount["sale_price"] ?? null;
 
         require __DIR__ . "/../views/product-detail.php";
     }

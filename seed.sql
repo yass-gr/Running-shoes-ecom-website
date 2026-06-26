@@ -3092,6 +3092,9 @@ INSERT INTO `Product_variants` (`id`, `product_id`, `womens_variant_id`, `size`,
 (2349,131,NULL,9.0,'Color 1','A131W090',17,241,77.00,5,NULL),
 (2350,131,NULL,10.0,'Color 1','A131W100',24,241,77.00,5,NULL),
 (2351,131,NULL,11.0,'Color 1','A131W110',4,241,77.00,5,NULL);
+
+-- Assign discount_id = 2 (SUMMER25, 25% off) to first variant of selected products
+UPDATE Product_variants SET discount_id = 2 WHERE id IN (59,95,161,200);
 /*!40000 ALTER TABLE `Product_variants` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;

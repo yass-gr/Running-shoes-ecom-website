@@ -76,6 +76,20 @@ class Product extends Model {
         );
     }
 
+    public function findByDiscountIds(array $discountIds): array {
+        $placeholders = implode(",", array_fill(0, count($discountIds), "?"));
+        return $this->fetchAll(
+            "SELECT DISTINCT p.*, b.name AS brand_name, c.material AS category_material
+             FROM Products p
+             JOIN Brands b ON b.id = p.brand_id
+             JOIN Categories c ON c.id = p.category_id
+             JOIN Product_variants pv ON pv.product_id = p.id
+             WHERE pv.discount_id IN ($placeholders)
+             ORDER BY p.name",
+            $discountIds
+        );
+    }
+
     public function getTopSellers(int $limit = 10): array {
         return $this->fetchAll(
             'SELECT p.*, b.name AS brand_name

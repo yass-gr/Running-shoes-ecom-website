@@ -16,6 +16,7 @@ $pageUrl = "?" . http_build_query($queryParams);
     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <script type="module" src="../assets/js/shared/nav.js" defer></script>
     <script type="module" src="../assets/js/shared/cart.js" defer></script>
+    <script type="module" src="../assets/js/shared/filterModal.js" defer></script>
   </head>
   <body>
     <?php require_once __DIR__ . "/components/navbar.php"; ?>
@@ -29,7 +30,7 @@ $pageUrl = "?" . http_build_query($queryParams);
             type="text"
             name="q"
             placeholder="What are you looking for?"
-            value="<?= e($query) ?>"
+            value="<?= e($query ?? "") ?>"
             autofocus
             autocomplete="off"
           />
@@ -42,7 +43,7 @@ $pageUrl = "?" . http_build_query($queryParams);
         </form>
       </div>
 
-      <?php if ($query !== ""): ?>
+      <?php if (($query ?? "") !== ""): ?>
         <p class="search-results-info">
           <?= $productCount ?> result<?= $productCount !== 1 ? "s" : "" ?> for "<strong><?= e($query) ?></strong>"
         </p>
@@ -62,7 +63,7 @@ $pageUrl = "?" . http_build_query($queryParams);
             </svg>
             <h2 class="search-empty__title">No results found</h2>
             <p class="search-empty__desc">
-              <?php if ($query !== ""): ?>
+              <?php if (($query ?? "") !== ""): ?>
                 We couldn't find anything matching "<strong><?= e($query) ?></strong>". Try a different search term.
               <?php else: ?>
                 Start typing to search our collection.
@@ -73,21 +74,11 @@ $pageUrl = "?" . http_build_query($queryParams);
           <?php foreach ($pageProducts as $item): ?>
             <div class="card">
               <a href="?route=product&id=<?= $item["id"] ?>">
-                <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
-                <?php if ($item["badge"]): ?>
-                  <span class="card__badge card__badge--<?= str_replace(' ', '_', strtolower($item["badge"])) ?>"><?= $item["badge"] ?></span>
-                <?php endif; ?>
+                <img src="<?= $item["image"] ?? "" ?>" alt="<?= $item["name"] ?>">
                 <div class="info">
                   <p class="name"><?= $item["name"] ?></p>
-                  <p class="color"><?= $item["color"] ?></p>
-                  <p class="price">
-                    <?php if (isset($item["sale_price"])): ?>
-                      <span style="color:#d32f2f;">$<?= number_format($item["sale_price"]) ?></span>
-                      <span style="text-decoration:line-through;color:#999;">$<?= number_format($item["price"]) ?></span>
-                    <?php else: ?>
-                      $<?= number_format($item["price"]) ?>
-                    <?php endif; ?>
-                  </p>
+                  <p class="color"><?= $item["color"] ?? "" ?></p>
+                  <p class="price">$<?= number_format((float) ($item["price"] ?? 0)) ?></p>
                 </div>
               </a>
             </div>
@@ -95,20 +86,20 @@ $pageUrl = "?" . http_build_query($queryParams);
         <?php endif; ?>
       </section>
 
-      <?php if ($totalPages > 1): ?>
-      <nav class="search-pagination" aria-label="Page navigation">
-        <a class="pagination__btn <?= $currentPage <= 1 ? 'pagination__btn--disabled' : '' ?>"
-           href="<?= $pageUrl ?>&amp;q=<?= urlencode($query) ?>&amp;page=<?= $currentPage - 1 ?>" <?= $currentPage <= 1 ? 'aria-disabled="true" tabindex="-1"' : '' ?>>
+      <?php if (($totalPages ?? 1) > 1): ?>
+      <nav class="pagination" aria-label="Page navigation">
+        <a class="pagination__btn <?= ($currentPage ?? 1) <= 1 ? 'pagination__btn--disabled' : '' ?>"
+           href="<?= $pageUrl ?>&amp;q=<?= urlencode($query ?? "") ?>&amp;page=<?= ($currentPage ?? 1) - 1 ?>" <?= ($currentPage ?? 1) <= 1 ? 'aria-disabled="true" tabindex="-1"' : '' ?>>
           &#8249; Prev
         </a>
         <div class="pagination__pages">
           <?php for ($i = 1; $i <= $totalPages; $i++): ?>
-            <a class="pagination__page <?= $i === $currentPage ? 'pagination__page--active' : '' ?>"
-               href="<?= $pageUrl ?>&amp;q=<?= urlencode($query) ?>&amp;page=<?= $i ?>"><?= $i ?></a>
+            <a class="pagination__page <?= $i === ($currentPage ?? 1) ? 'pagination__page--active' : '' ?>"
+               href="<?= $pageUrl ?>&amp;q=<?= urlencode($query ?? "") ?>&amp;page=<?= $i ?>"><?= $i ?></a>
           <?php endfor; ?>
         </div>
-        <a class="pagination__btn <?= $currentPage >= $totalPages ? 'pagination__btn--disabled' : '' ?>"
-           href="<?= $pageUrl ?>&amp;q=<?= urlencode($query) ?>&amp;page=<?= $currentPage + 1 ?>" <?= $currentPage >= $totalPages ? 'aria-disabled="true" tabindex="-1"' : '' ?>>
+        <a class="pagination__btn <?= ($currentPage ?? 1) >= $totalPages ? 'pagination__btn--disabled' : '' ?>"
+           href="<?= $pageUrl ?>&amp;q=<?= urlencode($query ?? "") ?>&amp;page=<?= ($currentPage ?? 1) + 1 ?>" <?= ($currentPage ?? 1) >= $totalPages ? 'aria-disabled="true" tabindex="-1"' : '' ?>>
           Next &#8250;
         </a>
       </nav>

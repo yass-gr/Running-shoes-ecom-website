@@ -9,91 +9,74 @@ class SaleController
         require_once __DIR__ . "/../config/database.php";
         require_once __DIR__ . "/../models/product.php";
         require_once __DIR__ . "/../models/product_variant.php";
-        require_once __DIR__ . "/../models/discount.php";
 
         $productModel = new Product($pdo);
         $variantModel = new ProductVariant($pdo);
-        $discountModel = new Discount($pdo);
+        $availableColors = getFilterColors($variantModel);
 
-        $activeDiscounts = $discountModel->findActive();
-        $discountIds = array_column($activeDiscounts, "id");
+        $allProducts = $productModel->findAll();
+        $products = [];
 
-        if (empty($discountIds)) {
-            $products = [];
-        } else {
-            $placeholders = implode(",", array_fill(0, count($discountIds), "?"));
-            $all = $productModel->fetchAll(
-                "SELECT DISTINCT p.*, b.name AS brand_name, c.material AS category_material
-                 FROM Products p
-                 JOIN Brands b ON b.id = p.brand_id
-                 JOIN Categories c ON c.id = p.category_id
-                 JOIN Product_variants pv ON pv.product_id = p.id
-                 WHERE pv.discount_id IN ($placeholders)
-                 ORDER BY p.name",
-                $discountIds
-            );
+        foreach ($allProducts as $p) {
+            $variants = $variantModel->findByProduct($p["id"]);
+            if (empty($variants)) continue;
 
-            $products = [];
-            foreach ($all as $p) {
-                $variants = $variantModel->findByProduct($p["id"]);
-                $first = $variants[0] ?? [];
-                $thumb = $first["thumbnail"] ?? "";
-                if ($thumb === "" || $thumb === null) continue;
+            $discount = computeVariantDiscount($variants, (float)$p["base_price"]);
+            if ($discount === null) continue;
 
-                $swatches = [];
-                foreach ($variants as $v) {
-                    $c = $v["color"] ?? "";
-                    if ($c === "") continue;
+            $first = $variants[0] ?? [];
+            $thumb = $first["thumbnail"] ?? "";
+
+            $swatches = [];
+            $seenColors = [];
+            $sizes = [];
+            foreach ($variants as $v) {
+                $c = $v["color"] ?? "";
+                if ($c !== "" && !isset($seenColors[$c])) {
+                    $seenColors[$c] = true;
                     $swatches[] = [
                         "name" => $c,
                         "hex" => colorToHex($c),
                         "thumb" => $v["thumbnail"] ?? "",
                     ];
                 }
-
-                $discountPrice = null;
-                foreach ($variants as $v) {
-                    if ($v["discount_id"] !== null && in_array($v["discount_id"], $discountIds)) {
-                        $d = $discountModel->findById($v["discount_id"]);
-                        if ($d) {
-                            if ($d["discount_type"] === "%") {
-                                $discountPrice = $p["base_price"] - ($p["base_price"] * $d["value"] / 100);
-                            } else {
-                                $discountPrice = $p["base_price"] - $d["value"];
-                            }
-                            $discountPrice = max(0, $discountPrice);
-                        }
-                        break;
-                    }
+                $s = (string)($v["size"] ?? "");
+                if ($s !== "" && !in_array($s, $sizes)) {
+                    $sizes[] = $s;
                 }
-
-                $badge = null;
-                $totalStock = 0;
-                foreach ($variants as $v) {
-                    $qty = (int) ($v["stock_quantity"] ?? 0);
-                    $totalStock += $qty;
-                }
-                if ($totalStock <= 400) {
-                    $badge = "LAST FEW";
-                } else {
-                    $createdAt = strtotime($p["created_at"]);
-                    if ($createdAt && (time() - $createdAt) < 30 * 24 * 60 * 60) {
-                        $badge = "NEW";
-                    }
-                }
-
-                $products[] = [
-                    "id"    => $p["id"],
-                    "name"  => $p["name"],
-                    "price" => $p["base_price"],
-                    "sale_price" => $discountPrice,
-                    "total_stock" => $totalStock,
-                    "image" => $thumb,
-                    "color" => $swatches[0]["name"] ?? "",
-                    "swatches" => $swatches,
-                    "badge" => $badge,
-                ];
             }
+
+            $badge = null;
+            $totalStock = 0;
+            foreach ($variants as $v) {
+                $totalStock += (int) ($v["stock_quantity"] ?? 0);
+            }
+            $sales = (int) ($p["sales"] ?? 0);
+            if ($sales >= 400) {
+                $badge = "BESTSELLER";
+            } elseif ($totalStock <= 400) {
+                $badge = "LAST FEW";
+            } else {
+                $createdAt = strtotime($p["created_at"]);
+                if ($createdAt && (time() - $createdAt) < 30 * 24 * 60 * 60) {
+                    $badge = "NEW";
+                }
+            }
+
+            $products[] = [
+                "id"    => $p["id"],
+                "name"  => $p["name"],
+                "price" => $p["base_price"],
+                "sales" => $discount,
+                "sale_price" => $discount["sale_price"],
+                "total_stock" => $totalStock,
+                "image" => $thumb,
+                "color" => $swatches[0]["name"] ?? "",
+                "swatches" => $swatches,
+                "badge" => $badge,
+                "material" => $p["category_material"] ?? "",
+                "sizes" => $sizes,
+            ];
         }
 
         $sort = $_GET["sort"] ?? "featured";
