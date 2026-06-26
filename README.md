@@ -24,7 +24,6 @@ A PHP-based e-commerce platform for running shoes, featuring product catalog bro
 │   ├── js/
 │   └── images/
 ├── utils/               # Helper functions
-├── uploads/             # User-uploaded content
 ├── index.php            # Entry point
 ├── routes.php           # Route definitions
 ├── seed.sql             # Sample data (products, variants, discounts, etc.)
