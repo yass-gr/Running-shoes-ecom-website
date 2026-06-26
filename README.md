@@ -2,9 +2,21 @@
 
 PHP-based e-commerce platform for running shoes with product catalog, cart, checkout, user accounts, and admin panel.
 
-## Dev Server
+## Setup
 
 ```bash
+# 1. Create database
+mysql -u root -p -e "CREATE DATABASE runningdb"
+
+# 2. Import schema + seed data
+mysql -u root -p runningdb < running_shoes_website_db.sql
+mysql -u root -p runningdb < seed.sql
+
+# 3. Configure env
+cp .env.example .env
+# Edit .env with your DB credentials
+
+# 4. Start dev server
 php -S localhost:8000
 ```
 
