@@ -17,7 +17,7 @@
       </div>
 
       <nav>
-        <h1>Logo</h1>
+        <a href="?route=home"><h1>Logo</h1></a>
 
         <?php $navItems = [
             ["label" => "NEW ARRIVALS", "route" => "new-arrivals"],

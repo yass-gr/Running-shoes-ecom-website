@@ -66,9 +66,9 @@
 }
 
 .search-results-info {
-  max-width: 1700px;
+  width: 80%;
   margin: 0 auto;
-  padding: 0 20px 8px;
+  padding: 0 0 8px;
   font-size: 0.85rem;
   color: rgba(33, 33, 33, 0.55);
 }
