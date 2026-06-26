@@ -16,7 +16,6 @@ $pageUrl = "?" . http_build_query($queryParams);
     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <script type="module" src="../assets/js/shared/nav.js" defer></script>
     <script type="module" src="../assets/js/shared/cart.js" defer></script>
-    <script type="module" src="../assets/js/shared/productCard.js" defer></script>
   </head>
   <body>
     <?php require_once __DIR__ . "/components/navbar.php"; ?>
@@ -71,9 +70,27 @@ $pageUrl = "?" . http_build_query($queryParams);
             </p>
           </div>
         <?php else: ?>
-          <?php foreach ($pageProducts as $product): ?>
-            <?php $colorVariants = $variantMap[$product["master"] ?? "__standalone__"] ?? []; ?>
-            <?php require __DIR__ . "/components/product-card.php"; ?>
+          <?php foreach ($pageProducts as $item): ?>
+            <div class="card">
+              <a href="?route=product&id=<?= $item["id"] ?>">
+                <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
+                <?php if ($item["badge"]): ?>
+                  <span class="card__badge card__badge--<?= str_replace(' ', '_', strtolower($item["badge"])) ?>"><?= $item["badge"] ?></span>
+                <?php endif; ?>
+                <div class="info">
+                  <p class="name"><?= $item["name"] ?></p>
+                  <p class="color"><?= $item["color"] ?></p>
+                  <p class="price">
+                    <?php if (isset($item["sale_price"])): ?>
+                      <span style="color:#d32f2f;">$<?= number_format($item["sale_price"]) ?></span>
+                      <span style="text-decoration:line-through;color:#999;">$<?= number_format($item["price"]) ?></span>
+                    <?php else: ?>
+                      $<?= number_format($item["price"]) ?>
+                    <?php endif; ?>
+                  </p>
+                </div>
+              </a>
+            </div>
           <?php endforeach; ?>
         <?php endif; ?>
       </section>
