@@ -35,6 +35,7 @@ class SearchController
                 $c = $v["color"] ?? "";
                 if ($c === "" || isset($seenColors[$c])) continue;
                 $seenColors[$c] = true;
+                $c = stripColorSole($c);
                 $swatches[] = ["name" => $c, "hex" => colorToHex($c), "thumb" => $v["thumbnail"] ?? ""];
             }
 

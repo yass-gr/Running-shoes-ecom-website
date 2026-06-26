@@ -13,11 +13,13 @@ $item = $item ?? [];
       $<?= number_format($item["price"]) ?>
     <?php endif; ?>
   </p>
-  <div class="swatches">
-    <?php foreach ($item["swatches"] as $s): ?>
-      <div class="hue" style="background-color: <?= $s["hex"] ?>" data-thumb="<?= $s["thumb"] ?>"></div>
-    <?php endforeach; ?>
-  </div>
+  <?php if (!empty($item["swatches"])): ?>
+    <div class="swatches">
+      <?php foreach ($item["swatches"] as $s): ?>
+        <div class="hue" style="background-color: <?= $s["hex"] ?>" data-thumb="<?= $s["thumb"] ?>"></div>
+      <?php endforeach; ?>
+    </div>
+  <?php endif; ?>
 </div>
 <?php if ($item["badge"]): ?>
   <span class="card__badge card__badge--<?= str_replace(' ', '_', strtolower($item["badge"])) ?>"><?= $item["badge"] ?></span>
