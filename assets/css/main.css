@@ -13,6 +13,7 @@
 @import "components/productCard.css";
 @import "components/infoFaq.css";
 @import "views/newArrivals.css";
+@import "views/search.css";
 
 :root {
   --main-bg-clr: #f0eee9;

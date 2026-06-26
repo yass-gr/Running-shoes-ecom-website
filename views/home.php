@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mobile ver</title>
+    <title>Running Shoes</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -26,8 +26,7 @@
     ></script>
   </head>
   <body>
-
-    <?php require_once __DIR__ . "/components/navbar.php" ?>
+    <?php require_once __DIR__ . "/components/navbar.php"; ?>
 
     <section class="hero-container">
       <div id="hero-section">
@@ -53,7 +52,8 @@
         <div>
           <span>
             <h2>MENS</h2>
-            <button>SHOP MEN</button></span>
+            <button>SHOP MEN</button></span
+          >
         </div>
         <div>
           <span>
@@ -72,17 +72,18 @@
 
       <section id="new-arrivals">
         <h2 class="title">NEW ARRIVALS</h2>
-        <div class="arrow">-></div>
-        <span class="leftControl"></span>
-        <span class="rightControl"></span>
+        <div class="arrow">
+          ->
+        </div>
+         <span class="leftControl"></span>
+          <span class="rightControl">
+          </span>
         <div class="newAriv1content">
-          <?php foreach (array_slice($items, 0, 20) as $item): ?>
-            <div><img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>"></div>
-          <?php endforeach; ?>
+
         </div>
         <div class="info">
           <h2 class="collName">June's Collection</h2>
-          <p class="pName"><?= $items[0]["name"] ?? "Product" ?> - $<?= number_format($items[0]["price"] ?? 0) ?></p>
+          <p class="pName">Product Name - price $</p>
           <div>
             <button>SHOP MEN</button>
             <button>SHOP WOMEN</button>
@@ -93,7 +94,7 @@
       <section class="specialCollectionSection">
         <div class="main">
           <h1>Bold By Nature</h1>
-          <p>Show your true colors in eight exclusive Pantone-curated shades.</p>
+          <p>Show your true colors in eight exclusivePantone-curated shades.</p>
           <button>SHOP NOW</button>
         </div>
         <div></div>
@@ -103,39 +104,13 @@
 
       <section class="newArrivals2">
         <div class="header">
-          <h2 class="title">NEW ARRIVALS</h2>
+          <h2 class="title">NEW ARRIVALS </h2>
           <div class="arrows">
             <div class="left">⇠</div>
             <div class="right">⇢</div>
           </div>
         </div>
-        <div class="content">
-          <?php foreach (array_slice($items, 20) as $item): ?>
-            <div class="card">
-              <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
-              <div class="info">
-                <p class="name"><?= $item["name"] ?></p>
-                <p class="color"><?= $item["color"] ?></p>
-                <p class="price">
-                  <?php if (isset($item["sale_price"])): ?>
-                    <span style="text-decoration:line-through;color:#999;">$<?= number_format($item["price"]) ?></span>
-                    <span style="color:#d32f2f;">$<?= number_format($item["sale_price"]) ?></span>
-                  <?php else: ?>
-                    $<?= number_format($item["price"]) ?>
-                  <?php endif; ?>
-                </p>
-                <div class="swatches">
-                  <?php foreach ($item["swatches"] as $s): ?>
-                    <div class="hue" style="background-color: <?= $s["hex"] ?>" data-thumb="<?= $s["thumb"] ?>"></div>
-                  <?php endforeach; ?>
-                </div>
-              </div>
-              <?php if ($item["badge"]): ?>
-                <span class="card__badge card__badge--<?= str_replace(' ', '_', strtolower($item["badge"])) ?>"><?= $item["badge"] ?></span>
-              <?php endif; ?>
-            </div>
-          <?php endforeach; ?>
-        </div>
+        <div class="content"></div>
       </section>
 
       <section id="categories2">
@@ -165,10 +140,9 @@
         </div>
       </section>
 
-      <?php require_once __DIR__ . "/components/trust-cards.php" ?>
+      <?php require_once __DIR__ . "/components/trust-cards.php"; ?>
     </main>
 
-    <?php require_once __DIR__ . "/components/footer.php" ?>
-
+    <?php require_once __DIR__ . "/components/footer.php"; ?>
   </body>
 </html>

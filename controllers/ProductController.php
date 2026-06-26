@@ -1,58 +1,101 @@
 <?php
 
+require_once __DIR__ . "/../config/database.php";
+require_once __DIR__ . "/../models/product.php";
+require_once __DIR__ . "/../models/product_variant.php";
+require_once __DIR__ . "/../models/product_img.php";
+
 class ProductController
 {
-    public function index(): void
+    private Product $productModel;
+    private ProductVariant $variantModel;
+    private ProductImg $imgModel;
+
+    public function __construct()
     {
-        $route = $_GET["route"] ?? "shop-all";
+        $this->productModel = new Product($pdo);
+        $this->variantModel = new ProductVariant($pdo);
+        $this->imgModel = new ProductImg($pdo);
+    }
 
-        switch ($route) {
-            case "product":
-                $id = (int) ($_GET["id"] ?? 0);
-                if ($id <= 0) {
-                    http_response_code(404);
-                    echo "Product not found";
-                    return;
-                }
-                require_once __DIR__ . "/../config/database.php";
-                require_once __DIR__ . "/../models/product.php";
-                require_once __DIR__ . "/../models/product_variant.php";
-                require_once __DIR__ . "/../models/product_img.php";
-                $product = (new Product($pdo))->findById($id);
-                if (!$product) {
-                    http_response_code(404);
-                    echo "Product not found";
-                    return;
-                }
-                $variants = (new ProductVariant($pdo))->findByProduct($id);
-                $images = (new ProductImg($pdo))->findByVariantProduct($id);
-                require __DIR__ . "/../views/product-detail.php";
-                break;
+    public function shopAll(): void
+    {
+        $products = $this->productModel->findAll();
+        $perPage = 24;
+        $totalPages = (int) ceil(count($products) / $perPage);
+        $currentPage = max(1, min((int) ($_GET["page"] ?? 1), $totalPages));
+        $pageProducts = array_slice($products, ($currentPage - 1) * $perPage, $perPage);
+        $productCount = count($products);
 
-            case "shop-all":
-                require __DIR__ . "/../views/shop-all.php";
-                break;
+        require __DIR__ . "/../views/shop-all.php";
+    }
 
-            case "mens":
-                require __DIR__ . "/../views/mens.php";
-                break;
+    public function search(): void
+    {
+        $query = trim($_GET["q"] ?? "");
 
-            case "womens":
-                require __DIR__ . "/../views/womens.php";
-                break;
-
-            case "sale":
-                require __DIR__ . "/../views/sale.php";
-                break;
-
-            case "new-arrivals":
-                require __DIR__ . "/../views/new-arrivals.php";
-                break;
-
-            default:
-                http_response_code(404);
-                require __DIR__ . "/../views/404.php";
-                break;
+        if ($query !== "") {
+            $products = $this->productModel->search($query);
+        } else {
+            $products = $this->productModel->findAll();
+            shuffle($products);
+            $products = array_slice($products, 0, 10);
         }
+
+        $perPage = 24;
+        $totalPages = (int) ceil(count($products) / $perPage);
+        $currentPage = max(1, min((int) ($_GET["page"] ?? 1), $totalPages));
+        $pageProducts = array_slice($products, ($currentPage - 1) * $perPage, $perPage);
+        $productCount = count($products);
+
+        require __DIR__ . "/../views/search.php";
+    }
+
+    public function mens(): void
+    {
+        $products = $this->productModel->findByGender("Men");
+        $perPage = 24;
+        $totalPages = (int) ceil(count($products) / $perPage);
+        $currentPage = max(1, min((int) ($_GET["page"] ?? 1), $totalPages));
+        $pageProducts = array_slice($products, ($currentPage - 1) * $perPage, $perPage);
+        $productCount = count($products);
+
+        require __DIR__ . "/../views/mens.php";
+    }
+
+    public function womens(): void
+    {
+        $products = $this->productModel->findByGender("Women");
+        $perPage = 24;
+        $totalPages = (int) ceil(count($products) / $perPage);
+        $currentPage = max(1, min((int) ($_GET["page"] ?? 1), $totalPages));
+        $pageProducts = array_slice($products, ($currentPage - 1) * $perPage, $perPage);
+        $productCount = count($products);
+
+        require __DIR__ . "/../views/womens.php";
+    }
+
+    public function newArrivals(): void
+    {
+        $products = $this->productModel->findAll();
+        $perPage = 24;
+        $totalPages = (int) ceil(count($products) / $perPage);
+        $currentPage = max(1, min((int) ($_GET["page"] ?? 1), $totalPages));
+        $pageProducts = array_slice($products, ($currentPage - 1) * $perPage, $perPage);
+        $productCount = count($products);
+
+        require __DIR__ . "/../views/new-arrivals.php";
+    }
+
+    public function sale(): void
+    {
+        $products = $this->productModel->findAll();
+        $perPage = 24;
+        $totalPages = (int) ceil(count($products) / $perPage);
+        $currentPage = max(1, min((int) ($_GET["page"] ?? 1), $totalPages));
+        $pageProducts = array_slice($products, ($currentPage - 1) * $perPage, $perPage);
+        $productCount = count($products);
+
+        require __DIR__ . "/../views/sale.php";
     }
 }

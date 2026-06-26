@@ -96,12 +96,17 @@ header nav {
       cursor: pointer;
       font-weight: 500;
       letter-spacing: 0.5px;
+      transition: opacity 0.2s;
 
       a {
         text-decoration: none;
         color: inherit;
         display: block;
       }
+    }
+
+    li:hover {
+      opacity: 0.7;
     }
   }
   .nav-right {
@@ -116,13 +121,15 @@ header nav {
     svg {
       width: 20px;
       cursor: pointer;
+      display: block;
     }
 
     a {
       text-decoration: none;
       font-size: 0.8rem;
-      padding-right: 10px;
-      font-family: "chillax", sans-serif;
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
     }
   }
 }
