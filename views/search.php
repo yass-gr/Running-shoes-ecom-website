@@ -102,6 +102,13 @@ $pageUrl = "?" . http_build_query($queryParams);
       <?php require_once __DIR__ . "/components/info-faq.php"; ?>
     </main>
 
+    <script>
+      $(".collection-grid").on("click", ".hue", function () {
+        const thumb = $(this).data("thumb");
+        $(this).closest(".card").find("img").attr("src", thumb);
+      });
+    </script>
+
     <?php require_once __DIR__ . "/components/trust-cards.php"; ?>
     <?php require_once __DIR__ . "/components/footer.php"; ?>
   </body>
