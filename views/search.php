@@ -73,9 +73,7 @@ $pageUrl = "?" . http_build_query($queryParams);
         <?php else: ?>
           <?php foreach ($pageProducts as $item): ?>
             <div class="card">
-              <a href="?route=product&id=<?= $item["id"] ?>">
-                <?php require __DIR__ . "/components/product-card-swatch.php"; ?>
-              </a>
+              <?php require __DIR__ . "/components/product-card-swatch.php"; ?>
             </div>
           <?php endforeach; ?>
         <?php endif; ?>
