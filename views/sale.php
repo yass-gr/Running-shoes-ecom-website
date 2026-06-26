@@ -49,28 +49,9 @@ $pageUrl = "?" . http_build_query($queryParams);
           <p class="collection-grid__empty">No products on sale at the moment.</p>
         <?php else: ?>
         <?php foreach ($pageProducts as $item): ?>
-          <div class="card"
-               data-price="<?= $item["price"] ?>"
-               data-color="<?= $item["color"] ?>"
-               data-material="<?= $item["material"] ?? "" ?>"
-               data-sizes="<?= implode(",", $item["sizes"] ?? []) ?>">
+          <div class="card">
             <a href="?route=product&id=<?= $item["id"] ?>">
-              <img src="<?= $item["image"] ?>" alt="<?= $item["name"] ?>">
-              <?php if ($item["badge"]): ?>
-                <span class="card__badge card__badge--<?= str_replace(' ', '_', strtolower($item["badge"])) ?>"><?= $item["badge"] ?></span>
-              <?php endif; ?>
-              <div class="info">
-                <p class="name"><?= $item["name"] ?></p>
-                <p class="color"><?= $item["color"] ?></p>
-                <p class="price">
-                  <?php if (isset($item["sale_price"])): ?>
-                    <span style="color:#d32f2f;">$<?= number_format($item["sale_price"]) ?></span>
-                    <span style="text-decoration:line-through;color:#999;">$<?= number_format($item["price"]) ?></span>
-                  <?php else: ?>
-                    $<?= number_format($item["price"]) ?>
-                  <?php endif; ?>
-                </p>
-              </div>
+              <?php require __DIR__ . "/components/product-card-swatch.php"; ?>
             </a>
           </div>
         <?php endforeach; ?>
@@ -103,6 +84,13 @@ $pageUrl = "?" . http_build_query($queryParams);
     <?php require_once __DIR__ . "/components/trust-cards.php"; ?>
     <?php require_once __DIR__ . "/components/footer.php"; ?>
     <script>
+      $(".collection-grid").on("click", ".hue", function () {
+        const thumb = $(this).data("thumb");
+        $(this).closest(".card").find("img").attr("src", thumb);
+        $(this).closest(".swatches").find(".hue").removeClass("hue--active");
+        $(this).addClass("hue--active");
+      });
+
       document.querySelector('.collection-toolbar__sort')?.addEventListener('change', function() {
         var url = new URL(window.location.href);
         url.searchParams.set('sort', this.value);

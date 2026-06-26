@@ -48,7 +48,7 @@
                     <td><?= e($order["created_at"]) ?></td>
                     <td>$<?= number_format($order["subtotal"]) ?></td>
                     <td><?= e($order["shipping_status"]) ?></td>
-                    <td><a href="?route=order&id=<?= $order["id"] ?>">View</a></td>
+                    <td><a href="?route=account">View</a></td>
                   </tr>
                 <?php endforeach; ?>
               </tbody>

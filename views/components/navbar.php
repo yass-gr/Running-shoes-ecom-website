@@ -96,11 +96,11 @@
       <div class="noItemsInCart">
         <h1>Your cart is empty. Start shopping!</h1>
         <div class="btnGroup">
-          <a href=""><button>SHOP WOMENS</button></a>
-        <a href=""><button>SHOP MENS</button></a>
-        <a href=""><button>SHOP ALL</button></a>
-        <a href=""><button>SHOP WOMENS SALE</button></a>
-        <a href=""><button>SHOP MENS SALE</button></a>
+          <a href="?route=womens"><button>SHOP WOMENS</button></a>
+        <a href="?route=mens"><button>SHOP MENS</button></a>
+        <a href="?route=shop-all"><button>SHOP ALL</button></a>
+        <a href="?route=sale"><button>SHOP WOMENS SALE</button></a>
+        <a href="?route=sale"><button>SHOP MENS SALE</button></a>
         </div>
         
     </div>

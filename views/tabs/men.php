@@ -3,19 +3,12 @@
 
 <div class="navTitle">SHOP MEN'S</div>
 <div class="colsContainer">
-  <ul>
-    <li><a>New arrivals</a></li>
-    <li><a>Best sellers</a></li>
-    
-  </ul>
   <div class="col">
     <h3>MEN'S SHOES</h3>
     <ul>
-      <li><a>Shop All</a></li>
-      
+      <li><a href="?route=mens">Shop All</a></li>
     </ul>
   </div>
-
 </div>
 <div class="imgGrid">
   <div class="gridItem">

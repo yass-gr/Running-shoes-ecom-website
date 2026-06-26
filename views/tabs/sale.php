@@ -3,17 +3,13 @@
   <div class="col">
     <h3>MEN</h3>
     <ul>
-      <li><a>item 1</a></li>
-      <li><a>item 2</a></li>
-      <li><a>item 3</a></li>
+      <li><a href="?route=sale">Shop All Sale</a></li>
     </ul>
   </div>
   <div class="col">
     <h3>WOMEN</h3>
     <ul>
-      <li><a>item 1</a></li>
-      <li><a>item 2</a></li>
-      <li><a>item 3</a></li>
+      <li><a href="?route=sale">Shop All Sale</a></li>
     </ul>
   </div>
 </div>

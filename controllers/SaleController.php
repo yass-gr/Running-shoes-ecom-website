@@ -26,6 +26,7 @@ class SaleController
 
             $first = $variants[0] ?? [];
             $thumb = $first["thumbnail"] ?? "";
+            if ($thumb === "" || $thumb === null) continue;
 
             $swatches = [];
             $seenColors = [];

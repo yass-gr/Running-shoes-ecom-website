@@ -15,7 +15,7 @@
     <main style="text-align: center; padding: 100px 20px;">
       <h1>404</h1>
       <p>Page not found.</p>
-      <a href="/">Back to home</a>
+      <a href="?route=home">Back to home</a>
     </main>
     <?php require_once __DIR__ . "/components/footer.php"; ?>
   </body>
