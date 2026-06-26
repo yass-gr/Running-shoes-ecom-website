@@ -1,86 +1,70 @@
 <?php
 
-require_once __DIR__ . "/controllers/HomeController.php";
-require_once __DIR__ . "/controllers/ProductController.php";
-require_once __DIR__ . "/controllers/ShopAllController.php";
-require_once __DIR__ . "/controllers/MensController.php";
-require_once __DIR__ . "/controllers/WomensController.php";
-require_once __DIR__ . "/controllers/SaleController.php";
-require_once __DIR__ . "/controllers/NewArrivalsController.php";
-require_once __DIR__ . "/controllers/CartController.php";
-require_once __DIR__ . "/controllers/OrderController.php";
-require_once __DIR__ . "/controllers/AuthController.php";
-require_once __DIR__ . "/controllers/AdminController.php";
-require_once __DIR__ . "/controllers/DeliveryController.php";
+require_once __DIR__ . "/utils/helpers.php";
 
-$route = $_GET["route"] ?? "home";
+$route = $_GET["route"] ?? "";
 
 switch ($route) {
-    case "home":
-        $controller = new HomeController();
-        $controller->index();
-        break;
-
     case "shop-all":
-        $controller = new ShopAllController();
-        $controller->index();
+        require_once __DIR__ . "/controllers/ShopAllController.php";
+        (new ShopAllController())->index();
         break;
 
     case "mens":
-        $controller = new MensController();
-        $controller->index();
+        require_once __DIR__ . "/controllers/MensController.php";
+        (new MensController())->index();
         break;
 
     case "womens":
-        $controller = new WomensController();
-        $controller->index();
-        break;
-
-    case "sale":
-        $controller = new SaleController();
-        $controller->index();
+        require_once __DIR__ . "/controllers/WomensController.php";
+        (new WomensController())->index();
         break;
 
     case "new-arrivals":
-        $controller = new NewArrivalsController();
-        $controller->index();
+        require_once __DIR__ . "/controllers/NewArrivalsController.php";
+        (new NewArrivalsController())->index();
+        break;
+
+    case "sale":
+        require_once __DIR__ . "/controllers/SaleController.php";
+        (new SaleController())->index();
+        break;
+
+    case "home":
+        require_once __DIR__ . "/controllers/HomeController.php";
+        (new HomeController())->index();
+        break;
+
+    case "search":
+        require_once __DIR__ . "/controllers/SearchController.php";
+        (new SearchController())->index();
         break;
 
     case "product":
-        $controller = new ProductController();
-        $controller->index();
+        require_once __DIR__ . "/controllers/ProductDetailController.php";
+        (new ProductDetailController())->index();
         break;
 
     case "cart":
-        $controller = new CartController();
-        $controller->index();
+        require_once __DIR__ . "/controllers/CartController.php";
+        (new CartController())->index();
         break;
 
     case "checkout":
-        $controller = new OrderController();
-        $controller->index();
+        require_once __DIR__ . "/controllers/OrderController.php";
+        (new OrderController())->index();
         break;
 
     case "login":
     case "register":
     case "logout":
     case "account":
-        $controller = new AuthController();
-        $controller->index();
-        break;
-
-    case "admin":
-        $controller = new AdminController();
-        $controller->index();
-        break;
-
-    case "delivery":
-        $controller = new DeliveryController();
-        $controller->index();
+        require_once __DIR__ . "/controllers/AuthController.php";
+        (new AuthController())->index();
         break;
 
     default:
-        http_response_code(404);
-        require __DIR__ . "/views/404.php";
+        require_once __DIR__ . "/controllers/HomeController.php";
+        (new HomeController())->index();
         break;
 }

@@ -30,7 +30,14 @@
         <div class="product-detail__info">
           <h1 class="product-detail__title"><?= e($product["name"]) ?></h1>
           <p class="product-detail__brand"><?= e($product["brand_name"] ?? "") ?></p>
-          <p class="product-detail__price">$<?= number_format($product["base_price"]) ?></p>
+          <p class="product-detail__price">
+            <?php if ($salePrice): ?>
+              <span style="text-decoration:line-through;color:#999;">$<?= number_format($product["base_price"]) ?></span>
+              <span style="color:#d32f2f;">$<?= number_format($salePrice) ?></span>
+            <?php else: ?>
+              $<?= number_format($product["base_price"]) ?>
+            <?php endif; ?>
+          </p>
           <p class="product-detail__description"><?= e($product["description"] ?? "") ?></p>
 
           <div class="product-detail__variants">

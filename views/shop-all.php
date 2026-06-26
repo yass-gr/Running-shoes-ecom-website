@@ -16,6 +16,7 @@ $pageUrl = "?" . http_build_query($queryParams);
     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <script type="module" src="../assets/js/shared/nav.js" defer></script>
     <script type="module" src="../assets/js/shared/cart.js" defer></script>
+    <script type="module" src="../assets/js/shared/productCard.js" defer></script>
     <script type="module" src="../assets/js/shared/filterModal.js" defer></script>
   </head>
   <body>
@@ -183,10 +184,10 @@ $pageUrl = "?" . http_build_query($queryParams);
       <section class="collection-categories" aria-label="Shop more categories">
         <?php foreach ($categories as $category): ?>
           <article class="collection-category">
-            <img src="<?= e($category["image"]) ?>" alt="<?= e($category["title"]) ?>" loading="lazy" />
+            <img src="<?= e($category["image"]) ?>" alt="" loading="lazy" />
             <div class="collection-category__content">
               <h2><?= e($category["title"]) ?></h2>
-              <a href="?route=<?= $category["route"] ?>"><?= $category["cta"] ?></a>
+              <a href="?route=<?= e($category["route"]) ?>"><?= e($category["cta"]) ?></a>
             </div>
           </article>
         <?php endforeach; ?>
