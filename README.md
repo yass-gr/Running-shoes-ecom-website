@@ -33,7 +33,7 @@ A PHP-based e-commerce platform for running shoes, featuring product catalog bro
 ## Features
 
 - **Product Catalog** — Browse all products, filter by gender (men/women), new arrivals, sale items
-- **Client-Side Filtering** — Filter by price, color, material, and size with cascading disable
+- **Server-Side Filtering** — Filter by price, color, material, and size with cascading disable
 - **Product Detail** — View product images, color swatches, size selection
 - **Shopping Cart** — Add/remove items, quantity management
 - **Checkout** — Order placement with city-based shipping rules
