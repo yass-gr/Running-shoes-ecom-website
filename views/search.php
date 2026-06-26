@@ -73,14 +73,7 @@ $pageUrl = "?" . http_build_query($queryParams);
         <?php else: ?>
           <?php foreach ($pageProducts as $item): ?>
             <div class="card">
-              <a href="?route=product&id=<?= $item["id"] ?>">
-                <img src="<?= $item["image"] ?? "" ?>" alt="<?= $item["name"] ?>">
-                <div class="info">
-                  <p class="name"><?= $item["name"] ?></p>
-                  <p class="color"><?= $item["color"] ?? "" ?></p>
-                  <p class="price">$<?= number_format((float) ($item["price"] ?? 0)) ?></p>
-                </div>
-              </a>
+              <?php require __DIR__ . "/components/product-card.php"; ?>
             </div>
           <?php endforeach; ?>
         <?php endif; ?>
