@@ -37,7 +37,6 @@ class ShopAllController
                     "thumb" => $v["thumbnail"] ?? "",
                 ];
             }
-            }
 
             $badge = null;
             $totalStock = 0;
